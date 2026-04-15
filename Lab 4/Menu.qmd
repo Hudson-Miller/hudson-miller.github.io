@@ -1,0 +1,254 @@
+---
+execute:               # Default settings for code blocks
+  warning: false       # Do not print warnings
+  message: false       # Do not print messages
+  size: "scriptsize"   # Set code size to script size
+
+format:
+  pdf:        # Specify .pdf formatting options 
+    documentclass: article     # Document Class
+    number-sections: true      # Number Sections
+    reference-section-title: "References" # Title for reference section
+    code-line-numbers: true    # Line numbers printed in code
+    cap-location: top          # Captions at the top of tables 
+    geometry:
+      - top=0.75in
+      - left=0.75in
+      - bottom=0.75in
+      - right=0.75in
+format-links: [pdf]
+---
+```{r}
+#| echo: false
+
+default_chunk_hook  <- knitr::knit_hooks$get("chunk")
+
+latex_font_size <- c("Huge", "huge", "LARGE", "Large", 
+                     "large", "normalsize", "small", 
+                     "footnotesize", "scriptsize", "tiny")
+
+knitr::knit_hooks$set(chunk = function(x, options) {
+  x <- default_chunk_hook(x, options)
+  if(options$size %in% latex_font_size) {
+    paste0("\n \\", options$size, "\n\n", 
+      x, 
+      "\n\n \\normalsize"
+    )
+  } else {
+    x
+  }
+})
+
+```
+
+```{r}
+#| label: load-packages
+#| include: false
+library(tidyverse)
+```
+
+<!-- Code For Building Menu Here -->
+```{r}
+#| include: false
+breakfasts <- c("website/BerryMelonSmoothie.html",
+                "website/BiscuitsAndGravy.html",
+                "website/BreakfastCheesecake.html",
+                "website/BreakfastMuffins.html",
+                "website/ChiaParfait.html",
+                "website/GardenTomatoQuiche.html",
+                "website/OvernightOats.html",
+                "website/PumpkinToast.html",
+                "website/TropicalSmoothie.html")
+dinner <- c("website/AfricanPeanutSoup.html",
+            "website/Alfredo.html",
+            "website/ArugulaPasta.html",
+            "website/AutumnGrainBowl.html",
+            "website/BakedZiti.html",
+            "website/BBQChili.html",
+            "website/Bibimbap.html",
+            "website/BLTSalad.html",
+            "website/Burgers.html",
+            "website/CapreseSandwiches.html",
+            "website/EggplantParmesan.html",
+            "website/Enchiladas.html",
+            "website/FloridaRolls.html",
+            "website/KimchiGrilledCheese.html",
+            "website/Lasagna.html",
+            "website/LatinBowl.html",
+            "website/Meatloaf.html",
+            "website/PadThai.html",
+            "website/PastaAndPeas.html",
+            "website/Pizza.html",
+            "website/RedWineRagu.html",
+            "website/SalmonChowder.html",
+            "website/Shakshuka.html")
+```
+
+
+
+```{r}
+#| include: false
+meals = c(sample(dinner, 3, replace = F),sample(breakfasts, 1))
+```
+
+\newpage
+
+```{r}
+#| include: false
+
+# I am going to create a general algorithm for n number of recipes because I want practice with this type of coding.
+
+library("rvest")
+
+recipe.items = lapply(meals, read_html)
+
+recipe = function(recipe.number){
+  ingredients.section = html_element(recipe.items[[recipe.number]], "#ingredients")
+  ingredients = html_elements(ingredients.section, "li")
+
+  instructions.section = html_element(recipe.items[[recipe.number]], "#instructions")
+  instructions = html_elements(instructions.section, "li")
+
+  image.element = html_element(recipe.items[[recipe.number]], ".img-fluid.figure-img")
+  
+  src = html_attr(image.element, "src")
+  image.url = paste0("website/",src)
+
+  list(
+    ingredients = ingredients,
+    instructions = instructions,
+    image.url = image.url
+  )
+
+}
+
+r1 = recipe(1)
+r2 = recipe(2)
+r3 = recipe(3)
+r4 = recipe(4)
+
+ingredients.1 <- paste("-", html_text(r1$ingredients))
+ingredients.2 <- paste("-", html_text(r2$ingredients))
+ingredients.3 <- paste("-", html_text(r3$ingredients))
+ingredients.4 <- paste("-", html_text(r4$ingredients))
+```
+
+
+# Ingredients
+
+```{r}
+#| echo: false
+#| results: 'asis'
+all.ingredients = c(ingredients.1,ingredients.2,ingredients.3,ingredients.4)
+
+cat(all.ingredients, sep = "\n")
+
+
+
+```
+
+
+# Recipe One
+
+
+```{r}
+#| echo: false
+#| results: 'asis'
+# width="50%" shrinks the image for printing
+recipe.title <- html_element(recipe.items[[1]],"h1") |> html_text()
+cat(paste('![', recipe.title, '](', r1$image.url, "){width=50%}", sep="")) 
+```
+
+
+```{r}
+#| echo: false
+#| results: 'asis'
+cat(ingredients.1, sep = "\n")
+```
+
+```{r}
+#| echo: false
+#| results: 'asis'
+formatted_list <- paste("1.", html_text(r1$instructions))
+cat(formatted_list, sep = "\n")
+```
+
+\newpage
+
+# Recipe Two
+
+```{r}
+#| echo: false
+#| results: 'asis'
+# width="50%" shrinks the image for printing
+recipe.title <- html_element(recipe.items[[2]],"h1") |> html_text()
+cat(paste('![', recipe.title, '](', r2$image.url, "){width=50%}", sep="")) 
+```
+
+
+```{r}
+#| echo: false
+#| results: 'asis'
+cat(ingredients.2, sep = "\n")
+```
+
+```{r}
+#| echo: false
+#| results: 'asis'
+formatted_list <- paste("1.", html_text(r2$instructions))
+cat(formatted_list, sep = "\n")
+```
+
+\newpage
+
+# Recipe Three
+
+```{r}
+#| echo: false
+#| results: 'asis'
+# width="50%" shrinks the image for printing
+recipe.title <- html_element(recipe.items[[3]],"h1") |> html_text()
+cat(paste('![', recipe.title, '](', r3$image.url, "){width=50%}", sep="")) 
+```
+
+
+```{r}
+#| echo: false
+#| results: 'asis'
+cat(ingredients.3, sep = "\n")
+```
+
+```{r}
+#| echo: false
+#| results: 'asis'
+formatted_list <- paste("1.", html_text(r3$instructions))
+cat(formatted_list, sep = "\n")
+```
+
+\newpage
+
+# Breakfast Recipe
+
+
+```{r}
+#| echo: false
+#| results: 'asis'
+# width="50%" shrinks the image for printing
+recipe.title <- html_element(recipe.items[[4]],"h1") |> html_text()
+cat(paste('![', recipe.title, '](', r4$image.url, "){width=50%}", sep="")) 
+```
+
+
+```{r}
+#| echo: false
+#| results: 'asis'
+cat(ingredients.4, sep = "\n")
+```
+
+```{r}
+#| echo: false
+#| results: 'asis'
+formatted_list <- paste("1.", html_text(r4$instructions))
+cat(formatted_list, sep = "\n")
+```
+
