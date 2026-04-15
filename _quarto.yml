@@ -20,14 +20,6 @@ website:
     - 11-Lab-Estimation/Lab11WriteUp.qmd
 
 format:
-html:
-theme:
-- cosmo
-- brand
-css: styles.css
-toc: true
-
-format:
   html:
     theme:
       - cosmo
