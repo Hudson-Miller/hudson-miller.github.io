@@ -1,5 +1,5 @@
 ---
-title: "Name"
+title: "Hudson Miller"
 ---
 
 This is a Quarto website.
