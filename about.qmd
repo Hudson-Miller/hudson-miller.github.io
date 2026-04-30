@@ -8,12 +8,17 @@ My name is **Hudson Miller**. I'm a Mathematics and Computer Science student at 
 
 ## Research
 
-I conduct research in investigating the properties of simple finite graphs and monomial orders. My work sits at the intersection of **computational commutative algebra** and **graph theory** — specifically, how combinatorial information encoded in a graph can be read off from algebraic objects like edge ideals and their resolutions.
+I work under Professor Sosa-Castillo, investigating properties of simple finite graphs and monomial orders. My work sits at the intersection of **computational commutative algebra** and **graph theory** — specifically, how combinatorial information encoded in a graph can be read off from algebraic objects like edge ideals.
 
 ## Coursework
 
 This site hosts lab reports and analyses from **Math 240: Computational Statistics** at Colgate. The work involves statistical modeling and data analysis in R, ranging from foundational inference to applied regression and beyond.
 
+## Personal Interests
+
+Along with my work affiliated with Colgate University, I have several personal projects that I am passionate about. I am currently working on a coreset algorithm that blends graph-theoretical constructions along with simple Euclidean principles in order to reduce data size by up to $75%$ without a significant drop in accuracy across models. This is optimized for application in ML fields, for example drawing decision boundaries.
+
 ## Contact
 
-Feel free to reach out via email or through Colgate's directory.
+email: <hrmiller@colgate.edu>
+

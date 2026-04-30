@@ -3,7 +3,7 @@ title: "Hudson Miller"
 ---
 
 ::: {.hero-block}
-# Hudson Miller
+# About Me
 
 ::: {.subtitle}
 Mathematics & Computer Science · Colgate University, Class of '29
@@ -11,9 +11,9 @@ Mathematics & Computer Science · Colgate University, Class of '29
 :::
 
 ::: {.info-card}
-Welcome. I'm an undergraduate researcher working at the intersection of **computational commutative algebra** and **graph theory**, advised by Professor Sosa-Castillo. My current work investigates properties of simple finite graphs under monomial orders, with an emphasis on formal proof-writing at a publication standard.
+Welcome. I'm an undergraduate researcher working at the intersection of **computational commutative algebra** and **graph theory** at Colgate University. I am a Benton Scholar and AMS Scholar, granting me over $10,000$ in funding over the next four years. Alongside combinatorics, I am interested in statistical modelling, data visualization, and web design. I am also a Division One student-athlete on the Men's Rowing Team.
 
-This site also hosts my coursework from **Math 240: Computational Statistics**.
+This site hosts my coursework from **Math 240: Computational Statistics**.
 :::
 
 ## Research
@@ -24,17 +24,17 @@ I study connections between graph-theoretic structure and algebraic properties o
 
 The lab reports below document statistical analyses conducted in R across a range of applied topics.
 
-| Lab | Topic |
-|-----|-------|
-| [Lab 2](Lab 2/Lab2WriteUp.qmd) | — |
-| [Lab 3](Lab 3/Lab3WriteUp.qmd) | — |
-| [Lab 4](Lab 4/Lab4WriteUp.qmd) | — |
-| [Lab 5–6](Lab 5-6/Lab5WriteUp.qmd) | — |
-| [Lab 8–9](Lab 8-9/Lab8WriteUp.qmd) | — |
-| [Lab 10](Lab 10/Lab10WriteUp.qmd) | — |
-| [Lab 11](Lab 11/Lab11WriteUp.qmd) | — |
-| [Lab 13](Lab 13/Lab13WriteUp.qmd) | — |
-| [Colgate Rowing Analysis](Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.qmd) | Rowing performance data |
+| Lab |
+|-----|
+| [Lab 2](Lab 2/Lab2WriteUp.qmd)
+| [Lab 3](Lab 3/Lab3WriteUp.qmd) 
+| [Lab 4](Lab 4/Lab4WriteUp.qmd)
+| [Lab 5–6](Lab 5-6/Lab5WriteUp.qmd)
+| [Lab 8–9](Lab 8-9/Lab8WriteUp.qmd)
+| [Lab 10](Lab 10/Lab10WriteUp.qmd)
+| [Lab 11](Lab 11/Lab11WriteUp.qmd)
+| [Lab 13](Lab 13/Lab13WriteUp.qmd)
+| [Colgate Rowing Analysis](Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.qmd)
 
 ---
 

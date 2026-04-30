@@ -446,57 +446,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "",
     "section": "",
-    "text": "My name is Hudson Miller. I’m a Mathematics and Computer Science student at Colgate University (Class of ’29), interested in the formal structures that connect algebra, combinatorics, and computation.",
-    "crumbs": [
-      "Home",
-      "Overview",
-      "About"
-    ]
-  },
-  {
-    "objectID": "about.html#hello",
-    "href": "about.html#hello",
-    "title": "About",
-    "section": "",
-    "text": "My name is Hudson Miller. I’m a Mathematics and Computer Science student at Colgate University (Class of ’29), interested in the formal structures that connect algebra, combinatorics, and computation.",
-    "crumbs": [
-      "Home",
-      "Overview",
-      "About"
-    ]
-  },
-  {
-    "objectID": "about.html#research",
-    "href": "about.html#research",
-    "title": "About",
-    "section": "Research",
-    "text": "Research\nI conduct research in investigating the properties of simple finite graphs and monomial orders. My work sits at the intersection of computational commutative algebra and graph theory — specifically, how combinatorial information encoded in a graph can be read off from algebraic objects like edge ideals and their resolutions.",
-    "crumbs": [
-      "Home",
-      "Overview",
-      "About"
-    ]
-  },
-  {
-    "objectID": "about.html#coursework",
-    "href": "about.html#coursework",
-    "title": "About",
-    "section": "Coursework",
-    "text": "Coursework\nThis site hosts lab reports and analyses from Math 240: Computational Statistics at Colgate. The work involves statistical modeling and data analysis in R, ranging from foundational inference to applied regression and beyond.",
-    "crumbs": [
-      "Home",
-      "Overview",
-      "About"
-    ]
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About",
-    "section": "Contact",
-    "text": "Contact\nFeel free to reach out via email or through Colgate’s directory.",
+    "text": "Code",
     "crumbs": [
       "Home",
       "Overview",
