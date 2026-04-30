@@ -2,4 +2,10 @@
 title: "About"
 ---
 
-About this site
+**Welcome!**
+
+My name is Hudson Miller, and I am a Mathematics and Computer Science student at Colgate University (Class of '29).
+
+I work under Professor Sosa-Castillo, researching properties of simple finite graphs and monomial orders. I write formal proofs and solve problems at the intersection of computational commutative algebra and graph theory. This position is highly collaborative, and is preparing me to develop and express my own mathematical projects to a publication-quality standard.
+
+Here, you will find work for my Math 240: Computational Statistics class.
