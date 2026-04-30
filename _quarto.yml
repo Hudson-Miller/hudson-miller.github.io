@@ -11,7 +11,7 @@ website:
     - href: index.qmd
       text: Home
     - about.qmd
-    - 02-Lab-ObjectsInR/Lab2WriteUp.qmd
+    - Lab2WriteUp.html
     - 03-Lab-ObjectsInR2/Lab3WriteUp.qmd
     - 04-Lab-Programming/Lab4WriteUp.qmd
     - 05-Lab-DataWrangling/Lab5WriteUp.qmd
