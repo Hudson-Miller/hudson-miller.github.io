@@ -1,0 +1,432 @@
+---
+title: Colgate Men's Rowing Performance Data # Title of the document
+
+
+execute:               # Default settings for code blocks
+  warning: false       # Do not print warnings
+  message: false       # Do not print messages
+  size: "scriptsize"   # Set code size to script size
+
+# Below will do html by default. To render the entire project
+# Use the following code:
+# quarto::quarto_render("Lab3WriteUp.qmd")
+format:
+  pdf:        # Specify .pdf formatting options 
+    documentclass: article     # Document Class
+    number-sections: true      # Number Sections
+    reference-section-title: "References" # Title for reference section
+    code-line-numbers: true    # Line numbers printed in code
+    cap-location: top          # Captions at the top of tables 
+    geometry:
+      - top=0.75in
+      - left=0.75in
+      - bottom=0.75in
+      - right=0.75in
+  html:       # Specify HTML formatting options 
+    number-sections: true      # Number Sections
+    code-fold: true            # Button to show code
+    code-line-numbers: true    # Line numbers printed in code
+    cap-location: top          # Captions at the top of tables and figures
+format-links: [pdf]
+---
+
+# Overview
+
+This is some work I did for the Colgate rowing team. This is a good example of what could be a test question, we walk through data cleaning, summary, analysis, and modelling.
+
+```{r}
+
+
+default_chunk_hook <- knitr::knit_hooks$get("chunk")
+
+latex_font_size <- c(
+  "Huge",
+  "huge",
+  "LARGE",
+  "Large",
+  "large",
+  "normalsize",
+  "small",
+  "footnotesize",
+  "scriptsize",
+  "tiny"
+)
+
+knitr::knit_hooks$set(chunk = function(x, options) {
+  x <- default_chunk_hook(x, options)
+  if (options$size %in% latex_font_size) {
+    paste0("\n \\", options$size, "\n\n", x, "\n\n \\normalsize")
+  } else {
+    x
+  }
+})
+```
+
+```{r}
+#| label: load-packages
+#| include: false
+library(tidyverse)
+library(patchwork)
+```
+
+# Charts and stuff
+
+Data cleaning! Remove rowers that quit, and make sure that people that vary their usage of their first and last names are coerced to the same person.
+
+```{r}
+data = read.csv("/Users/hudson/Downloads/CSV_Colgate_MROW_Updated_3:12:26.csv") |>
+  filter(Name != "Harry" & Name != "David" & Name != "Ethan") |>
+  mutate(Name = case_when(Name == "Williams" ~ "Luca",
+  .default = Name))
+
+```
+
+
+```{r}
+data = data |>
+  group_by(Workout.Number) |>
+  mutate('Percent of Mean' = Watts/mean(Watts)) |>
+  ungroup()
+```
+
+
+`ggplot`! Try and interpret this plot. How could I have made it better? (Watts are how we measure power in rowing)
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+library(stringr)
+
+data |>
+  mutate(Name = str_extract(Name, "^[A-Za-z]+")) |>
+  ggplot(aes(x = Workout.Number, 
+             y = `Percent of Mean`, 
+             color = Name,
+             group = Name)) +
+  geom_line() +
+  geom_point() +
+  labs(
+    x = "Workout Number",
+    y = "Percent of Mean Watts",
+    title = "Performance Trends (Relative to Mean)"
+  )
+```
+
+
+Some more data cleaning! This is converting seconds to watts from the rowers' best races this season.
+
+```{r}
+data <- data |>
+  mutate(Name_key = str_extract(Name, "^[A-Za-z]+"),
+         Best_2k = case_when(
+           Name_key == "Williams" ~ 2.80 * (500 / (365.1 / 4))^3,
+           Name_key == "Milligan" ~ 2.80 * (500 / (373.03 / 4))^3,
+           Name_key == "Andrew"   ~ 2.80 * (500 / (375.9 / 4))^3,
+           Name_key == "Oliver"   ~ 2.80 * (500 / (379.7 / 4))^3,
+           Name_key == "Mark"     ~ 2.80 * (500 / (387.6 / 4))^3,
+           Name_key == "Mel"      ~ 2.80 * (500 / (388.2 / 4))^3,
+           Name_key == "Christian"~ 2.80 * (500 / (390.1 / 4))^3,
+           Name_key == "Gabe"     ~ 2.80 * (500 / (393.3 / 4))^3,
+           Name_key == "Will"     ~ 2.80 * (500 / (396.4 / 4))^3,
+           Name_key == "Stokes"   ~ 2.80 * (500 / (386.0 / 4))^3,
+           Name_key == "Ozzy"     ~ 2.80 * (500 / (413.0 / 4))^3,
+           Name_key == "Harry"    ~ 2.80 * (500 / (410.7 / 4))^3,
+           .default = NA_real_
+         )) |>
+  select(-Name_key)
+```
+
+```{r}
+data <- data |>
+  mutate(Predicted.2k.new = (Watts * ((Time..s.)^0.19) * Best_2k)^0.455)
+```
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+library(stringr)
+
+data |> filter(!is.na(Predicted.2k.new)) |>
+  mutate(Name = str_extract(Name, "^[A-Za-z]+")) |>
+  ggplot(aes(x = Workout.Number, 
+             y = `Predicted.2k.new`, 
+             color = Name,
+             group = Name)) +
+  geom_line() +
+  geom_point() +
+  labs(
+    x = "Workout Number",
+    y = "Predicted 2k",
+    title = "Predicted 2k's"
+  )
+```
+
+
+This predictive model does not include any numerical summary. If you were to include a numerical summary, what would you report?
+
+```{r}
+
+data = read.csv("/Users/hudson/Downloads/CSV_Colgate_MROW_Updated_3:12:26.csv")
+```
+
+
+
+```{r}
+
+data = data |>
+  group_by(Workout.Number) |>
+  mutate('Percent of Mean' = Watts/mean(Watts)) |>
+  ungroup()
+```
+
+
+```{r}
+data.no.hr <- data |>
+  filter(Time..s. != 3600)
+```
+
+
+```{r}
+data.no.hr = data.no.hr |>
+  group_by(Name) |>
+  mutate(
+    `2k.Watts` = Watts[Workout.Number == 31][1],
+    Predicted.2k.new = (Watts * ((Time..s.)^0.19) * `2k.Watts`)^0.455
+  ) |>
+  ungroup()
+```
+
+```{r}
+data.no.hr = data.no.hr |>
+    mutate(`Predicted.2k.time.s` = ((2.8 / `Predicted.2k.new`)^(1/3)) * 2000,
+    `Predicted.2k.time.m` = sprintf(
+      "%d:%02d",
+      floor(`Predicted.2k.time.s` / 60),
+      round(`Predicted.2k.time.s` %% 60)
+    )
+  )
+
+```
+
+
+This is a plot of race predictions under a different model! How would you interpret, change, and summarize this plot?
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+library(stringr)
+
+data.no.hr |> filter(!is.na(Predicted.2k.new)) |>
+  mutate(Name = str_extract(Name, "^[A-Za-z]+")) |>
+  ggplot(aes(x = Workout.Number, 
+             y = `Predicted.2k.new`, 
+             color = Name,
+             group = Name)) +
+  geom_line() +
+  geom_point() +
+  labs(
+    x = "Workout Number",
+    y = "Predicted 2k",
+    title = "Predicted 2k's"
+  )
+```
+
+
+
+
+```{r}
+# #| echo: false
+# library(dplyr)
+# library(ggplot2)
+# library(stringr)
+
+# data.no.hr |> filter(!is.na(Predicted.2k.new)) |>
+#   mutate(Name = str_extract(Name, "^[A-Za-z]+")) |>
+#   ggplot(aes(x = Workout.Number, 
+#              y = `Predicted.2k.time.m`, 
+#              color = Name,
+#              group = Name)) +
+#   geom_line() +
+#   geom_point() +
+#   labs(
+#     x = "Workout Number",
+#     y = "Predicted 2k Time",
+#     title = "Predicted 2k's (time)"
+#   )
+```
+
+
+```{r}
+
+
+athletes <- c("Milligan", "Ozzy", "Andrew", "Oliver", "Mark", "Lucca", "Matheson")
+
+
+data.no.hr |> filter(!is.na(Predicted.2k.new)) |>
+    filter(Name %in% athletes) |>
+  mutate(Name = str_extract(Name, "^[A-Za-z]+")) |>
+  ggplot(aes(x = Workout.Number, 
+             y = `Predicted.2k.new`, 
+             color = Name,
+             group = Name)) +
+  geom_line() +
+  geom_point() +
+  labs(
+    x = "Workout Number",
+    y = "Predicted 2k",
+    title = "Predicted 2k's"
+  )
+
+```
+
+This is a small subset of rowers from this year. What would you say about this chart? Is there another chart that could work better here?
+
+
+```{r}
+Calibration =  data.no.hr|> 
+    filter(Workout.Number == 31) |>
+    dplyr::select(`2k.Watts`, `Predicted.2k.new`) |>
+    mutate(delta = `2k.Watts`-`Predicted.2k.new`) 
+
+summary(
+    Calibration, 
+    mean = mean()
+) |>
+
+knitr::kable()
+
+```
+
+
+This is a numerical summary that helps us judge the accuracy of our model. How would you go about this procedure?
+
+```{r}
+
+library(dplyr)
+library(ggplot2)
+library(stringr)
+
+
+athletes <- c("Mark", "Williams", "Milligan", "Andrew", "Oliver","Ozzy")
+
+data.no.hr |>
+  mutate(Name = str_extract(Name, "^[A-Za-z]+")) |>
+  filter(
+    Workout.Number != 31,
+    !is.na(Predicted.2k.new),
+    Name %in% athletes
+  ) |>
+  ggplot(aes(x = Workout.Number, y = Predicted.2k.new)) +
+  geom_point() +
+  geom_line() +
+  geom_hline(aes(yintercept = `2k.Watts`), linetype = "dashed") +
+  facet_wrap(~Name) +
+  labs(
+    x = "Workout Number",
+    y = "Predicted 2k Watts",
+    title = "Workout-Implied 2k Performance by Athlete"
+  )
+```
+
+
+```{r}
+library(dplyr)
+library(stringr)
+library(broom)
+library(knitr)
+
+athletes <- c("Mark", "Williams", "Milligan", "Andrew", "Oliver","Ozzy")
+
+table_out <- data.no.hr |>
+  mutate(Name = str_extract(Name, "^[A-Za-z]+")) |>
+  filter(Name %in% athletes, !is.na(Predicted.2k.new)) |>
+  group_by(Name) |>
+  do({
+    m <- lm(Predicted.2k.time.s ~ Workout.Number, data = .)
+    tibble(
+      Intercept = coef(m)[1],
+      Slope = coef(m)[2],
+      R2 = summary(m)$r.squared,
+      p_value = summary(m)$coefficients[2,4]
+    )
+  }) |>
+  ungroup()
+
+kable(
+  table_out,
+  digits = 3,
+  col.names = c("Athlete","Intercept (sec)","Slope (sec/workout)","R²","p-value"),
+  caption = "Linear Model of Predicted 2k Time vs Workout Number"
+)
+```
+
+This is a little bit outside the scope of our course. If you wanted to answer the question: are athletes getting faster from the start of the season to the end, what would you do? (hint: hypothesis testing)
+
+```{r}
+
+library(dplyr)
+
+# attach true 2k watts (Workout 31) to each athlete
+data.model <- data.no.hr |>
+  group_by(Name) |>
+  mutate(`2k.Watts` = Watts[Workout.Number == 31][1]) |>
+  ungroup()
+
+# fit global fatigue exponent
+fit <- nls(
+  `2k.Watts` ~ Watts * (Time..s. / 390)^d,
+  data = data.model |> filter(Workout.Number != 31),
+  start = list(d = 0.07)
+)
+
+# extract fitted exponent
+d_hat <- coef(fit)["d"]
+
+# compute predicted 2k watts for every workout
+data.model <- data.model |>
+  mutate(
+    Predicted.2k = Watts * (Time..s. / 390)^d_hat
+  )
+
+# optional: check prediction stability by athlete
+sd_table <- data.model |>
+  group_by(Name) |>
+  summarize(
+    sd_pred = sd(Predicted.2k.new, na.rm = TRUE),
+    mean_pred = mean(Predicted.2k.new, na.rm = TRUE)
+  )
+
+```
+
+
+```{r}
+
+athletes <- c("Mark", "Williams", "Milligan", "Andrew", "Oliver")
+
+data.rank <- data.model |>
+  mutate(Relative.Intensity = Watts / `2k.Watts`)|>
+  filter(Name %in% athletes) |>
+  group_by(Workout.Number) |>
+  mutate(Rank = rank(-Relative.Intensity)) |>
+  ungroup()
+
+library(ggplot2)
+
+data.rank |>
+  filter(Workout.Number != 31) |>
+  ggplot(aes(x = Workout.Number, y = Rank, color = Name, group = Name)) +
+  geom_line() +
+  geom_point() +
+  scale_y_reverse() +
+  labs(
+    x = "Workout Number",
+    y = "Rank (Intensity vs 2k)",
+    title = "Athlete Intensity Ranking by Workout"
+  )
+
+```
+
+This graphic was the one that my team and coaching staff looked at the most. Why would I include it? What actionable insights can be derived from it? How would you change it, or add to it?

@@ -18,6 +18,8 @@ website:
     - Lab 8-9/Lab8WriteUp.qmd
     - Lab 10/Lab10WriteUp.qmd
     - Lab 11/Lab11WriteUp.qmd
+    - Lab 13/Lab13WriteUp.qmd
+    - Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.qmd
 
 format:
   html:
