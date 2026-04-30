@@ -72,16 +72,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bcb4737e8fbcf1e9dfc00b59f8305558.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ab8bc71f45afde97538d8ceca41e9436.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -103,6 +103,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -137,98 +138,153 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Hudson Miller</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 10/Lab10WriteUp.html">Lab Ten – Point Estimation</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Math 240 Labs</a></li><li class="breadcrumb-item"><a href="../Lab 10/Lab10WriteUp.html">Lab 10</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="../">Hudson Miller</a> 
-    </div>
-      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Overview</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Math 240 Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 2/Lab2WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Two – Basic Tasks in R</span></a>
+ <span class="menu-text">Lab 2</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 3/Lab3WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Three – Matrices and Data Frames in R</span></a>
+ <span class="menu-text">Lab 3</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 4/Lab4WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Four – Programming in R</span></a>
+ <span class="menu-text">Lab 4</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 5-6/Lab5WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Five-Six – Data Wrangling in R</span></a>
+ <span class="menu-text">Lab 5–6</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 8-9/Lab8WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Eight – Probability</span></a>
+ <span class="menu-text">Lab 8–9</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 10/Lab10WriteUp.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab Ten – Point Estimation</span></a>
+ <span class="menu-text">Lab 10</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 11/Lab11WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Eleven – Point Estimation and Resampling</span></a>
+ <span class="menu-text">Lab 11</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 13/Lab13WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Thirteen – Statistical Inference</span></a>
+ <span class="menu-text">Lab 13</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Colgate Men’s Rowing Performance Data</span></a>
+ <span class="menu-text">Rowing Data Analysis</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -269,9 +325,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Math 240 Labs</a></li><li class="breadcrumb-item"><a href="../Lab 10/Lab10WriteUp.html">Lab 10</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab Ten – Point Estimation</h1>
+<div class="quarto-title-block"><div><h1 class="title">Lab Ten – Point Estimation</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -1137,6 +1193,8 @@ Figure&nbsp;2: Beta Distributions for Each Player in the 2024 Season
 <p>Analyzing the MLE estimates for the Altham distributions, we can see that the probability of winning one leg was highly correlated (really, we should test this) to the final standings (<a href="#tbl-MLEb" class="quarto-xref">Table&nbsp;1</a>). This makes sense, performing well over cumulative legs won corresponded to a higher final standing. The theta in the non-Beta distribution also indicates that a more stable probability of winning each leg often resulted in more wins over the season (<a href="#tbl-MLEb" class="quarto-xref">Table&nbsp;1</a>). The Altham-Beta-Binomial MLE table shows us that most of the top players had higher standard deviations in their odds of winning a single leg than the lower-ranked players. This is interesting, as it suggests a player should work on a better average leg rather than a more consistent good performance.</p>
 
 
+<!-- -->
+
 </section>
 </section>
 
@@ -1211,6 +1269,57 @@ Figure&nbsp;2: Beta Distributions for Each Player in the 2024 Season
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -1540,10 +1649,673 @@ Figure&nbsp;2: Beta Distributions for Each Player in the 2024 Season
       }
     }
   });
-  </script>
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1"></a><span class="co">---</span></span>
+<span id="cb23-2"><a href="#cb23-2"></a><span class="an">title:</span><span class="co"> Lab Ten -- Point Estimation # Title of the document</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a></span>
+<span id="cb23-4"><a href="#cb23-4"></a><span class="co"># Bibliography Details</span></span>
+<span id="cb23-5"><a href="#cb23-5"></a><span class="an">bibliography:</span><span class="co"> Lab10References.bib  # Name of bib file in the same folder </span></span>
+<span id="cb23-6"><a href="#cb23-6"></a><span class="an">bibliographystyle:</span><span class="co"> apa            # Bibliography style</span></span>
+<span id="cb23-7"><a href="#cb23-7"></a></span>
+<span id="cb23-8"><a href="#cb23-8"></a><span class="an">execute:</span><span class="co">               # Default settings for code blocks</span></span>
+<span id="cb23-9"><a href="#cb23-9"></a><span class="co">  warning: false       # Do not print warnings</span></span>
+<span id="cb23-10"><a href="#cb23-10"></a><span class="co">  message: false       # Do not print messages</span></span>
+<span id="cb23-11"><a href="#cb23-11"></a><span class="co">  size: "scriptsize"   # Set code size to script size</span></span>
+<span id="cb23-12"><a href="#cb23-12"></a></span>
+<span id="cb23-13"><a href="#cb23-13"></a><span class="co"># Below will do html by default. To render the entire project</span></span>
+<span id="cb23-14"><a href="#cb23-14"></a><span class="co"># Use the following code:</span></span>
+<span id="cb23-15"><a href="#cb23-15"></a><span class="co"># quarto::quarto_render("Lab10WriteUp.qmd")</span></span>
+<span id="cb23-16"><a href="#cb23-16"></a><span class="an">format:</span></span>
+<span id="cb23-17"><a href="#cb23-17"></a><span class="co">  pdf:        # Specify .pdf formatting options </span></span>
+<span id="cb23-18"><a href="#cb23-18"></a><span class="co">    documentclass: article     # Document Class</span></span>
+<span id="cb23-19"><a href="#cb23-19"></a><span class="co">    number-sections: true      # Number Sections</span></span>
+<span id="cb23-20"><a href="#cb23-20"></a><span class="co">    reference-section-title: "References" # Title for reference section</span></span>
+<span id="cb23-21"><a href="#cb23-21"></a><span class="co">    code-line-numbers: true    # Line numbers printed in code</span></span>
+<span id="cb23-22"><a href="#cb23-22"></a><span class="co">    cap-location: top          # Captions at the top of tables </span></span>
+<span id="cb23-23"><a href="#cb23-23"></a><span class="co">    geometry:</span></span>
+<span id="cb23-24"><a href="#cb23-24"></a><span class="co">      - top=0.75in</span></span>
+<span id="cb23-25"><a href="#cb23-25"></a><span class="co">      - left=0.75in</span></span>
+<span id="cb23-26"><a href="#cb23-26"></a><span class="co">      - bottom=0.75in</span></span>
+<span id="cb23-27"><a href="#cb23-27"></a><span class="co">      - right=0.75in</span></span>
+<span id="cb23-28"><a href="#cb23-28"></a><span class="co">  html:       # Specify HTML formatting options </span></span>
+<span id="cb23-29"><a href="#cb23-29"></a><span class="co">    number-sections: true      # Number Sections</span></span>
+<span id="cb23-30"><a href="#cb23-30"></a><span class="co">    code-fold: true            # Button to show code</span></span>
+<span id="cb23-31"><a href="#cb23-31"></a><span class="co">    code-line-numbers: true    # Line numbers printed in code</span></span>
+<span id="cb23-32"><a href="#cb23-32"></a><span class="co">    cap-location: top          # Captions at the top of tables and figures</span></span>
+<span id="cb23-33"><a href="#cb23-33"></a><span class="an">format-links:</span><span class="co"> [pdf]</span></span>
+<span id="cb23-34"><a href="#cb23-34"></a><span class="co">---</span></span>
+<span id="cb23-35"><a href="#cb23-35"></a></span>
+<span id="cb23-38"><a href="#cb23-38"></a><span class="in">```{r}</span></span>
+<span id="cb23-39"><a href="#cb23-39"></a><span class="co">#| echo: false</span></span>
+<span id="cb23-40"><a href="#cb23-40"></a></span>
+<span id="cb23-41"><a href="#cb23-41"></a>default_chunk_hook <span class="ot">&lt;-</span> knitr<span class="sc">::</span>knit_hooks<span class="sc">$</span><span class="fu">get</span>(<span class="st">"chunk"</span>)</span>
+<span id="cb23-42"><a href="#cb23-42"></a></span>
+<span id="cb23-43"><a href="#cb23-43"></a>latex_font_size <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb23-44"><a href="#cb23-44"></a>  <span class="st">"Huge"</span>,</span>
+<span id="cb23-45"><a href="#cb23-45"></a>  <span class="st">"huge"</span>,</span>
+<span id="cb23-46"><a href="#cb23-46"></a>  <span class="st">"LARGE"</span>,</span>
+<span id="cb23-47"><a href="#cb23-47"></a>  <span class="st">"Large"</span>,</span>
+<span id="cb23-48"><a href="#cb23-48"></a>  <span class="st">"large"</span>,</span>
+<span id="cb23-49"><a href="#cb23-49"></a>  <span class="st">"normalsize"</span>,</span>
+<span id="cb23-50"><a href="#cb23-50"></a>  <span class="st">"small"</span>,</span>
+<span id="cb23-51"><a href="#cb23-51"></a>  <span class="st">"footnotesize"</span>,</span>
+<span id="cb23-52"><a href="#cb23-52"></a>  <span class="st">"scriptsize"</span>,</span>
+<span id="cb23-53"><a href="#cb23-53"></a>  <span class="st">"tiny"</span></span>
+<span id="cb23-54"><a href="#cb23-54"></a>)</span>
+<span id="cb23-55"><a href="#cb23-55"></a></span>
+<span id="cb23-56"><a href="#cb23-56"></a>knitr<span class="sc">::</span>knit_hooks<span class="sc">$</span><span class="fu">set</span>(<span class="at">chunk =</span> <span class="cf">function</span>(x, options) {</span>
+<span id="cb23-57"><a href="#cb23-57"></a>  x <span class="ot">&lt;-</span> <span class="fu">default_chunk_hook</span>(x, options)</span>
+<span id="cb23-58"><a href="#cb23-58"></a>  <span class="cf">if</span> (options<span class="sc">$</span>size <span class="sc">%in%</span> latex_font_size) {</span>
+<span id="cb23-59"><a href="#cb23-59"></a>    <span class="fu">paste0</span>(<span class="st">"</span><span class="sc">\n</span><span class="st"> </span><span class="sc">\\</span><span class="st">"</span>, options<span class="sc">$</span>size, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>, x, <span class="st">"</span><span class="sc">\n\n</span><span class="st"> </span><span class="sc">\\</span><span class="st">normalsize"</span>)</span>
+<span id="cb23-60"><a href="#cb23-60"></a>  } <span class="cf">else</span> {</span>
+<span id="cb23-61"><a href="#cb23-61"></a>    x</span>
+<span id="cb23-62"><a href="#cb23-62"></a>  }</span>
+<span id="cb23-63"><a href="#cb23-63"></a>})</span>
+<span id="cb23-64"><a href="#cb23-64"></a><span class="in">```</span></span>
+<span id="cb23-65"><a href="#cb23-65"></a></span>
+<span id="cb23-68"><a href="#cb23-68"></a><span class="in">```{r}</span></span>
+<span id="cb23-69"><a href="#cb23-69"></a><span class="co">#| label: load-packages</span></span>
+<span id="cb23-70"><a href="#cb23-70"></a><span class="co">#| include: false</span></span>
+<span id="cb23-71"><a href="#cb23-71"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb23-72"><a href="#cb23-72"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb23-73"><a href="#cb23-73"></a><span class="in">```</span></span>
+<span id="cb23-74"><a href="#cb23-74"></a></span>
+<span id="cb23-75"><a href="#cb23-75"></a>**Tips**</span>
+<span id="cb23-76"><a href="#cb23-76"></a></span>
+<span id="cb23-77"><a href="#cb23-77"></a><span class="ss">-   </span>Complete the tasks below. Make sure to start your solutions in on a new line that starts with "**Solution**:".</span>
+<span id="cb23-78"><a href="#cb23-78"></a><span class="ss">-   </span>Make sure to use the Quarto Cheatsheet. This will make completing and writing up the lab *much* easier.</span>
+<span id="cb23-79"><a href="#cb23-79"></a><span class="ss">-   </span>Make sure to use "enter" to make your code readable, so it doesn't run off the page. I switched the Quarto document to automatically render to .pdf, so you can see what you're submitting by default. You can switch back for the highlighting by moving the html block above the pdf block in the YAML header.</span>
+<span id="cb23-80"><a href="#cb23-80"></a><span class="ss">-   </span>Don't forget that you can copy-and-paste code when you're doing something similar as we did in class!</span>
+<span id="cb23-81"><a href="#cb23-81"></a><span class="ss">-   </span>Make sure to plot all computed probabilities. This is good <span class="in">`ggplot`</span> practice AND will help make sure you don't make a mistake when computing the probability.</span>
+<span id="cb23-82"><a href="#cb23-82"></a></span>
+<span id="cb23-83"><a href="#cb23-83"></a><span class="fu"># Lab 8 Notes</span></span>
+<span id="cb23-84"><a href="#cb23-84"></a></span>
+<span id="cb23-85"><a href="#cb23-85"></a><span class="fu">## Altham's Multiplicative Binomial Distribution</span></span>
+<span id="cb23-86"><a href="#cb23-86"></a></span>
+<span id="cb23-87"><a href="#cb23-87"></a>The PMF for Altham's Multiplicative Binomial Distribution is $$f_X(x) = \frac{1}{c} {n \choose x} p^x (1-p)^{n-x} \theta^{x(n-x)}I(x \in <span class="sc">\{</span>0, 1, ..., n<span class="sc">\}</span>)$$ where $$c = \sum_{i=0}^n {n \choose i} p^i (1-p)^{n-i} \theta^{i(n-i)}.$$ Just so we start on the same page, I have included my <span class="in">`R`</span> function for computing probability using this distribution.</span>
+<span id="cb23-88"><a href="#cb23-88"></a></span>
+<span id="cb23-91"><a href="#cb23-91"></a><span class="in">```{r}</span></span>
+<span id="cb23-92"><a href="#cb23-92"></a>daltbinom <span class="ot">&lt;-</span> <span class="cf">function</span>(x, size, prob, theta) {</span>
+<span id="cb23-93"><a href="#cb23-93"></a>  normalizing.constant <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb23-94"><a href="#cb23-94"></a>  <span class="cf">for</span> (j <span class="cf">in</span> <span class="dv">0</span><span class="sc">:</span>size) {</span>
+<span id="cb23-95"><a href="#cb23-95"></a>    normalizing.constant <span class="ot">&lt;-</span> normalizing.constant <span class="sc">+</span></span>
+<span id="cb23-96"><a href="#cb23-96"></a>      <span class="fu">choose</span>(size, j) <span class="sc">*</span> prob<span class="sc">^</span>j <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> prob)<span class="sc">^</span>(size <span class="sc">-</span> j) <span class="sc">*</span> theta<span class="sc">^</span>(j <span class="sc">*</span> (size <span class="sc">-</span> j))</span>
+<span id="cb23-97"><a href="#cb23-97"></a>  }</span>
+<span id="cb23-98"><a href="#cb23-98"></a>  <span class="co"># Probability Mass at x=x</span></span>
+<span id="cb23-99"><a href="#cb23-99"></a>  (<span class="dv">1</span> <span class="sc">/</span> normalizing.constant) <span class="sc">*</span></span>
+<span id="cb23-100"><a href="#cb23-100"></a>    <span class="fu">choose</span>(size, x) <span class="sc">*</span></span>
+<span id="cb23-101"><a href="#cb23-101"></a>    prob<span class="sc">^</span>x <span class="sc">*</span></span>
+<span id="cb23-102"><a href="#cb23-102"></a>    (<span class="dv">1</span> <span class="sc">-</span> prob)<span class="sc">^</span>(size <span class="sc">-</span> x) <span class="sc">*</span></span>
+<span id="cb23-103"><a href="#cb23-103"></a>    theta<span class="sc">^</span>(x <span class="sc">*</span> (size <span class="sc">-</span> x)) <span class="sc">*</span></span>
+<span id="cb23-104"><a href="#cb23-104"></a>    (x <span class="sc">&gt;=</span> <span class="dv">0</span>) <span class="sc">*</span></span>
+<span id="cb23-105"><a href="#cb23-105"></a>    (x <span class="sc">&lt;=</span> size)</span>
+<span id="cb23-106"><a href="#cb23-106"></a>}</span>
+<span id="cb23-107"><a href="#cb23-107"></a><span class="in">```</span></span>
+<span id="cb23-108"><a href="#cb23-108"></a></span>
+<span id="cb23-109"><a href="#cb23-109"></a><span class="fu"># Altham's Multiplicative Beta Binomial Distribution</span></span>
+<span id="cb23-110"><a href="#cb23-110"></a></span>
+<span id="cb23-111"><a href="#cb23-111"></a>The PMF for Altham's Multiplicative Beta Binomial Distribution is $$f_X(x) = \left<span class="co">[</span><span class="ot">\int_{0}^1 \left(\frac{1}{c} {n \choose x} p^x (1-p)^{n-x} \theta^{x(n-x)}\right)\left(\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} p^{\alpha-1}(1-p)^{\beta-1}\right) dp\right</span><span class="co">]</span>I(x \in <span class="sc">\{</span>0, 1, ..., n<span class="sc">\}</span>)$$</span>
+<span id="cb23-112"><a href="#cb23-112"></a></span>
+<span id="cb23-113"><a href="#cb23-113"></a>Just so we start on the same page, I have included my <span class="in">`R`</span> function for computing probability using this distribution.</span>
+<span id="cb23-114"><a href="#cb23-114"></a></span>
+<span id="cb23-117"><a href="#cb23-117"></a><span class="in">```{r}</span></span>
+<span id="cb23-118"><a href="#cb23-118"></a>daltbbinom.single <span class="ot">&lt;-</span> <span class="cf">function</span>(x, size, alpha, beta, theta) {</span>
+<span id="cb23-119"><a href="#cb23-119"></a>  integrand <span class="ot">&lt;-</span> <span class="cf">function</span>(p) {</span>
+<span id="cb23-120"><a href="#cb23-120"></a>    <span class="fu">sapply</span>(</span>
+<span id="cb23-121"><a href="#cb23-121"></a>      p, <span class="co"># integrate will pass in a vector, so we use sapply to apply the following</span></span>
+<span id="cb23-122"><a href="#cb23-122"></a>      <span class="cf">function</span>(p_val) {</span>
+<span id="cb23-123"><a href="#cb23-123"></a>        <span class="co"># f(x|p) * f(p|alpha, beta)</span></span>
+<span id="cb23-124"><a href="#cb23-124"></a>        <span class="fu">daltbinom</span>(x, size, p_val, theta) <span class="sc">*</span> <span class="fu">dbeta</span>(p_val, alpha, beta)</span>
+<span id="cb23-125"><a href="#cb23-125"></a>      }</span>
+<span id="cb23-126"><a href="#cb23-126"></a>    )</span>
+<span id="cb23-127"><a href="#cb23-127"></a>  }</span>
+<span id="cb23-128"><a href="#cb23-128"></a>  <span class="co"># Probability Mass at x=x</span></span>
+<span id="cb23-129"><a href="#cb23-129"></a>  <span class="co"># integrate(integrand, lower = 0, upper = 1)$value * (x&gt;=0)*(x&lt;=size)</span></span>
+<span id="cb23-130"><a href="#cb23-130"></a>  <span class="co"># I shrink the bounds below to avoid log(0)=-infinty</span></span>
+<span id="cb23-131"><a href="#cb23-131"></a>  <span class="co"># I use try() to catch when there is an error and avoid crashing</span></span>
+<span id="cb23-132"><a href="#cb23-132"></a>  res <span class="ot">&lt;-</span> <span class="fu">try</span>(</span>
+<span id="cb23-133"><a href="#cb23-133"></a>    <span class="fu">integrate</span>(integrand, <span class="at">lower =</span> <span class="fl">1e-7</span>, <span class="at">upper =</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fl">1e-7</span>)<span class="sc">$</span>value <span class="sc">*</span></span>
+<span id="cb23-134"><a href="#cb23-134"></a>      (x <span class="sc">&gt;=</span> <span class="dv">0</span>) <span class="sc">*</span></span>
+<span id="cb23-135"><a href="#cb23-135"></a>      (x <span class="sc">&lt;=</span> size),</span>
+<span id="cb23-136"><a href="#cb23-136"></a>    <span class="at">silent =</span> <span class="cn">TRUE</span></span>
+<span id="cb23-137"><a href="#cb23-137"></a>  )</span>
+<span id="cb23-138"><a href="#cb23-138"></a>  <span class="co"># If there is an error, return a near-zero probability</span></span>
+<span id="cb23-139"><a href="#cb23-139"></a>  <span class="cf">if</span> (<span class="fu">inherits</span>(res, <span class="st">"try-error"</span>)) {</span>
+<span id="cb23-140"><a href="#cb23-140"></a>    <span class="fu">return</span>(<span class="fl">0.1</span><span class="sc">^</span><span class="dv">6</span>)</span>
+<span id="cb23-141"><a href="#cb23-141"></a>  }</span>
+<span id="cb23-142"><a href="#cb23-142"></a></span>
+<span id="cb23-143"><a href="#cb23-143"></a>  res</span>
+<span id="cb23-144"><a href="#cb23-144"></a>}</span>
+<span id="cb23-145"><a href="#cb23-145"></a><span class="co"># Write a function that works on a vector</span></span>
+<span id="cb23-146"><a href="#cb23-146"></a>daltbbinom <span class="ot">&lt;-</span> <span class="cf">function</span>(x, size, alpha, beta, theta) {</span>
+<span id="cb23-147"><a href="#cb23-147"></a>  <span class="fu">sapply</span>(</span>
+<span id="cb23-148"><a href="#cb23-148"></a>    <span class="at">X =</span> x,</span>
+<span id="cb23-149"><a href="#cb23-149"></a>    <span class="at">FUN =</span> daltbbinom.single,</span>
+<span id="cb23-150"><a href="#cb23-150"></a>    <span class="at">size =</span> size,</span>
+<span id="cb23-151"><a href="#cb23-151"></a>    <span class="at">alpha =</span> alpha,</span>
+<span id="cb23-152"><a href="#cb23-152"></a>    <span class="at">beta =</span> beta,</span>
+<span id="cb23-153"><a href="#cb23-153"></a>    <span class="at">theta =</span> theta</span>
+<span id="cb23-154"><a href="#cb23-154"></a>  )</span>
+<span id="cb23-155"><a href="#cb23-155"></a>}</span>
+<span id="cb23-156"><a href="#cb23-156"></a><span class="in">```</span></span>
+<span id="cb23-157"><a href="#cb23-157"></a></span>
+<span id="cb23-158"><a href="#cb23-158"></a><span class="fu"># Question 1</span></span>
+<span id="cb23-159"><a href="#cb23-159"></a></span>
+<span id="cb23-160"><a href="#cb23-160"></a>In Lab 8, we use Altham's Multiplicative Binomial Distribution. Your job was to interpret the impact of $\theta$ in that equation. In this lab, we will model the number of legs won in a best of eleven (first to six) match.</span>
+<span id="cb23-161"><a href="#cb23-161"></a></span>
+<span id="cb23-162"><a href="#cb23-162"></a>To help us think about the interpretation, something that was challenging before, let's try something a little more manageable.</span>
+<span id="cb23-163"><a href="#cb23-163"></a></span>
+<span id="cb23-164"><a href="#cb23-164"></a><span class="fu">## Part a</span></span>
+<span id="cb23-165"><a href="#cb23-165"></a></span>
+<span id="cb23-166"><a href="#cb23-166"></a>Suppose a player has a 50% chance of winning a specific leg, that is let $p=0.50$. Let's look at the probability they win ($x=6$) legs in the match. Compute this probability over a sequence from $\theta=0.5$ to $\theta=1.5$ and plot it using a line where the $x$-axis is $\theta$ and the $y$-axis is $P(X=6)$.</span>
+<span id="cb23-167"><a href="#cb23-167"></a></span>
+<span id="cb23-168"><a href="#cb23-168"></a>**Solution**</span>
+<span id="cb23-169"><a href="#cb23-169"></a></span>
+<span id="cb23-172"><a href="#cb23-172"></a><span class="in">```{r}</span></span>
+<span id="cb23-173"><a href="#cb23-173"></a><span class="co"># Create the vector of probabilities for each theta. We use a function to essentially "vectorize" the daltbinom function (now I am wondering if it was already vectorized for theta).</span></span>
+<span id="cb23-174"><a href="#cb23-174"></a></span>
+<span id="cb23-175"><a href="#cb23-175"></a>prob <span class="ot">=</span> <span class="cf">function</span>(t) {</span>
+<span id="cb23-176"><a href="#cb23-176"></a>  <span class="fu">daltbinom</span>(<span class="at">x =</span> <span class="dv">6</span>, <span class="at">size =</span> <span class="dv">11</span>, <span class="at">prob =</span> <span class="fl">0.5</span>, <span class="at">theta =</span> t)</span>
+<span id="cb23-177"><a href="#cb23-177"></a>}</span>
+<span id="cb23-178"><a href="#cb23-178"></a></span>
+<span id="cb23-179"><a href="#cb23-179"></a></span>
+<span id="cb23-180"><a href="#cb23-180"></a>thetas <span class="ot">=</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="fl">0.5</span>, <span class="at">to =</span> <span class="fl">1.5</span>, <span class="at">by =</span> <span class="fl">0.05</span> )</span>
+<span id="cb23-181"><a href="#cb23-181"></a></span>
+<span id="cb23-182"><a href="#cb23-182"></a>probs <span class="ot">=</span> <span class="fu">sapply</span>(thetas, prob)</span>
+<span id="cb23-183"><a href="#cb23-183"></a>data <span class="ot">=</span> <span class="fu">tibble</span>(thetas,probs)</span>
+<span id="cb23-184"><a href="#cb23-184"></a></span>
+<span id="cb23-185"><a href="#cb23-185"></a><span class="in">```</span></span>
+<span id="cb23-186"><a href="#cb23-186"></a></span>
+<span id="cb23-189"><a href="#cb23-189"></a><span class="in">```{r}</span></span>
+<span id="cb23-190"><a href="#cb23-190"></a><span class="co">#Plot the probability vs theta</span></span>
+<span id="cb23-191"><a href="#cb23-191"></a></span>
+<span id="cb23-192"><a href="#cb23-192"></a><span class="fu">ggplot</span>(data) <span class="sc">+</span> <span class="co"># Specify Data</span></span>
+<span id="cb23-193"><a href="#cb23-193"></a><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> thetas, <span class="co"># Specify x-axis</span></span>
+<span id="cb23-194"><a href="#cb23-194"></a><span class="at">y =</span> probs)) <span class="sc">+</span> <span class="co"># Specify y-axis</span></span>
+<span id="cb23-195"><a href="#cb23-195"></a><span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> thetas, <span class="co"># Specify x-axis</span></span>
+<span id="cb23-196"><a href="#cb23-196"></a><span class="at">y =</span> probs), <span class="co"># Specify y-axis</span></span>
+<span id="cb23-197"><a href="#cb23-197"></a><span class="at">method =</span> <span class="st">"lm"</span>, <span class="co"># Specify best fit line</span></span>
+<span id="cb23-198"><a href="#cb23-198"></a><span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span> <span class="co"># Specify line color</span></span>
+<span id="cb23-199"><a href="#cb23-199"></a><span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="co"># A cleaner theme</span></span>
+<span id="cb23-200"><a href="#cb23-200"></a><span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Theta"</span>, <span class="co"># Specify axis labels</span></span>
+<span id="cb23-201"><a href="#cb23-201"></a><span class="at">y =</span> <span class="st">"Probability of winning 6/11 games"</span>) <span class="sc">+</span></span>
+<span id="cb23-202"><a href="#cb23-202"></a><span class="fu">ggtitle</span>(<span class="st">"Probability of Winning in Dalton Binomial Distribution"</span>) <span class="co"># Plot title</span></span>
+<span id="cb23-203"><a href="#cb23-203"></a><span class="in">```</span></span>
+<span id="cb23-204"><a href="#cb23-204"></a></span>
+<span id="cb23-205"><a href="#cb23-205"></a><span class="fu">## Part b</span></span>
+<span id="cb23-206"><a href="#cb23-206"></a></span>
+<span id="cb23-207"><a href="#cb23-207"></a>Now, plot Altham's Multiplicative Binomial Distribution under the same parameters with $\theta=0.50$, $\theta=1$, and $\theta=1.5$. Use <span class="in">`ncol=1`</span> in <span class="in">`facet_wrap()`</span> to plot the PMFs in a single column for comparing.</span>
+<span id="cb23-208"><a href="#cb23-208"></a></span>
+<span id="cb23-211"><a href="#cb23-211"></a><span class="in">```{r}</span></span>
+<span id="cb23-212"><a href="#cb23-212"></a><span class="co">#| fig-height: 10</span></span>
+<span id="cb23-213"><a href="#cb23-213"></a></span>
+<span id="cb23-214"><a href="#cb23-214"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> (<span class="dv">0</span><span class="sc">:</span><span class="dv">11</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb23-215"><a href="#cb23-215"></a>  <span class="fu">mutate</span>(<span class="at">PMF05 =</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">size =</span> <span class="dv">11</span>, <span class="at">prob =</span> <span class="fl">0.5</span>, <span class="at">theta =</span> <span class="fl">0.5</span>)) </span>
+<span id="cb23-216"><a href="#cb23-216"></a></span>
+<span id="cb23-217"><a href="#cb23-217"></a>ggdat <span class="ot">=</span> ggdat <span class="sc">|&gt;</span></span>
+<span id="cb23-218"><a href="#cb23-218"></a>       <span class="fu">mutate</span>(<span class="at">PMF01 =</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">size =</span> <span class="dv">11</span>, <span class="at">prob =</span> <span class="fl">0.5</span>, <span class="at">theta =</span> <span class="dv">1</span>))</span>
+<span id="cb23-219"><a href="#cb23-219"></a></span>
+<span id="cb23-220"><a href="#cb23-220"></a>ggdat <span class="ot">=</span> ggdat <span class="sc">|&gt;</span></span>
+<span id="cb23-221"><a href="#cb23-221"></a>      <span class="fu">mutate</span>(<span class="at">PMF15 =</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">size =</span> <span class="dv">11</span>, <span class="at">prob =</span> <span class="fl">0.5</span>, <span class="at">theta =</span> <span class="fl">1.5</span>))</span>
+<span id="cb23-222"><a href="#cb23-222"></a></span>
+<span id="cb23-223"><a href="#cb23-223"></a></span>
+<span id="cb23-224"><a href="#cb23-224"></a></span>
+<span id="cb23-225"><a href="#cb23-225"></a>PMF05.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb23-226"><a href="#cb23-226"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF05)) <span class="sc">+</span></span>
+<span id="cb23-227"><a href="#cb23-227"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb23-228"><a href="#cb23-228"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF05)) <span class="sc">+</span></span>
+<span id="cb23-229"><a href="#cb23-229"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb23-230"><a href="#cb23-230"></a><span class="fu">scale_x_continuous</span>(<span class="st">"P of Winning n games"</span>,</span>
+<span id="cb23-231"><a href="#cb23-231"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">11</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb23-232"><a href="#cb23-232"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb23-233"><a href="#cb23-233"></a><span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb23-234"><a href="#cb23-234"></a><span class="fu">ggtitle</span>(<span class="st">"Theta = 0.5"</span>)</span>
+<span id="cb23-235"><a href="#cb23-235"></a></span>
+<span id="cb23-236"><a href="#cb23-236"></a></span>
+<span id="cb23-237"><a href="#cb23-237"></a>PMF01.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb23-238"><a href="#cb23-238"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF01)) <span class="sc">+</span></span>
+<span id="cb23-239"><a href="#cb23-239"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb23-240"><a href="#cb23-240"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF01)) <span class="sc">+</span></span>
+<span id="cb23-241"><a href="#cb23-241"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb23-242"><a href="#cb23-242"></a><span class="fu">scale_x_continuous</span>(<span class="st">"P of Winning n games"</span>,</span>
+<span id="cb23-243"><a href="#cb23-243"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">11</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb23-244"><a href="#cb23-244"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb23-245"><a href="#cb23-245"></a><span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb23-246"><a href="#cb23-246"></a><span class="fu">ggtitle</span>(<span class="st">"Theta = 1"</span>)</span>
+<span id="cb23-247"><a href="#cb23-247"></a></span>
+<span id="cb23-248"><a href="#cb23-248"></a>PMF15.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb23-249"><a href="#cb23-249"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF15)) <span class="sc">+</span></span>
+<span id="cb23-250"><a href="#cb23-250"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb23-251"><a href="#cb23-251"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF15)) <span class="sc">+</span></span>
+<span id="cb23-252"><a href="#cb23-252"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb23-253"><a href="#cb23-253"></a><span class="fu">scale_x_continuous</span>(<span class="st">"P of Winning n games"</span>,</span>
+<span id="cb23-254"><a href="#cb23-254"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">11</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb23-255"><a href="#cb23-255"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb23-256"><a href="#cb23-256"></a><span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb23-257"><a href="#cb23-257"></a><span class="fu">ggtitle</span>(<span class="st">"Theta = 1"</span>)</span>
+<span id="cb23-258"><a href="#cb23-258"></a></span>
+<span id="cb23-259"><a href="#cb23-259"></a>PMF05.plot <span class="sc">/</span> PMF01.plot <span class="sc">/</span> PMF15.plot</span>
+<span id="cb23-260"><a href="#cb23-260"></a></span>
+<span id="cb23-261"><a href="#cb23-261"></a></span>
+<span id="cb23-262"><a href="#cb23-262"></a><span class="in">```</span></span>
+<span id="cb23-263"><a href="#cb23-263"></a></span>
+<span id="cb23-264"><a href="#cb23-264"></a><span class="fu">## Part c</span></span>
+<span id="cb23-265"><a href="#cb23-265"></a></span>
+<span id="cb23-266"><a href="#cb23-266"></a>What is your best assessment of what $\theta$ is doing in this setting. Consider when a 6-0 blowout is most likely, and when a 5-6 nail-biter is most likely. Note here we should treat the match as a fixed $n=11$ as we did for $n=3$ in Lab 8.\</span>
+<span id="cb23-267"><a href="#cb23-267"></a>**Note:** In lab 8, we saw that small $\theta$ meant wins came in bunches (clumped together), so there were more 2-0 wins in a best of three series.</span>
+<span id="cb23-268"><a href="#cb23-268"></a></span>
+<span id="cb23-269"><a href="#cb23-269"></a>**Solution**</span>
+<span id="cb23-270"><a href="#cb23-270"></a></span>
+<span id="cb23-271"><a href="#cb23-271"></a>Here, we can see that theta is essentially a measure of how extreme the values will be in a distribution. A low theta ($&lt;1$) corresponds to an expectation of extreme outcomes, and a high theta ($&gt;1$) corrresponds to an expectation of moederate values. Here, this is interpreted as us expecting a close match, with both players winning a similar amount of games, when theta is low. Similarly, we expect blowouts when theta is high. When theta is moderate, we expect close-ish games, but accept that there will be some blowouts. I think that theta $\approx 1$ is the most appropriate for this situation.</span>
+<span id="cb23-272"><a href="#cb23-272"></a></span>
+<span id="cb23-273"><a href="#cb23-273"></a><span class="fu"># Question 2</span></span>
+<span id="cb23-274"><a href="#cb23-274"></a></span>
+<span id="cb23-275"><a href="#cb23-275"></a><span class="fu">## Part a</span></span>
+<span id="cb23-276"><a href="#cb23-276"></a></span>
+<span id="cb23-277"><a href="#cb23-277"></a>Altham's Multiplicative Binomial Distribution does not typically simplify to the clean $E(X)=np$ seen in the Binomial distribution, unless $\theta = 1$. Write out the expression that would need to be solved to find $E(X^k)$, and then write a function that computes it given the proposed parameter values $p$ (<span class="in">`prob`</span>) and $\theta$ (<span class="in">`theta`</span>).</span>
+<span id="cb23-278"><a href="#cb23-278"></a></span>
+<span id="cb23-279"><a href="#cb23-279"></a>**Solution**</span>
+<span id="cb23-280"><a href="#cb23-280"></a></span>
+<span id="cb23-281"><a href="#cb23-281"></a>We have the formula for the $k^{th}$ moment: </span>
+<span id="cb23-282"><a href="#cb23-282"></a>$$</span>
+<span id="cb23-283"><a href="#cb23-283"></a>E(X) = \sum_{x= -\infty}^{\infty}xf_x(x)</span>
+<span id="cb23-284"><a href="#cb23-284"></a>$$</span>
+<span id="cb23-285"><a href="#cb23-285"></a></span>
+<span id="cb23-286"><a href="#cb23-286"></a>which we can compute here:</span>
+<span id="cb23-287"><a href="#cb23-287"></a></span>
+<span id="cb23-290"><a href="#cb23-290"></a><span class="in">```{r}</span></span>
+<span id="cb23-291"><a href="#cb23-291"></a><span class="co"># Note that our PMF is 0 outside the range 0,11, so instead of computing over the integers we just use the integers in [0,11]. </span></span>
+<span id="cb23-292"><a href="#cb23-292"></a>Exk <span class="ot">=</span> <span class="cf">function</span>(k, size, prob, theta){</span>
+<span id="cb23-293"><a href="#cb23-293"></a>  x <span class="ot">=</span> <span class="dv">0</span><span class="sc">:</span>size</span>
+<span id="cb23-294"><a href="#cb23-294"></a>  fx <span class="ot">=</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">size =</span> size, <span class="at">prob =</span> prob, <span class="at">theta =</span> theta)</span>
+<span id="cb23-295"><a href="#cb23-295"></a>  <span class="fu">return</span>(<span class="fu">sum</span>(x<span class="sc">^</span>k<span class="sc">*</span>fx))</span>
+<span id="cb23-296"><a href="#cb23-296"></a>}</span>
+<span id="cb23-297"><a href="#cb23-297"></a></span>
+<span id="cb23-298"><a href="#cb23-298"></a><span class="fu">Exk</span>(<span class="dv">1</span>, <span class="dv">11</span>, <span class="fl">0.5</span>, <span class="dv">1</span>)</span>
+<span id="cb23-299"><a href="#cb23-299"></a></span>
+<span id="cb23-300"><a href="#cb23-300"></a>n <span class="ot">=</span> <span class="dv">11</span></span>
+<span id="cb23-301"><a href="#cb23-301"></a>p <span class="ot">=</span> <span class="fl">0.5</span></span>
+<span id="cb23-302"><a href="#cb23-302"></a></span>
+<span id="cb23-303"><a href="#cb23-303"></a>(n<span class="sc">*</span>p)</span>
+<span id="cb23-304"><a href="#cb23-304"></a></span>
+<span id="cb23-305"><a href="#cb23-305"></a><span class="co"># Our expected value of the altham binomial matches that of the binomial for theta = 1. </span></span>
+<span id="cb23-306"><a href="#cb23-306"></a><span class="co"># This makes sense, as the Altham distribution for theta = 1 is the binomial distribution.</span></span>
+<span id="cb23-307"><a href="#cb23-307"></a></span>
+<span id="cb23-308"><a href="#cb23-308"></a><span class="in">```</span></span>
+<span id="cb23-309"><a href="#cb23-309"></a></span>
+<span id="cb23-310"><a href="#cb23-310"></a><span class="fu">## Part b</span></span>
+<span id="cb23-311"><a href="#cb23-311"></a></span>
+<span id="cb23-312"><a href="#cb23-312"></a>Describe how you can use your answer to part a to find Method of Moments estimates for the parameters $p$ and $\theta$ for Altham's Multiplicative Binomial Distribution based on data.</span>
+<span id="cb23-313"><a href="#cb23-313"></a></span>
+<span id="cb23-314"><a href="#cb23-314"></a>**Solution**</span>
+<span id="cb23-315"><a href="#cb23-315"></a></span>
+<span id="cb23-316"><a href="#cb23-316"></a>From a dataset, we can obtain a first and second moment. We set the formula for the $1st$ moment (which is a function that takes arguments theta and p) equal to our observed value from the dataset. We do the same for the second moment. We now have two equations and two unknowns, and can use row reduction to solve for the two unknowns.</span>
+<span id="cb23-317"><a href="#cb23-317"></a></span>
+<span id="cb23-318"><a href="#cb23-318"></a><span class="fu">## Part c</span></span>
+<span id="cb23-319"><a href="#cb23-319"></a></span>
+<span id="cb23-320"><a href="#cb23-320"></a>Write a function that computes the log-likelihood for Altham's Multiplicative Binomial Distribution, given data (<span class="in">`x`</span>) and proposed parameter values $p$ (<span class="in">`prob`</span>) and $\theta$ (<span class="in">`theta`</span>).</span>
+<span id="cb23-321"><a href="#cb23-321"></a></span>
+<span id="cb23-322"><a href="#cb23-322"></a>**Solution**</span>
+<span id="cb23-323"><a href="#cb23-323"></a></span>
+<span id="cb23-326"><a href="#cb23-326"></a><span class="in">```{r}</span></span>
+<span id="cb23-327"><a href="#cb23-327"></a><span class="co"># Let's assume x is a dataframe or tibble with columns event # and success. </span></span>
+<span id="cb23-328"><a href="#cb23-328"></a><span class="co"># </span></span>
+<span id="cb23-329"><a href="#cb23-329"></a><span class="co"># We could easily find n from the length of the "event" column vector, so we will write our function for arbitrary n</span></span>
+<span id="cb23-330"><a href="#cb23-330"></a></span>
+<span id="cb23-331"><a href="#cb23-331"></a></span>
+<span id="cb23-332"><a href="#cb23-332"></a><span class="co"># Let's create an arbitrary x vector to test:</span></span>
+<span id="cb23-333"><a href="#cb23-333"></a></span>
+<span id="cb23-334"><a href="#cb23-334"></a></span>
+<span id="cb23-335"><a href="#cb23-335"></a>loglik <span class="ot">=</span> <span class="cf">function</span>(x, size, p, theta){</span>
+<span id="cb23-336"><a href="#cb23-336"></a>   results <span class="ot">=</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">size =</span> size, <span class="at">prob =</span> p, <span class="at">theta =</span> theta)</span>
+<span id="cb23-337"><a href="#cb23-337"></a>   lik <span class="ot">=</span> base<span class="sc">::</span><span class="fu">log</span>(results)</span>
+<span id="cb23-338"><a href="#cb23-338"></a>   <span class="fu">return</span>(<span class="fu">sum</span>(lik))</span>
+<span id="cb23-339"><a href="#cb23-339"></a>  }</span>
+<span id="cb23-340"><a href="#cb23-340"></a></span>
+<span id="cb23-341"><a href="#cb23-341"></a><span class="co"># Example scenario</span></span>
+<span id="cb23-342"><a href="#cb23-342"></a></span>
+<span id="cb23-343"><a href="#cb23-343"></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">11</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">9</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">3</span>,<span class="dv">8</span>,<span class="dv">4</span>,<span class="dv">8</span>,<span class="dv">3</span>,<span class="dv">11</span>,<span class="dv">10</span>,<span class="dv">10</span>,<span class="dv">10</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">9</span>,<span class="dv">7</span>,<span class="dv">4</span>)</span>
+<span id="cb23-344"><a href="#cb23-344"></a></span>
+<span id="cb23-345"><a href="#cb23-345"></a><span class="fu">loglik</span>(<span class="at">x =</span> x, <span class="at">size =</span> <span class="dv">11</span>, <span class="at">p =</span> <span class="fl">0.5</span>, <span class="at">theta =</span> <span class="dv">1</span>)</span>
+<span id="cb23-346"><a href="#cb23-346"></a></span>
+<span id="cb23-347"><a href="#cb23-347"></a><span class="in">```</span></span>
+<span id="cb23-348"><a href="#cb23-348"></a></span>
+<span id="cb23-349"><a href="#cb23-349"></a><span class="fu">## Part d</span></span>
+<span id="cb23-350"><a href="#cb23-350"></a></span>
+<span id="cb23-351"><a href="#cb23-351"></a>Describe how you can use your answer to part c to find Maximum Likelihood estimates for the parameters $p$ and $\theta$ for Altham's Multiplicative Binomial Distribution based on data.</span>
+<span id="cb23-352"><a href="#cb23-352"></a></span>
+<span id="cb23-353"><a href="#cb23-353"></a>**Solution**</span>
+<span id="cb23-354"><a href="#cb23-354"></a></span>
+<span id="cb23-355"><a href="#cb23-355"></a>We would use use calculus (via the <span class="in">`optim`</span> function) to optimize theta and p for the highest (least negative) value of the log-likelihood function. We could plot result this using a color gradient, as we did in class.</span>
+<span id="cb23-356"><a href="#cb23-356"></a></span>
+<span id="cb23-357"><a href="#cb23-357"></a><span class="fu"># Lab 10</span></span>
+<span id="cb23-358"><a href="#cb23-358"></a></span>
+<span id="cb23-359"><a href="#cb23-359"></a>Peter "Snakebite" Wright is a two-time Professional Darts Corporation World Champion (2020, 2022) and a former World No. 1. He is one of the sport's most decorated players, winning nearly 50 PDC titles including the World Matchplay, UK Open, and multiple European Championships.</span>
+<span id="cb23-360"><a href="#cb23-360"></a></span>
+<span id="cb23-361"><a href="#cb23-361"></a>In 2024, he made The Premier League -- a league involving the eight best players that runs every Thursday night from February to May. In this season, he won two of eighteen matches, securing only four points. The spread in legs won was -43, meaning he lost 43 more legs than he won. This performance was rather quite bad. He was soundly trounced in almost all his match ups.</span>
+<span id="cb23-362"><a href="#cb23-362"></a></span>
+<span id="cb23-363"><a href="#cb23-363"></a>The 2024 standings are below:</span>
+<span id="cb23-364"><a href="#cb23-364"></a></span>
+<span id="cb23-365"><a href="#cb23-365"></a><span class="pp">|</span> Rank <span class="pp">|</span> Player             <span class="pp">|</span></span>
+<span id="cb23-366"><a href="#cb23-366"></a><span class="pp">|:-----|:-------------------|</span></span>
+<span id="cb23-367"><a href="#cb23-367"></a><span class="pp">|</span> 1    <span class="pp">|</span> Luke Littler       <span class="pp">|</span></span>
+<span id="cb23-368"><a href="#cb23-368"></a><span class="pp">|</span> 2    <span class="pp">|</span> Luke Humphries     <span class="pp">|</span></span>
+<span id="cb23-369"><a href="#cb23-369"></a><span class="pp">|</span> 3    <span class="pp">|</span> Michael van Gerwen <span class="pp">|</span></span>
+<span id="cb23-370"><a href="#cb23-370"></a><span class="pp">|</span> 4    <span class="pp">|</span> Michael Smith      <span class="pp">|</span></span>
+<span id="cb23-371"><a href="#cb23-371"></a><span class="pp">|</span> 5    <span class="pp">|</span> Nathan Aspinall    <span class="pp">|</span></span>
+<span id="cb23-372"><a href="#cb23-372"></a><span class="pp">|</span> 6    <span class="pp">|</span> Rob Cross          <span class="pp">|</span></span>
+<span id="cb23-373"><a href="#cb23-373"></a><span class="pp">|</span> 7    <span class="pp">|</span> Gerwyn Price       <span class="pp">|</span></span>
+<span id="cb23-374"><a href="#cb23-374"></a><span class="pp">|</span> 8    <span class="pp">|</span> Peter Wright       <span class="pp">|</span></span>
+<span id="cb23-375"><a href="#cb23-375"></a></span>
+<span id="cb23-376"><a href="#cb23-376"></a><span class="fu">## Summarize the 2024 Data</span></span>
+<span id="cb23-377"><a href="#cb23-377"></a></span>
+<span id="cb23-378"><a href="#cb23-378"></a>In <span class="in">`pdc2024.csv`</span>, I have provided the data for the 2024 Premier League season. There are a few data cleaning steps to consider.</span>
+<span id="cb23-379"><a href="#cb23-379"></a></span>
+<span id="cb23-380"><a href="#cb23-380"></a><span class="ss">-   </span>Remove any matches with no <span class="in">`Score`</span> (e.g., a bye or walkover)</span>
+<span id="cb23-381"><a href="#cb23-381"></a><span class="ss">-   </span>Nights 1 through 16 are best of 11 (first to 6), but the playoffs are extended. For consistency, keep nights 1 through 16 only.</span>
+<span id="cb23-382"><a href="#cb23-382"></a><span class="ss">-   </span>Make two columns <span class="in">`WinnerLegs`</span> and <span class="in">`LoserLegs`</span> that keep track of the number of legs each player has won</span>
+<span id="cb23-383"><a href="#cb23-383"></a></span>
+<span id="cb23-384"><a href="#cb23-384"></a>Summarize the data. What do the data tell us about the breakdown of the results?</span>
+<span id="cb23-385"><a href="#cb23-385"></a></span>
+<span id="cb23-386"><a href="#cb23-386"></a>**Solution**</span>
+<span id="cb23-387"><a href="#cb23-387"></a></span>
+<span id="cb23-388"><a href="#cb23-388"></a></span>
+<span id="cb23-391"><a href="#cb23-391"></a><span class="in">```{r}</span></span>
+<span id="cb23-392"><a href="#cb23-392"></a><span class="co"># data cleaning:</span></span>
+<span id="cb23-393"><a href="#cb23-393"></a></span>
+<span id="cb23-394"><a href="#cb23-394"></a>dat.pdc <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="st">"pdc2024.csv"</span>)</span>
+<span id="cb23-395"><a href="#cb23-395"></a>dat.pdc <span class="ot">=</span> <span class="fu">tibble</span>(dat.pdc) <span class="sc">|&gt;</span></span>
+<span id="cb23-396"><a href="#cb23-396"></a>  <span class="fu">filter</span>(Score <span class="sc">!=</span> <span class="st">"w/o"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb23-397"><a href="#cb23-397"></a>  <span class="fu">filter</span>(Night <span class="sc">!=</span>  <span class="st">"Finals"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb23-398"><a href="#cb23-398"></a>  <span class="fu">mutate</span>(<span class="at">Matchnum =</span> <span class="fu">row_number</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb23-399"><a href="#cb23-399"></a>  <span class="fu">separate</span>(Score, <span class="at">into =</span> <span class="fu">c</span>(<span class="st">"WinnerLegs"</span>, <span class="st">"LoserLegs"</span>), <span class="at">sep =</span> <span class="st">"-"</span>, <span class="at">convert =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb23-400"><a href="#cb23-400"></a></span>
+<span id="cb23-401"><a href="#cb23-401"></a><span class="in">```</span></span>
+<span id="cb23-402"><a href="#cb23-402"></a></span>
+<span id="cb23-403"><a href="#cb23-403"></a></span>
+<span id="cb23-404"><a href="#cb23-404"></a></span>
+<span id="cb23-407"><a href="#cb23-407"></a><span class="in">```{r}</span></span>
+<span id="cb23-408"><a href="#cb23-408"></a><span class="co"># Failed attempts:</span></span>
+<span id="cb23-409"><a href="#cb23-409"></a></span>
+<span id="cb23-410"><a href="#cb23-410"></a><span class="co"># dat.pdc = read_csv("pdc2024.csv")</span></span>
+<span id="cb23-411"><a href="#cb23-411"></a><span class="co"># dat.pdc = tibble(dat.pdc) |&gt;</span></span>
+<span id="cb23-412"><a href="#cb23-412"></a><span class="co">#   filter(Score != "w/o") |&gt;</span></span>
+<span id="cb23-413"><a href="#cb23-413"></a><span class="co">#   filter(Night !=  "Finals") |&gt;</span></span>
+<span id="cb23-414"><a href="#cb23-414"></a><span class="co">#   mutate(Matchnum = row_number()) |&gt;</span></span>
+<span id="cb23-415"><a href="#cb23-415"></a><span class="co">#   separate(Score, into = c("WinnerLegs", "LoserLegs"), sep = "-", convert = TRUE) |&gt;</span></span>
+<span id="cb23-416"><a href="#cb23-416"></a><span class="co">#   group_by(Winner) |&gt;</span></span>
+<span id="cb23-417"><a href="#cb23-417"></a><span class="co">#   arrange(Matchnum, .by_group = TRUE) |&gt;</span></span>
+<span id="cb23-418"><a href="#cb23-418"></a><span class="co">#   mutate(LegsWon = cumsum(WinnerLegs)) |&gt;</span></span>
+<span id="cb23-419"><a href="#cb23-419"></a><span class="co">#   ungroup() |&gt;</span></span>
+<span id="cb23-420"><a href="#cb23-420"></a><span class="co">#   arrange(Matchnum)</span></span>
+<span id="cb23-421"><a href="#cb23-421"></a></span>
+<span id="cb23-422"><a href="#cb23-422"></a></span>
+<span id="cb23-423"><a href="#cb23-423"></a></span>
+<span id="cb23-424"><a href="#cb23-424"></a><span class="co"># dat.pdc = read_csv("pdc2024.csv")</span></span>
+<span id="cb23-425"><a href="#cb23-425"></a></span>
+<span id="cb23-426"><a href="#cb23-426"></a><span class="co"># # function()</span></span>
+<span id="cb23-427"><a href="#cb23-427"></a><span class="co"># dat.pdc = tibble(dat.pdc) |&gt;</span></span>
+<span id="cb23-428"><a href="#cb23-428"></a><span class="co">#   filter(Score != "w/o") |&gt;</span></span>
+<span id="cb23-429"><a href="#cb23-429"></a><span class="co">#   filter(Night !=  "Finals") |&gt;</span></span>
+<span id="cb23-430"><a href="#cb23-430"></a><span class="co">#   separate(Score, into = c("WinnerLegs", "LoserLegs"), sep = "-", convert = TRUE)</span></span>
+<span id="cb23-431"><a href="#cb23-431"></a></span>
+<span id="cb23-432"><a href="#cb23-432"></a><span class="co"># Legstat = function(player){</span></span>
+<span id="cb23-433"><a href="#cb23-433"></a><span class="co">#   dat.pdc = dat.pdc |&gt;</span></span>
+<span id="cb23-434"><a href="#cb23-434"></a><span class="co">#   mutate(LegsWonLittler = LoserLegs * (Loser == Player)+ 6*(Winner == Player)) |&gt;</span></span>
+<span id="cb23-435"><a href="#cb23-435"></a><span class="co"># }</span></span>
+<span id="cb23-436"><a href="#cb23-436"></a><span class="co"># # sapply(unique(players), dat.pdc)</span></span>
+<span id="cb23-437"><a href="#cb23-437"></a></span>
+<span id="cb23-438"><a href="#cb23-438"></a><span class="co"># dat.pdc = tibble(dat.pdc) |&gt;</span></span>
+<span id="cb23-439"><a href="#cb23-439"></a><span class="co">#  filter(Winner == "Luke Littler" | Loser == "Luke Littler") |&gt;</span></span>
+<span id="cb23-440"><a href="#cb23-440"></a><span class="co">#  mutate(Littler = case_when(Winner == "Luke Littler" ~ 6, Loser == "Luke Littler" ~ LoserLegs)) |&gt;</span></span>
+<span id="cb23-441"><a href="#cb23-441"></a><span class="co">#  mutate(LittlerWins = cumsum(Littler))</span></span>
+<span id="cb23-442"><a href="#cb23-442"></a><span class="in">```</span></span>
+<span id="cb23-443"><a href="#cb23-443"></a></span>
+<span id="cb23-446"><a href="#cb23-446"></a><span class="in">```{r}</span></span>
+<span id="cb23-447"><a href="#cb23-447"></a>dat.pdc <span class="ot">=</span> dat.pdc <span class="sc">|&gt;</span> <span class="fu">mutate</span>(<span class="at">MatchID =</span> <span class="fu">row_number</span>())</span>
+<span id="cb23-448"><a href="#cb23-448"></a></span>
+<span id="cb23-449"><a href="#cb23-449"></a>cum_legs <span class="ot">=</span> <span class="cf">function</span>(player) {</span>
+<span id="cb23-450"><a href="#cb23-450"></a>  dat.pdc <span class="sc">|&gt;</span></span>
+<span id="cb23-451"><a href="#cb23-451"></a>    <span class="fu">filter</span>(Winner <span class="sc">==</span> player <span class="sc">|</span> Loser <span class="sc">==</span> player) <span class="sc">|&gt;</span></span>
+<span id="cb23-452"><a href="#cb23-452"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb23-453"><a href="#cb23-453"></a>      <span class="at">LegsWon =</span> <span class="fu">case_when</span>(</span>
+<span id="cb23-454"><a href="#cb23-454"></a>        Winner <span class="sc">==</span> player <span class="sc">~</span> WinnerLegs,</span>
+<span id="cb23-455"><a href="#cb23-455"></a>        Loser  <span class="sc">==</span> player <span class="sc">~</span> LoserLegs</span>
+<span id="cb23-456"><a href="#cb23-456"></a>      ),</span>
+<span id="cb23-457"><a href="#cb23-457"></a>      <span class="at">CumLegsWon =</span> <span class="fu">cumsum</span>(LegsWon)</span>
+<span id="cb23-458"><a href="#cb23-458"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb23-459"><a href="#cb23-459"></a>    <span class="fu">select</span>(MatchID, CumLegsWon) <span class="sc">|&gt;</span></span>
+<span id="cb23-460"><a href="#cb23-460"></a>    <span class="fu">rename</span>(<span class="sc">!!</span><span class="at">player :=</span> CumLegsWon)</span>
+<span id="cb23-461"><a href="#cb23-461"></a>}</span>
+<span id="cb23-462"><a href="#cb23-462"></a></span>
+<span id="cb23-463"><a href="#cb23-463"></a>players <span class="ot">=</span> <span class="fu">unique</span>(<span class="fu">as.character</span>(<span class="fu">c</span>(dat.pdc<span class="sc">$</span>Winner, dat.pdc<span class="sc">$</span>Loser)))</span>
+<span id="cb23-464"><a href="#cb23-464"></a></span>
+<span id="cb23-465"><a href="#cb23-465"></a>cum_data <span class="ot">=</span> <span class="fu">map</span>(players, cum_legs) <span class="sc">|&gt;</span> <span class="fu">reduce</span>(full_join, <span class="at">by =</span> <span class="st">"MatchID"</span>)</span>
+<span id="cb23-466"><a href="#cb23-466"></a></span>
+<span id="cb23-467"><a href="#cb23-467"></a>dat.pdc <span class="ot">=</span> dat.pdc <span class="sc">|&gt;</span> <span class="fu">left_join</span>(cum_data, <span class="at">by =</span> <span class="st">"MatchID"</span>)</span>
+<span id="cb23-468"><a href="#cb23-468"></a></span>
+<span id="cb23-469"><a href="#cb23-469"></a>dat.pdc <span class="ot">=</span> dat.pdc <span class="sc">|&gt;</span></span>
+<span id="cb23-470"><a href="#cb23-470"></a>  <span class="fu">fill</span>(<span class="fu">any_of</span>(players), <span class="at">.direction =</span> <span class="st">"down"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb23-471"><a href="#cb23-471"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">any_of</span>(players), <span class="sc">~</span> <span class="fu">replace_na</span>(., <span class="dv">0</span>)))</span>
+<span id="cb23-472"><a href="#cb23-472"></a></span>
+<span id="cb23-473"><a href="#cb23-473"></a><span class="in">```</span></span>
+<span id="cb23-474"><a href="#cb23-474"></a></span>
+<span id="cb23-475"><a href="#cb23-475"></a></span>
+<span id="cb23-478"><a href="#cb23-478"></a><span class="in">```{r}</span></span>
+<span id="cb23-479"><a href="#cb23-479"></a><span class="co">#| label: fig-CumulativeLegs</span></span>
+<span id="cb23-480"><a href="#cb23-480"></a><span class="co">#| fig-cap: Cumulative Legs Won Throughout the 2024 Season by Player</span></span>
+<span id="cb23-481"><a href="#cb23-481"></a>dat.pdc <span class="sc">|&gt;</span></span>
+<span id="cb23-482"><a href="#cb23-482"></a>  <span class="fu">pivot_longer</span>(<span class="fu">any_of</span>(players), <span class="at">names_to =</span> <span class="st">"Player"</span>, <span class="at">values_to =</span> <span class="st">"CumLegs"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb23-483"><a href="#cb23-483"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(CumLegs)) <span class="sc">|&gt;</span></span>
+<span id="cb23-484"><a href="#cb23-484"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> MatchID, <span class="at">y =</span> CumLegs, <span class="at">color =</span> Player)) <span class="sc">+</span></span>
+<span id="cb23-485"><a href="#cb23-485"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb23-486"><a href="#cb23-486"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Games Played"</span>, <span class="at">y =</span> <span class="st">"Cumulative Legs Won"</span>, <span class="at">color =</span> <span class="st">"Player"</span>) <span class="sc">+</span></span>
+<span id="cb23-487"><a href="#cb23-487"></a>  <span class="fu">theme_minimal</span>()</span>
+<span id="cb23-488"><a href="#cb23-488"></a></span>
+<span id="cb23-489"><a href="#cb23-489"></a><span class="co">#I had to look up a lot of functions to make this plot and the data manipulation possible. If there is an easier solution I would be very interested to see it, but I tried to do it simply for a while and couldn't find anything super elegant.</span></span>
+<span id="cb23-490"><a href="#cb23-490"></a></span>
+<span id="cb23-491"><a href="#cb23-491"></a><span class="in">```</span></span>
+<span id="cb23-492"><a href="#cb23-492"></a></span>
+<span id="cb23-493"><a href="#cb23-493"></a></span>
+<span id="cb23-494"><a href="#cb23-494"></a>From this plot, the way that the season evolved, for each player and as a league, is clear. Some notable trends are:</span>
+<span id="cb23-495"><a href="#cb23-495"></a></span>
+<span id="cb23-496"><a href="#cb23-496"></a><span class="ss">- </span>Luke Littler's surge in the last quarter of the season</span>
+<span id="cb23-497"><a href="#cb23-497"></a><span class="ss">- </span>Peter Wright's consistently poor performance</span>
+<span id="cb23-498"><a href="#cb23-498"></a><span class="ss">- </span>The mid-season reign of Luke Humphries</span>
+<span id="cb23-499"><a href="#cb23-499"></a><span class="ss">- </span>After the first 30 games, there were only three leaders, two of which finished first and second. Michael van Gerwen had a short stint of domination in the early season, but faded to a mediocre finish by the end.</span>
+<span id="cb23-500"><a href="#cb23-500"></a></span>
+<span id="cb23-501"><a href="#cb23-501"></a></span>
+<span id="cb23-502"><a href="#cb23-502"></a><span class="fu">## Altham's Multiplicative Binomial Distribution</span></span>
+<span id="cb23-503"><a href="#cb23-503"></a></span>
+<span id="cb23-504"><a href="#cb23-504"></a>For each player in the 2024 season, use the number of legs won in each match to compute maximium likelihood estimates for $p$ and $\theta$.\</span>
+<span id="cb23-505"><a href="#cb23-505"></a>**Note**: The "for each" here can be done more efficiently with a function or a loop!</span>
+<span id="cb23-506"><a href="#cb23-506"></a></span>
+<span id="cb23-507"><a href="#cb23-507"></a><span class="ss">-   </span>Create a vector containing the number of legs won by the player. Note sometimes you will need to pull from winner's legs and sometimes from the loser's legs.</span>
+<span id="cb23-508"><a href="#cb23-508"></a><span class="ss">-   </span>Find the MLE for the player using this data. Ensure to report $p$ and $\theta$ for each player in a nicely formatted table.\</span>
+<span id="cb23-509"><a href="#cb23-509"></a>    **Note:** In Lecture on Monday, we used transformations to restrict how <span class="in">`optim()`</span> searches the parameter space. For example, here, you might consider <span class="in">`p &lt;- 1/(1+exp(-par[1]))`</span> and <span class="in">`theta &lt;- exp(par[2])`</span>.</span>
+<span id="cb23-510"><a href="#cb23-510"></a><span class="ss">-   </span>Make comments about the MLEs in the context of the standings.</span>
+<span id="cb23-511"><a href="#cb23-511"></a></span>
+<span id="cb23-512"><a href="#cb23-512"></a></span>
+<span id="cb23-513"><a href="#cb23-513"></a>**Solution**</span>
+<span id="cb23-514"><a href="#cb23-514"></a></span>
+<span id="cb23-517"><a href="#cb23-517"></a><span class="in">```{r}</span></span>
+<span id="cb23-518"><a href="#cb23-518"></a>legs <span class="ot">=</span> <span class="cf">function</span>(player) {</span>
+<span id="cb23-519"><a href="#cb23-519"></a>  dat.pdc <span class="sc">|&gt;</span></span>
+<span id="cb23-520"><a href="#cb23-520"></a>    <span class="fu">filter</span>(Winner <span class="sc">==</span> player <span class="sc">|</span> Loser <span class="sc">==</span> player) <span class="sc">|&gt;</span></span>
+<span id="cb23-521"><a href="#cb23-521"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb23-522"><a href="#cb23-522"></a>      <span class="at">LegsWon =</span> <span class="fu">case_when</span>(</span>
+<span id="cb23-523"><a href="#cb23-523"></a>        Winner <span class="sc">==</span> player <span class="sc">~</span> WinnerLegs,</span>
+<span id="cb23-524"><a href="#cb23-524"></a>        Loser  <span class="sc">==</span> player <span class="sc">~</span> LoserLegs</span>
+<span id="cb23-525"><a href="#cb23-525"></a>      )</span>
+<span id="cb23-526"><a href="#cb23-526"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb23-527"><a href="#cb23-527"></a>    <span class="fu">select</span>(MatchID, LegsWon) <span class="sc">|&gt;</span></span>
+<span id="cb23-528"><a href="#cb23-528"></a>    <span class="fu">rename</span>(<span class="sc">!!</span><span class="fu">paste0</span>(player, <span class="st">"_dist"</span>) <span class="sc">:</span><span class="er">=</span> LegsWon)</span>
+<span id="cb23-529"><a href="#cb23-529"></a>}</span>
+<span id="cb23-530"><a href="#cb23-530"></a> <span class="co">#paste0 so there are no spaces, needed to distinguish these columns from cumulative columns</span></span>
+<span id="cb23-531"><a href="#cb23-531"></a></span>
+<span id="cb23-532"><a href="#cb23-532"></a>legs_data <span class="ot">=</span> <span class="fu">map</span>(players, legs) <span class="sc">|&gt;</span> <span class="fu">reduce</span>(full_join, <span class="at">by =</span> <span class="st">"MatchID"</span>)</span>
+<span id="cb23-533"><a href="#cb23-533"></a></span>
+<span id="cb23-534"><a href="#cb23-534"></a>dat.pdc <span class="ot">=</span> dat.pdc <span class="sc">|&gt;</span> <span class="fu">left_join</span>(legs_data, <span class="at">by =</span> <span class="st">"MatchID"</span>)</span>
+<span id="cb23-535"><a href="#cb23-535"></a><span class="in">```</span></span>
+<span id="cb23-536"><a href="#cb23-536"></a></span>
+<span id="cb23-539"><a href="#cb23-539"></a><span class="in">```{r}</span></span>
+<span id="cb23-540"><a href="#cb23-540"></a>altham_mle <span class="ot">=</span> <span class="cf">function</span>(player) {</span>
+<span id="cb23-541"><a href="#cb23-541"></a>  y <span class="ot">=</span> dat.pdc <span class="sc">|&gt;</span></span>
+<span id="cb23-542"><a href="#cb23-542"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(<span class="sc">!!</span><span class="fu">sym</span>(<span class="fu">paste0</span>(player, <span class="st">"_dist"</span>)))) <span class="sc">|&gt;</span></span>
+<span id="cb23-543"><a href="#cb23-543"></a>    <span class="fu">pull</span>(<span class="sc">!!</span><span class="fu">sym</span>(<span class="fu">paste0</span>(player, <span class="st">"_dist"</span>)))</span>
+<span id="cb23-544"><a href="#cb23-544"></a>  </span>
+<span id="cb23-545"><a href="#cb23-545"></a>  nll <span class="ot">=</span> <span class="cf">function</span>(par) {</span>
+<span id="cb23-546"><a href="#cb23-546"></a>    p     <span class="ot">=</span> <span class="dv">1</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> <span class="fu">exp</span>(<span class="sc">-</span>par[<span class="dv">1</span>]))</span>
+<span id="cb23-547"><a href="#cb23-547"></a>    theta <span class="ot">=</span> <span class="fu">exp</span>(par[<span class="dv">2</span>])</span>
+<span id="cb23-548"><a href="#cb23-548"></a>    <span class="sc">-</span><span class="fu">loglik</span>(<span class="at">x =</span> y, <span class="at">size =</span> <span class="dv">11</span>, <span class="at">p =</span> p, <span class="at">theta =</span> theta)</span>
+<span id="cb23-549"><a href="#cb23-549"></a>  }</span>
+<span id="cb23-550"><a href="#cb23-550"></a>  </span>
+<span id="cb23-551"><a href="#cb23-551"></a>  fit <span class="ot">=</span> <span class="fu">optim</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>), nll)</span>
+<span id="cb23-552"><a href="#cb23-552"></a>  </span>
+<span id="cb23-553"><a href="#cb23-553"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb23-554"><a href="#cb23-554"></a>    <span class="at">Player =</span> player,</span>
+<span id="cb23-555"><a href="#cb23-555"></a>    <span class="at">p      =</span> <span class="dv">1</span> <span class="sc">/</span> (<span class="dv">1</span> <span class="sc">+</span> <span class="fu">exp</span>(<span class="sc">-</span>fit<span class="sc">$</span>par[<span class="dv">1</span>])),</span>
+<span id="cb23-556"><a href="#cb23-556"></a>    <span class="at">theta  =</span> <span class="fu">exp</span>(fit<span class="sc">$</span>par[<span class="dv">2</span>])</span>
+<span id="cb23-557"><a href="#cb23-557"></a>  )</span>
+<span id="cb23-558"><a href="#cb23-558"></a>}</span>
+<span id="cb23-559"><a href="#cb23-559"></a></span>
+<span id="cb23-560"><a href="#cb23-560"></a>rank_order <span class="ot">=</span> <span class="fu">tibble</span>(</span>
+<span id="cb23-561"><a href="#cb23-561"></a>  <span class="at">Player =</span> <span class="fu">c</span>(<span class="st">"Luke Littler"</span>, <span class="st">"Luke Humphries"</span>, <span class="st">"Michael van Gerwen"</span>, <span class="st">"Michael Smith"</span>, <span class="st">"Nathan Aspinall"</span>, <span class="st">"Rob Cross"</span>,</span>
+<span id="cb23-562"><a href="#cb23-562"></a>  <span class="st">"Gerwyn Price"</span>, <span class="st">"Peter Wright"</span>),</span>
+<span id="cb23-563"><a href="#cb23-563"></a>  <span class="at">Rank =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span></span>
+<span id="cb23-564"><a href="#cb23-564"></a>)</span>
+<span id="cb23-565"><a href="#cb23-565"></a></span>
+<span id="cb23-566"><a href="#cb23-566"></a>mle_table <span class="ot">=</span> <span class="fu">map</span>(players, altham_mle) <span class="sc">|&gt;</span> <span class="fu">list_rbind</span>() <span class="sc">|&gt;</span></span>
+<span id="cb23-567"><a href="#cb23-567"></a>  <span class="fu">left_join</span>(rank_order, <span class="at">by =</span> <span class="st">"Player"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb23-568"><a href="#cb23-568"></a>  <span class="fu">arrange</span>(Rank) <span class="sc">|&gt;</span></span>
+<span id="cb23-569"><a href="#cb23-569"></a>  <span class="fu">select</span>(Rank, Player, p, theta)</span>
+<span id="cb23-570"><a href="#cb23-570"></a><span class="in">```</span></span>
+<span id="cb23-571"><a href="#cb23-571"></a></span>
+<span id="cb23-574"><a href="#cb23-574"></a><span class="in">```{r}</span></span>
+<span id="cb23-575"><a href="#cb23-575"></a><span class="co">#| label: tbl-MLEb</span></span>
+<span id="cb23-576"><a href="#cb23-576"></a></span>
+<span id="cb23-577"><a href="#cb23-577"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(mle_table, <span class="at">digits =</span> <span class="dv">3</span>,</span>
+<span id="cb23-578"><a href="#cb23-578"></a>             <span class="at">caption =</span> <span class="st">"MLE Estimates for Altham's Multiplicative Binomial Distribution"</span>)</span>
+<span id="cb23-579"><a href="#cb23-579"></a><span class="in">```</span></span>
+<span id="cb23-580"><a href="#cb23-580"></a></span>
+<span id="cb23-581"><a href="#cb23-581"></a>We get a result that corroborates what we know about distributions and darts. The table, when ranked in order of final standings, is also ranked from highest p (of winning one leg) to lowest. This means that the players with the highest probabilities of winning a leg, have won the most matches. This isn't necessarily surprising (actually, it would be cool to run an analysis to see how suprising it actually is under these conditions), but it also isn't guaranteed. We also see a (less solid) positive correlation with theta and final standings. This is interesting, and makes sense- winning more legs closer to each other means that you're not spreading out your legs won between matches, you're winning 6 instead of 5 times, for example. In theory, we could have a player who won 5 games each match, which would have broken the pattern we see here.</span>
+<span id="cb23-582"><a href="#cb23-582"></a></span>
+<span id="cb23-583"><a href="#cb23-583"></a></span>
+<span id="cb23-584"><a href="#cb23-584"></a><span class="fu">## Altham's Multiplicative Beta Binomial Distribution</span></span>
+<span id="cb23-585"><a href="#cb23-585"></a></span>
+<span id="cb23-586"><a href="#cb23-586"></a>For each player in the 2024 season, use the number of legs won in each match to compute maxmium likelihood estimates for $p$ and $\theta$.\</span>
+<span id="cb23-587"><a href="#cb23-587"></a>**Note**: The "for each" here can be done more efficiently with a function or a loop!</span>
+<span id="cb23-588"><a href="#cb23-588"></a></span>
+<span id="cb23-589"><a href="#cb23-589"></a><span class="ss">-   </span>Create a vector containing the number of legs won by the player. Note sometimes you will need to pull from winner's legs and sometimes from the loser's legs.</span>
+<span id="cb23-590"><a href="#cb23-590"></a><span class="ss">-   </span>Find the MLEs for the player using this data. Ensure to report $\alpha$, $\beta$, and $\theta$ for each player in a nicely formatted table.\</span>
+<span id="cb23-591"><a href="#cb23-591"></a>    **Note 1**: Due to the computational complexity of `integrate()`, you should compute the logged probability for `0:6` once and add them according to the data in each player's vector. **Note 2**: In Lecture on Monday, we used transformations to restrict how <span class="in">`optim()`</span> searches the parameter space.</span>
+<span id="cb23-592"><a href="#cb23-592"></a><span class="ss">-   </span>Plot the underlying Beta($\alpha$, $\beta$) distribution for each player.\</span>
+<span id="cb23-593"><a href="#cb23-593"></a>    **Note**: Add the mean and variance of the Beta to the table of MLEs. Recall \begin{align*}</span>
+<span id="cb23-594"><a href="#cb23-594"></a>     E(X)   &amp;= \frac{\alpha}{\alpha+\beta}<span class="sc">\\</span></span>
+<span id="cb23-595"><a href="#cb23-595"></a>     sd(X) &amp;= \sqrt{\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}}</span>
+<span id="cb23-596"><a href="#cb23-596"></a>    \end{align*}</span>
+<span id="cb23-597"><a href="#cb23-597"></a><span class="ss">-   </span>Make comments about the MLEs in the context of the standings.\</span>
+<span id="cb23-598"><a href="#cb23-598"></a>    **Note**: The players alternate who throws first in a leg has the mathematical "head start" to reach a finish before their opponent can take another turn. Players alternate who throws first with each leg.</span>
+<span id="cb23-599"><a href="#cb23-599"></a></span>
+<span id="cb23-600"><a href="#cb23-600"></a>**Solution**</span>
+<span id="cb23-601"><a href="#cb23-601"></a></span>
+<span id="cb23-602"><a href="#cb23-602"></a></span>
+<span id="cb23-605"><a href="#cb23-605"></a><span class="in">```{r}</span></span>
+<span id="cb23-606"><a href="#cb23-606"></a>llaltbb <span class="ot">=</span> <span class="cf">function</span>(par, obs, <span class="at">neg =</span> F) {</span>
+<span id="cb23-607"><a href="#cb23-607"></a>  alpha <span class="ot">=</span> <span class="fu">exp</span>(par[<span class="dv">1</span>])</span>
+<span id="cb23-608"><a href="#cb23-608"></a>  beta  <span class="ot">=</span> <span class="fu">exp</span>(par[<span class="dv">2</span>])</span>
+<span id="cb23-609"><a href="#cb23-609"></a>  theta <span class="ot">=</span> <span class="fu">exp</span>(par[<span class="dv">3</span>])</span>
+<span id="cb23-610"><a href="#cb23-610"></a>  </span>
+<span id="cb23-611"><a href="#cb23-611"></a>  log_probs <span class="ot">=</span> base<span class="sc">::</span><span class="fu">log</span>(<span class="fu">daltbbinom</span>(<span class="at">x =</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">11</span>, <span class="at">size =</span> <span class="dv">11</span>,</span>
+<span id="cb23-612"><a href="#cb23-612"></a>                             <span class="at">alpha =</span> alpha, <span class="at">beta =</span> beta, <span class="at">theta =</span> theta))</span>
+<span id="cb23-613"><a href="#cb23-613"></a>  </span>
+<span id="cb23-614"><a href="#cb23-614"></a>  ll <span class="ot">=</span> <span class="fu">sum</span>(log_probs[obs <span class="sc">+</span> <span class="dv">1</span>])</span>
+<span id="cb23-615"><a href="#cb23-615"></a>  <span class="fu">ifelse</span>(neg, <span class="sc">-</span>ll, ll)</span>
+<span id="cb23-616"><a href="#cb23-616"></a>}</span>
+<span id="cb23-617"><a href="#cb23-617"></a></span>
+<span id="cb23-618"><a href="#cb23-618"></a>altbb_mle <span class="ot">=</span> <span class="cf">function</span>(player) {</span>
+<span id="cb23-619"><a href="#cb23-619"></a>  y <span class="ot">=</span> dat.pdc <span class="sc">|&gt;</span></span>
+<span id="cb23-620"><a href="#cb23-620"></a>    <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(<span class="sc">!!</span><span class="fu">sym</span>(<span class="fu">paste0</span>(player, <span class="st">"_dist"</span>)))) <span class="sc">|&gt;</span></span>
+<span id="cb23-621"><a href="#cb23-621"></a>    <span class="fu">pull</span>(<span class="sc">!!</span><span class="fu">sym</span>(<span class="fu">paste0</span>(player, <span class="st">"_dist"</span>)))</span>
+<span id="cb23-622"><a href="#cb23-622"></a>  </span>
+<span id="cb23-623"><a href="#cb23-623"></a>  fit <span class="ot">=</span> <span class="fu">optim</span>(<span class="at">par =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>),</span>
+<span id="cb23-624"><a href="#cb23-624"></a>              <span class="at">fn  =</span> llaltbb,</span>
+<span id="cb23-625"><a href="#cb23-625"></a>              <span class="at">obs =</span> y,</span>
+<span id="cb23-626"><a href="#cb23-626"></a>              <span class="at">neg =</span> T)</span>
+<span id="cb23-627"><a href="#cb23-627"></a>  </span>
+<span id="cb23-628"><a href="#cb23-628"></a>  alpha <span class="ot">=</span> <span class="fu">exp</span>(fit<span class="sc">$</span>par[<span class="dv">1</span>])</span>
+<span id="cb23-629"><a href="#cb23-629"></a>  beta  <span class="ot">=</span> <span class="fu">exp</span>(fit<span class="sc">$</span>par[<span class="dv">2</span>])</span>
+<span id="cb23-630"><a href="#cb23-630"></a>  theta <span class="ot">=</span> <span class="fu">exp</span>(fit<span class="sc">$</span>par[<span class="dv">3</span>])</span>
+<span id="cb23-631"><a href="#cb23-631"></a>  </span>
+<span id="cb23-632"><a href="#cb23-632"></a>  <span class="fu">tibble</span>(</span>
+<span id="cb23-633"><a href="#cb23-633"></a>    <span class="at">Player =</span> player,</span>
+<span id="cb23-634"><a href="#cb23-634"></a>    <span class="at">alpha  =</span> alpha,</span>
+<span id="cb23-635"><a href="#cb23-635"></a>    <span class="at">beta   =</span> beta,</span>
+<span id="cb23-636"><a href="#cb23-636"></a>    <span class="at">theta  =</span> theta,</span>
+<span id="cb23-637"><a href="#cb23-637"></a>    <span class="at">Mean   =</span> alpha <span class="sc">/</span> (alpha <span class="sc">+</span> beta),</span>
+<span id="cb23-638"><a href="#cb23-638"></a>    <span class="at">SD     =</span> <span class="fu">sqrt</span>((alpha <span class="sc">*</span> beta) <span class="sc">/</span> ((alpha <span class="sc">+</span> beta)<span class="sc">^</span><span class="dv">2</span> <span class="sc">*</span> (alpha <span class="sc">+</span> beta <span class="sc">+</span> <span class="dv">1</span>)))</span>
+<span id="cb23-639"><a href="#cb23-639"></a>  )</span>
+<span id="cb23-640"><a href="#cb23-640"></a>}</span>
+<span id="cb23-641"><a href="#cb23-641"></a></span>
+<span id="cb23-642"><a href="#cb23-642"></a>altbb_table <span class="ot">=</span> <span class="fu">map</span>(players, altbb_mle) <span class="sc">|&gt;</span> <span class="fu">list_rbind</span>() <span class="sc">|&gt;</span></span>
+<span id="cb23-643"><a href="#cb23-643"></a>  <span class="fu">left_join</span>(rank_order, <span class="at">by =</span> <span class="st">"Player"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb23-644"><a href="#cb23-644"></a>  <span class="fu">arrange</span>(Rank) <span class="sc">|&gt;</span></span>
+<span id="cb23-645"><a href="#cb23-645"></a>  <span class="fu">select</span>(Rank, Player, alpha, beta, theta, Mean, SD)</span>
+<span id="cb23-646"><a href="#cb23-646"></a><span class="in">```</span></span>
+<span id="cb23-647"><a href="#cb23-647"></a></span>
+<span id="cb23-650"><a href="#cb23-650"></a><span class="in">```{r}</span></span>
+<span id="cb23-651"><a href="#cb23-651"></a><span class="co">#| label: tbl-MLEbb</span></span>
+<span id="cb23-652"><a href="#cb23-652"></a></span>
+<span id="cb23-653"><a href="#cb23-653"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(altbb_table, <span class="at">digits =</span> <span class="dv">3</span>,</span>
+<span id="cb23-654"><a href="#cb23-654"></a>             <span class="at">caption =</span> <span class="st">"MLE Estimates for Altham's Multiplicative Beta Binomial Distribution"</span>)</span>
+<span id="cb23-655"><a href="#cb23-655"></a><span class="in">```</span></span>
+<span id="cb23-656"><a href="#cb23-656"></a></span>
+<span id="cb23-659"><a href="#cb23-659"></a><span class="in">```{r}</span></span>
+<span id="cb23-660"><a href="#cb23-660"></a><span class="co">#| label: fig-AlthamBB</span></span>
+<span id="cb23-661"><a href="#cb23-661"></a><span class="co">#| fig-cap: Beta Distributions for Each Player in the 2024 Season</span></span>
+<span id="cb23-662"><a href="#cb23-662"></a></span>
+<span id="cb23-663"><a href="#cb23-663"></a>altbb_table <span class="sc">|&gt;</span></span>
+<span id="cb23-664"><a href="#cb23-664"></a>  <span class="fu">rowwise</span>() <span class="sc">|&gt;</span></span>
+<span id="cb23-665"><a href="#cb23-665"></a>  <span class="fu">mutate</span>(<span class="at">x =</span> <span class="fu">list</span>(<span class="fu">seq</span>(<span class="fl">0.01</span>, <span class="fl">0.99</span>, <span class="at">by =</span> <span class="fl">0.01</span>)),</span>
+<span id="cb23-666"><a href="#cb23-666"></a>         <span class="at">density =</span> <span class="fu">list</span>(<span class="fu">dbeta</span>(<span class="fu">seq</span>(<span class="fl">0.01</span>, <span class="fl">0.99</span>, <span class="at">by =</span> <span class="fl">0.01</span>), alpha, beta))) <span class="sc">|&gt;</span></span>
+<span id="cb23-667"><a href="#cb23-667"></a>  <span class="fu">unnest</span>(<span class="fu">c</span>(x, density)) <span class="sc">|&gt;</span></span>
+<span id="cb23-668"><a href="#cb23-668"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> density, <span class="at">color =</span> Player)) <span class="sc">+</span></span>
+<span id="cb23-669"><a href="#cb23-669"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb23-670"><a href="#cb23-670"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> <span class="fu">paste</span>(Rank, Player), <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">scales =</span> <span class="st">"free_y"</span>) <span class="sc">+</span></span>
+<span id="cb23-671"><a href="#cb23-671"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"p"</span>, <span class="at">y =</span> <span class="st">"Density"</span>, </span>
+<span id="cb23-672"><a href="#cb23-672"></a>       <span class="at">title =</span> <span class="st">"Beta Distribution by Player"</span>) <span class="sc">+</span></span>
+<span id="cb23-673"><a href="#cb23-673"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb23-674"><a href="#cb23-674"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
+<span id="cb23-675"><a href="#cb23-675"></a><span class="in">```</span></span>
+<span id="cb23-676"><a href="#cb23-676"></a><span class="fu">## Executive Summary</span></span>
+<span id="cb23-677"><a href="#cb23-677"></a></span>
+<span id="cb23-678"><a href="#cb23-678"></a>Summarize the work you've done here to provide a brief (200-300 word) data-driven summary of the 2024 Premier League season using your work in Lab 10. Your summary should be professional, clear, and all claims should be corroborated with statistical support.</span>
+<span id="cb23-679"><a href="#cb23-679"></a></span>
+<span id="cb23-680"><a href="#cb23-680"></a>**Solution**</span>
+<span id="cb23-681"><a href="#cb23-681"></a></span>
+<span id="cb23-682"><a href="#cb23-682"></a></span>
+<span id="cb23-683"><a href="#cb23-683"></a>The 2024 Premier League season was a season defined by storylines. The first 15 games saw a tight pack, with the leader in legs won changing several times. By week 30, we entered the peak of Michael van Gerwen's best performance, which put him firmly ahead of the rest of the field. By week 45, Humphries seperated himself from the other players, with a strong lead until week 75. From then on, Littler increased his lead almost every night, finishing with a ~25 leg margin above second place. The volatility of the standings, as seen in @fig-CumulativeLegs, makes it clear that this scenario would not be easy to predict on the player or league level. </span>
+<span id="cb23-684"><a href="#cb23-684"></a></span>
+<span id="cb23-685"><a href="#cb23-685"></a>Analyzing the MLE estimates for the Altham distributions, we can see that the probability of winning one leg was highly correlated (really, we should test this) to the final standings (@tbl-MLEb). This makes sense, performing well over cumulative legs won corresponded to a higher final standing. The theta in the non-Beta distribution also indicates that a more stable probability of winning each leg often resulted in more wins over the season (@tbl-MLEb). The Altham-Beta-Binomial MLE table shows us that most of the top players had higher standard deviations in their odds of winning a single leg than the lower-ranked players. This is interesting, as it suggests a player should work on a better average leg rather than a more consistent good performance.</span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Hudson Miller · Colgate University</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
 
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

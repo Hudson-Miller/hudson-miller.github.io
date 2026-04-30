@@ -92,16 +92,16 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bcb4737e8fbcf1e9dfc00b59f8305558.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ab8bc71f45afde97538d8ceca41e9436.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -123,6 +123,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -157,98 +158,153 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Hudson Miller</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Lab Two – Basic Tasks in R</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Math 240 Labs</a></li><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Lab 2</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="../">Hudson Miller</a> 
-    </div>
-      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Overview</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Math 240 Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 2/Lab2WriteUp.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab Two – Basic Tasks in R</span></a>
+ <span class="menu-text">Lab 2</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 3/Lab3WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Three – Matrices and Data Frames in R</span></a>
+ <span class="menu-text">Lab 3</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 4/Lab4WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Four – Programming in R</span></a>
+ <span class="menu-text">Lab 4</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 5-6/Lab5WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Five-Six – Data Wrangling in R</span></a>
+ <span class="menu-text">Lab 5–6</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 8-9/Lab8WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Eight – Probability</span></a>
+ <span class="menu-text">Lab 8–9</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 10/Lab10WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Ten – Point Estimation</span></a>
+ <span class="menu-text">Lab 10</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 11/Lab11WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Eleven – Point Estimation and Resampling</span></a>
+ <span class="menu-text">Lab 11</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 13/Lab13WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Thirteen – Statistical Inference</span></a>
+ <span class="menu-text">Lab 13</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Colgate Men’s Rowing Performance Data</span></a>
+ <span class="menu-text">Rowing Data Analysis</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -281,9 +337,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Math 240 Labs</a></li><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Lab 2</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab Two – Basic Tasks in R</h1>
+<div class="quarto-title-block"><div><h1 class="title">Lab Two – Basic Tasks in R</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -581,6 +637,8 @@ the command instead of actually citing. --></p>
 <p>The class is <code>character</code>. This is because the <code>character</code> class is “lower” than the <code>numeric</code> class, so the vector will resolve all inputs to the <code>character</code> class.</p>
 
 
+<!-- -->
+
 
 </section>
 </section>
@@ -666,6 +724,57 @@ R Core Team. 2025. <em>R: A Language and Environment for Statistical Computing</
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -995,10 +1104,303 @@ R Core Team. 2025. <em>R: A Language and Environment for Statistical Computing</
       }
     }
   });
-  </script>
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb37" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a href="#cb37-1"></a><span class="co">---</span></span>
+<span id="cb37-2"><a href="#cb37-2"></a><span class="an">title:</span><span class="co"> Lab Two -- Basic Tasks in R # Title of the document</span></span>
+<span id="cb37-3"><a href="#cb37-3"></a></span>
+<span id="cb37-4"><a href="#cb37-4"></a><span class="co"># Bibliography Details</span></span>
+<span id="cb37-5"><a href="#cb37-5"></a><span class="an">bibliography:</span><span class="co"> Lab2References.bib  # Name of bib file in the same folder </span></span>
+<span id="cb37-6"><a href="#cb37-6"></a><span class="an">bibliographystyle:</span><span class="co"> apa                   # Bibliography style</span></span>
+<span id="cb37-7"><a href="#cb37-7"></a></span>
+<span id="cb37-8"><a href="#cb37-8"></a><span class="an">execute:</span></span>
+<span id="cb37-9"><a href="#cb37-9"></a><span class="co">  warning: false</span></span>
+<span id="cb37-10"><a href="#cb37-10"></a><span class="co">  message: false</span></span>
+<span id="cb37-11"><a href="#cb37-11"></a></span>
+<span id="cb37-12"><a href="#cb37-12"></a><span class="co"># Below will do html by default. To render the entire project</span></span>
+<span id="cb37-13"><a href="#cb37-13"></a><span class="co"># Use the following code:</span></span>
+<span id="cb37-14"><a href="#cb37-14"></a><span class="co"># quarto::quarto_render("Lab2WriteUp.qmd")</span></span>
+<span id="cb37-15"><a href="#cb37-15"></a></span>
+<span id="cb37-16"><a href="#cb37-16"></a><span class="an">format:</span></span>
+<span id="cb37-17"><a href="#cb37-17"></a><span class="co">  html: </span></span>
+<span id="cb37-18"><a href="#cb37-18"></a><span class="co">    number-sections: TRUE</span></span>
+<span id="cb37-19"><a href="#cb37-19"></a><span class="co">    code-fold: TRUE</span></span>
+<span id="cb37-20"><a href="#cb37-20"></a><span class="co">    code-line-numbers: TRUE</span></span>
+<span id="cb37-21"><a href="#cb37-21"></a><span class="co">    cap-location: top </span></span>
+<span id="cb37-22"><a href="#cb37-22"></a><span class="co">  pdf:</span></span>
+<span id="cb37-23"><a href="#cb37-23"></a><span class="co">    documentclass: article</span></span>
+<span id="cb37-24"><a href="#cb37-24"></a><span class="co">    number-sections: TRUE</span></span>
+<span id="cb37-25"><a href="#cb37-25"></a><span class="co">    reference-section-title: "References" </span></span>
+<span id="cb37-26"><a href="#cb37-26"></a><span class="co">    code-line-numbers: TRUE</span></span>
+<span id="cb37-27"><a href="#cb37-27"></a><span class="co">    cap-location: top </span></span>
+<span id="cb37-28"><a href="#cb37-28"></a><span class="co">    include-in-header:</span></span>
+<span id="cb37-29"><a href="#cb37-29"></a><span class="co">      - text: |</span></span>
+<span id="cb37-30"><a href="#cb37-30"></a><span class="co">          \usepackage{amsmath}</span></span>
+<span id="cb37-31"><a href="#cb37-31"></a><span class="co">          \usepackage[dvipsnames]{xcolor}</span></span>
+<span id="cb37-32"><a href="#cb37-32"></a><span class="co">          \usepackage[shortlabels]{enumitem}</span></span>
+<span id="cb37-33"><a href="#cb37-33"></a><span class="co">          \usepackage{parskip}</span></span>
+<span id="cb37-34"><a href="#cb37-34"></a><span class="co">          \usepackage{hyperref}</span></span>
+<span id="cb37-35"><a href="#cb37-35"></a><span class="co">          \usepackage{geometry}</span></span>
+<span id="cb37-36"><a href="#cb37-36"></a><span class="co">          \usepackage{float}</span></span>
+<span id="cb37-37"><a href="#cb37-37"></a><span class="co">    geometry:</span></span>
+<span id="cb37-38"><a href="#cb37-38"></a><span class="co">      - top=0.75in</span></span>
+<span id="cb37-39"><a href="#cb37-39"></a><span class="co">      - left=0.75in</span></span>
+<span id="cb37-40"><a href="#cb37-40"></a><span class="co">      - bottom=0.75in</span></span>
+<span id="cb37-41"><a href="#cb37-41"></a><span class="co">      - right=0.75in</span></span>
+<span id="cb37-42"><a href="#cb37-42"></a><span class="an">format-links:</span><span class="co"> [pdf]</span></span>
+<span id="cb37-43"><a href="#cb37-43"></a><span class="co">---</span></span>
+<span id="cb37-46"><a href="#cb37-46"></a><span class="in">```{r}</span></span>
+<span id="cb37-47"><a href="#cb37-47"></a><span class="co">#| echo: false</span></span>
+<span id="cb37-48"><a href="#cb37-48"></a></span>
+<span id="cb37-49"><a href="#cb37-49"></a>default_chunk_hook  <span class="ot">&lt;-</span> knitr<span class="sc">::</span>knit_hooks<span class="sc">$</span><span class="fu">get</span>(<span class="st">"chunk"</span>)</span>
+<span id="cb37-50"><a href="#cb37-50"></a></span>
+<span id="cb37-51"><a href="#cb37-51"></a>latex_font_size <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Huge"</span>, <span class="st">"huge"</span>, <span class="st">"LARGE"</span>, <span class="st">"Large"</span>, </span>
+<span id="cb37-52"><a href="#cb37-52"></a>                     <span class="st">"large"</span>, <span class="st">"normalsize"</span>, <span class="st">"small"</span>, </span>
+<span id="cb37-53"><a href="#cb37-53"></a>                     <span class="st">"footnotesize"</span>, <span class="st">"scriptsize"</span>, <span class="st">"tiny"</span>)</span>
+<span id="cb37-54"><a href="#cb37-54"></a></span>
+<span id="cb37-55"><a href="#cb37-55"></a>knitr<span class="sc">::</span>knit_hooks<span class="sc">$</span><span class="fu">set</span>(<span class="at">chunk =</span> <span class="cf">function</span>(x, options) {</span>
+<span id="cb37-56"><a href="#cb37-56"></a>  x <span class="ot">&lt;-</span> <span class="fu">default_chunk_hook</span>(x, options)</span>
+<span id="cb37-57"><a href="#cb37-57"></a>  <span class="cf">if</span>(options<span class="sc">$</span>size <span class="sc">%in%</span> latex_font_size) {</span>
+<span id="cb37-58"><a href="#cb37-58"></a>    <span class="fu">paste0</span>(<span class="st">"</span><span class="sc">\n</span><span class="st"> </span><span class="sc">\\</span><span class="st">"</span>, options<span class="sc">$</span>size, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>, </span>
+<span id="cb37-59"><a href="#cb37-59"></a>      x, </span>
+<span id="cb37-60"><a href="#cb37-60"></a>      <span class="st">"</span><span class="sc">\n\n</span><span class="st"> </span><span class="sc">\\</span><span class="st">normalsize"</span></span>
+<span id="cb37-61"><a href="#cb37-61"></a>    )</span>
+<span id="cb37-62"><a href="#cb37-62"></a>  } <span class="cf">else</span> {</span>
+<span id="cb37-63"><a href="#cb37-63"></a>    x</span>
+<span id="cb37-64"><a href="#cb37-64"></a>  }</span>
+<span id="cb37-65"><a href="#cb37-65"></a>})</span>
+<span id="cb37-66"><a href="#cb37-66"></a></span>
+<span id="cb37-67"><a href="#cb37-67"></a><span class="in">```</span></span>
+<span id="cb37-68"><a href="#cb37-68"></a></span>
+<span id="cb37-71"><a href="#cb37-71"></a><span class="in">```{r}</span></span>
+<span id="cb37-72"><a href="#cb37-72"></a><span class="co">#| label: load-packages</span></span>
+<span id="cb37-73"><a href="#cb37-73"></a><span class="co">#| include: false</span></span>
+<span id="cb37-74"><a href="#cb37-74"></a><span class="co"># Load Libraries here</span></span>
+<span id="cb37-75"><a href="#cb37-75"></a><span class="in">```</span></span>
+<span id="cb37-76"><a href="#cb37-76"></a></span>
+<span id="cb37-77"><a href="#cb37-77"></a><span class="ss">* </span>Use <span class="in">`R`</span> <span class="co">[</span><span class="ot">@R</span><span class="co">]</span> to complete the tasks below. Make sure to start your solutions in on a new line that starts with "**Solution**:".</span>
+<span id="cb37-78"><a href="#cb37-78"></a><span class="ss">* </span>Make sure to use the Quarto Cheatsheet. This will make completing and writing up the lab *much* easier.</span>
+<span id="cb37-79"><a href="#cb37-79"></a></span>
+<span id="cb37-80"><a href="#cb37-80"></a><span class="fu"># Libraries and Packages</span></span>
+<span id="cb37-81"><a href="#cb37-81"></a></span>
+<span id="cb37-82"><a href="#cb37-82"></a><span class="fu">## Part a</span></span>
+<span id="cb37-83"><a href="#cb37-83"></a>Install the <span class="in">`esquisse`</span> package for <span class="in">`R`</span>. Report the code below, ensuring to set the <span class="in">`eval`</span> option to <span class="in">`false`</span>, using "<span class="sc">\#</span>| eval: false", so that we don't install the package every time you compile your Quarto document.</span>
+<span id="cb37-84"><a href="#cb37-84"></a></span>
+<span id="cb37-85"><a href="#cb37-85"></a>**Solution**</span>
+<span id="cb37-86"><a href="#cb37-86"></a></span>
+<span id="cb37-89"><a href="#cb37-89"></a><span class="in">```{r}</span></span>
+<span id="cb37-90"><a href="#cb37-90"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-91"><a href="#cb37-91"></a><span class="fu">install.packages</span>(<span class="st">"esquisse"</span>)</span>
+<span id="cb37-92"><a href="#cb37-92"></a><span class="in">```</span></span>
+<span id="cb37-93"><a href="#cb37-93"></a></span>
+<span id="cb37-94"><a href="#cb37-94"></a><span class="fu">## Part b</span></span>
+<span id="cb37-95"><a href="#cb37-95"></a>Load the <span class="in">`esquisse`</span> package for <span class="in">`R`</span>. Report the code below. It does not matter whether you set "<span class="sc">\#</span>| eval: false" because loading the package does not add a lot of time. Note you will not evaluate any code that uses the <span class="in">`esquisse`</span> package, so there is no need to load it as you compile your Quarto document.</span>
+<span id="cb37-96"><a href="#cb37-96"></a></span>
+<span id="cb37-97"><a href="#cb37-97"></a>**Solution**</span>
+<span id="cb37-98"><a href="#cb37-98"></a></span>
+<span id="cb37-101"><a href="#cb37-101"></a><span class="in">```{r}</span></span>
+<span id="cb37-102"><a href="#cb37-102"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-103"><a href="#cb37-103"></a><span class="fu">library</span>(esquisse)</span>
+<span id="cb37-104"><a href="#cb37-104"></a><span class="in">```</span></span>
+<span id="cb37-105"><a href="#cb37-105"></a></span>
+<span id="cb37-106"><a href="#cb37-106"></a><span class="fu">## Part c</span></span>
+<span id="cb37-107"><a href="#cb37-107"></a>How can you ask for help about the  <span class="in">`esquisse`</span> package for <span class="in">`R`</span>? Report the code below, ensuring to set the <span class="in">`eval`</span> option to <span class="in">`false`</span>, using "<span class="sc">\#</span>| eval: false", so that the help document isn't loaded every time you compile your Quarto document.</span>
+<span id="cb37-108"><a href="#cb37-108"></a></span>
+<span id="cb37-109"><a href="#cb37-109"></a>**Solution**</span>
+<span id="cb37-110"><a href="#cb37-110"></a></span>
+<span id="cb37-113"><a href="#cb37-113"></a><span class="in">```{r}</span></span>
+<span id="cb37-114"><a href="#cb37-114"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-115"><a href="#cb37-115"></a><span class="fu">help</span>(<span class="st">"esquisse"</span>)</span>
+<span id="cb37-116"><a href="#cb37-116"></a><span class="in">```</span></span>
+<span id="cb37-117"><a href="#cb37-117"></a></span>
+<span id="cb37-118"><a href="#cb37-118"></a><span class="fu">## Part d</span></span>
+<span id="cb37-119"><a href="#cb37-119"></a>Is a demo or vignette available for the  <span class="in">`esquisse`</span> package for <span class="in">`R`</span>? Report the code below, ensuring to set the <span class="in">`eval`</span> option to <span class="in">`false`</span>, using "<span class="sc">\#</span>| eval: false", so that the you don't get errors when you compile your Quarto document.</span>
+<span id="cb37-120"><a href="#cb37-120"></a></span>
+<span id="cb37-121"><a href="#cb37-121"></a>**Solution**</span>
+<span id="cb37-122"><a href="#cb37-122"></a></span>
+<span id="cb37-123"><a href="#cb37-123"></a>Yes, there is a vignette available for <span class="in">`esquisse`</span>. One is called get-started, and one is called shiny-usage.</span>
+<span id="cb37-126"><a href="#cb37-126"></a><span class="in">```{r}</span></span>
+<span id="cb37-127"><a href="#cb37-127"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-128"><a href="#cb37-128"></a><span class="fu">vignette</span>(<span class="at">package =</span> <span class="st">"esquisse"</span>)</span>
+<span id="cb37-129"><a href="#cb37-129"></a><span class="in">```</span></span>
+<span id="cb37-130"><a href="#cb37-130"></a></span>
+<span id="cb37-131"><a href="#cb37-131"></a>There are no demos for esquisse.</span>
+<span id="cb37-132"><a href="#cb37-132"></a></span>
+<span id="cb37-135"><a href="#cb37-135"></a><span class="in">```{r}</span></span>
+<span id="cb37-136"><a href="#cb37-136"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-137"><a href="#cb37-137"></a><span class="fu">demo</span>(<span class="at">package =</span> <span class="st">"esquisse"</span>)</span>
+<span id="cb37-138"><a href="#cb37-138"></a><span class="in">```</span></span>
+<span id="cb37-139"><a href="#cb37-139"></a></span>
+<span id="cb37-140"><a href="#cb37-140"></a></span>
+<span id="cb37-141"><a href="#cb37-141"></a></span>
+<span id="cb37-142"><a href="#cb37-142"></a><span class="fu">## Part e</span></span>
+<span id="cb37-143"><a href="#cb37-143"></a>Add the BibTeX citation for <span class="in">`esquisse`</span> package for <span class="in">`R`</span> to your <span class="in">`.bib`</span> file and cite it in a sentence describing what the package does below. Note you can reference a citation named <span class="in">`esquisse`</span> using "<span class="co">[</span><span class="ot">@\hspace{-0em}esquisse</span><span class="co">]</span>".</span>
+<span id="cb37-144"><a href="#cb37-144"></a><span class="co">&lt;!-- Note the \hspace{-0em} above is for printing </span></span>
+<span id="cb37-145"><a href="#cb37-145"></a><span class="co">the command instead of actually citing. --&gt;</span></span>
+<span id="cb37-146"><a href="#cb37-146"></a></span>
+<span id="cb37-147"><a href="#cb37-147"></a>**Solution**</span>
+<span id="cb37-148"><a href="#cb37-148"></a></span>
+<span id="cb37-149"><a href="#cb37-149"></a>The <span class="in">`esquisse`</span> <span class="co">[</span><span class="ot">@esquisse</span><span class="co">]</span> package creates a GUI in <span class="in">`r`</span> for graphs, allowing users to interact with graphs and data using drag-and-drop operations rather than strictly <span class="in">`r`</span> code.</span>
+<span id="cb37-150"><a href="#cb37-150"></a></span>
+<span id="cb37-151"><a href="#cb37-151"></a></span>
+<span id="cb37-152"><a href="#cb37-152"></a><span class="fu">## Part f</span></span>
+<span id="cb37-153"><a href="#cb37-153"></a>Run <span class="in">`esquisser()`</span> in your console -- not in a chunk of <span class="in">`R`</span> code in your Quarto document. </span>
+<span id="cb37-154"><a href="#cb37-154"></a></span>
+<span id="cb37-155"><a href="#cb37-155"></a>i. Select <span class="in">`palmerpenguins`</span> from the "Select an environment in which to search:" dropdown. This should automatically select <span class="in">`penguins`</span> in the "Select a data.frame:" dropdown. Click "Import Data".</span>
+<span id="cb37-156"><a href="#cb37-156"></a>ii. Drag <span class="in">`body_mass_g`</span> to the X box and <span class="in">`species`</span> to the fill box. </span>
+<span id="cb37-157"><a href="#cb37-157"></a>iii. Describe what you see in words. What can you conclude about Adelie, Chinstrap, and Gentoo penguins based on the resulting plot? </span>
+<span id="cb37-158"><a href="#cb37-158"></a></span>
+<span id="cb37-159"><a href="#cb37-159"></a>**Solution**</span>
+<span id="cb37-160"><a href="#cb37-160"></a></span>
+<span id="cb37-161"><a href="#cb37-161"></a>The overall distribution of body mass has a peak around 3500g,  mainly driven by the large count of the Adelie species with a large concentration of penguins around the 3500g mark. The Chinstrap penguins are similar, though there were less of them represented in the data, and they appear to skew slightly further right than the Adelie penguins. The Gentoo penguins are the heaviest, with a relatively even distribution of body masses between 4500g and 6000g. Overall, the order of the body mass of the average penguin of each species goes Adelies, Chinstraps, and then Gentoos from least to greatest.</span>
+<span id="cb37-162"><a href="#cb37-162"></a></span>
+<span id="cb37-163"><a href="#cb37-163"></a><span class="fu"># Objects and Vectors</span></span>
+<span id="cb37-164"><a href="#cb37-164"></a>Create the following vectors in <span class="in">`R`</span>. In some cases, you may be able to use <span class="in">`seq()`</span> or <span class="in">`rep()`</span> while in others you cannot. Use these functions when possible, otherwise manually create the vector and explain why that was necessary.</span>
+<span id="cb37-165"><a href="#cb37-165"></a></span>
+<span id="cb37-166"><a href="#cb37-166"></a>**Some Snowday Notes**</span>
+<span id="cb37-167"><a href="#cb37-167"></a></span>
+<span id="cb37-168"><a href="#cb37-168"></a>There are three ways we will create a vector. Most simply, we can create one from scratch. For example, I create a vector of odds, and evens less than 10 below.</span>
+<span id="cb37-169"><a href="#cb37-169"></a></span>
+<span id="cb37-172"><a href="#cb37-172"></a><span class="in">```{r}</span></span>
+<span id="cb37-173"><a href="#cb37-173"></a><span class="co">#| size: "scriptsize"</span></span>
+<span id="cb37-174"><a href="#cb37-174"></a><span class="co">#| code-fold: FALSE</span></span>
+<span id="cb37-175"><a href="#cb37-175"></a>(odds <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">9</span>))</span>
+<span id="cb37-176"><a href="#cb37-176"></a>(evens <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">6</span>, <span class="dv">8</span>))</span>
+<span id="cb37-177"><a href="#cb37-177"></a><span class="in">```</span></span>
+<span id="cb37-178"><a href="#cb37-178"></a></span>
+<span id="cb37-179"><a href="#cb37-179"></a>There are also built-in functions like <span class="in">`seq(...)`</span> for doing this:</span>
+<span id="cb37-182"><a href="#cb37-182"></a><span class="in">```{r}</span></span>
+<span id="cb37-183"><a href="#cb37-183"></a><span class="co">#| size: "scriptsize"</span></span>
+<span id="cb37-184"><a href="#cb37-184"></a><span class="co">#| code-fold: FALSE</span></span>
+<span id="cb37-185"><a href="#cb37-185"></a>(odds <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from=</span><span class="dv">1</span>, <span class="at">to=</span><span class="dv">9</span>, <span class="at">by=</span><span class="dv">2</span>))</span>
+<span id="cb37-186"><a href="#cb37-186"></a>(evens <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from=</span><span class="dv">2</span>, <span class="at">to=</span><span class="dv">8</span>, <span class="at">by=</span><span class="dv">2</span>))</span>
+<span id="cb37-187"><a href="#cb37-187"></a><span class="in">```</span></span>
+<span id="cb37-188"><a href="#cb37-188"></a>Either approach is easy enough with a small number of elements, but what if I wanted odds less than 100? 1000? 1 million? The <span class="in">`rep(...)`</span> and <span class="in">`seq()`</span> approaches would be far more efficient.</span>
+<span id="cb37-189"><a href="#cb37-189"></a></span>
+<span id="cb37-190"><a href="#cb37-190"></a>We can also create repeating sequences by hand</span>
+<span id="cb37-193"><a href="#cb37-193"></a><span class="in">```{r}</span></span>
+<span id="cb37-194"><a href="#cb37-194"></a><span class="co">#| size: "scriptsize"</span></span>
+<span id="cb37-195"><a href="#cb37-195"></a><span class="co">#| code-fold: FALSE</span></span>
+<span id="cb37-196"><a href="#cb37-196"></a>(repeating.seq1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>))</span>
+<span id="cb37-197"><a href="#cb37-197"></a>(repeating.seq2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">3</span>, <span class="dv">3</span>))</span>
+<span id="cb37-198"><a href="#cb37-198"></a><span class="in">```</span></span>
+<span id="cb37-199"><a href="#cb37-199"></a>or using a built-in function <span class="in">`rep(...)`</span></span>
+<span id="cb37-202"><a href="#cb37-202"></a><span class="in">```{r}</span></span>
+<span id="cb37-203"><a href="#cb37-203"></a><span class="co">#| size: "scriptsize"</span></span>
+<span id="cb37-204"><a href="#cb37-204"></a><span class="co">#| code-fold: FALSE</span></span>
+<span id="cb37-205"><a href="#cb37-205"></a>(repeating.seq1 <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">times=</span><span class="dv">3</span>))</span>
+<span id="cb37-206"><a href="#cb37-206"></a>(repeating.seq2 <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="at">each=</span><span class="dv">3</span>))</span>
+<span id="cb37-207"><a href="#cb37-207"></a><span class="in">```</span></span>
+<span id="cb37-208"><a href="#cb37-208"></a></span>
+<span id="cb37-209"><a href="#cb37-209"></a>There are some vectors for which we can't use a <span class="in">`seq()`</span> or <span class="in">`rep()`</span>. For example, consider the prime numbers less than 10. The primes are not sequential (e.g., jump by a fixed amount), nor are they repeating.</span>
+<span id="cb37-212"><a href="#cb37-212"></a><span class="in">```{r}</span></span>
+<span id="cb37-213"><a href="#cb37-213"></a><span class="co">#| size: "scriptsize"</span></span>
+<span id="cb37-214"><a href="#cb37-214"></a><span class="co">#| code-fold: FALSE</span></span>
+<span id="cb37-215"><a href="#cb37-215"></a>primes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">7</span>)</span>
+<span id="cb37-216"><a href="#cb37-216"></a><span class="in">```</span></span>
+<span id="cb37-217"><a href="#cb37-217"></a>**Note**: There is a <span class="in">`primes`</span> package for <span class="in">`R`</span> <span class="co">[</span><span class="ot">@primes</span><span class="co">]</span> that contains a <span class="in">`generate_primes(min, max)`</span> function for generating a vector of primes from <span class="in">`min`</span> to <span class="in">`max`</span>.</span>
+<span id="cb37-218"><a href="#cb37-218"></a></span>
+<span id="cb37-219"><a href="#cb37-219"></a></span>
+<span id="cb37-220"><a href="#cb37-220"></a><span class="fu">## Part a</span></span>
+<span id="cb37-221"><a href="#cb37-221"></a>The Fibonacci Sequence is a recursive formula:</span>
+<span id="cb37-222"><a href="#cb37-222"></a>$$F_n = F_{n-1} + F_{n-2}$$</span>
+<span id="cb37-223"><a href="#cb37-223"></a>where $F_0=0$ and $F_1=1$. </span>
+<span id="cb37-224"><a href="#cb37-224"></a></span>
+<span id="cb37-225"><a href="#cb37-225"></a>Create a vector of the first 10 Fibonacci numbers.</span>
+<span id="cb37-226"><a href="#cb37-226"></a></span>
+<span id="cb37-227"><a href="#cb37-227"></a>**Solution**</span>
+<span id="cb37-228"><a href="#cb37-228"></a></span>
+<span id="cb37-229"><a href="#cb37-229"></a>With what we've learned in class, the best way to create this vector would probably be to list it explicitly using the <span class="in">`c()`</span> function:</span>
+<span id="cb37-230"><a href="#cb37-230"></a></span>
+<span id="cb37-233"><a href="#cb37-233"></a><span class="in">```{r}</span></span>
+<span id="cb37-234"><a href="#cb37-234"></a>(<span class="at">fib.c =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">8</span>,<span class="dv">13</span>,<span class="dv">21</span>,<span class="dv">34</span>))</span>
+<span id="cb37-235"><a href="#cb37-235"></a><span class="in">```</span></span>
+<span id="cb37-236"><a href="#cb37-236"></a></span>
+<span id="cb37-237"><a href="#cb37-237"></a>I was curious about how we could create functions with their outputs stored to vectors, and came up with this:</span>
+<span id="cb37-238"><a href="#cb37-238"></a></span>
+<span id="cb37-241"><a href="#cb37-241"></a><span class="in">```{r}</span></span>
+<span id="cb37-242"><a href="#cb37-242"></a>fib <span class="ot">=</span> <span class="fu">numeric</span>(<span class="dv">10</span>)</span>
+<span id="cb37-243"><a href="#cb37-243"></a>fib[<span class="dv">1</span>] <span class="ot">=</span> <span class="dv">0</span></span>
+<span id="cb37-244"><a href="#cb37-244"></a>fib[<span class="dv">2</span>] <span class="ot">=</span> <span class="dv">1</span></span>
+<span id="cb37-245"><a href="#cb37-245"></a></span>
+<span id="cb37-246"><a href="#cb37-246"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">10</span>) {</span>
+<span id="cb37-247"><a href="#cb37-247"></a>  fib[i] <span class="ot">=</span> fib[i<span class="dv">-2</span>] <span class="sc">+</span> fib[i<span class="dv">-1</span>]</span>
+<span id="cb37-248"><a href="#cb37-248"></a>}</span>
+<span id="cb37-249"><a href="#cb37-249"></a></span>
+<span id="cb37-250"><a href="#cb37-250"></a>fib</span>
+<span id="cb37-251"><a href="#cb37-251"></a><span class="in">```</span></span>
+<span id="cb37-252"><a href="#cb37-252"></a></span>
+<span id="cb37-253"><a href="#cb37-253"></a><span class="fu">## Part b</span></span>
+<span id="cb37-254"><a href="#cb37-254"></a>Triangular Numbers are the cumulative sums of natural numbers:</span>
+<span id="cb37-255"><a href="#cb37-255"></a>$$F_n = \frac{n(n+1)}{2}.$$</span>
+<span id="cb37-256"><a href="#cb37-256"></a></span>
+<span id="cb37-257"><a href="#cb37-257"></a>Create a vector of the first 10 Triangular Numbers. </span>
+<span id="cb37-258"><a href="#cb37-258"></a></span>
+<span id="cb37-259"><a href="#cb37-259"></a>**Solution**</span>
+<span id="cb37-260"><a href="#cb37-260"></a></span>
+<span id="cb37-261"><a href="#cb37-261"></a>Again, I do not believe that this is easy to do with the <span class="in">`seq()`</span> and <span class="in">`rep()`</span> functions. We use the following function to store the sequence output to the <span class="in">`tri`</span> vector:</span>
+<span id="cb37-262"><a href="#cb37-262"></a></span>
+<span id="cb37-265"><a href="#cb37-265"></a><span class="in">```{r}</span></span>
+<span id="cb37-266"><a href="#cb37-266"></a>tri <span class="ot">=</span> <span class="fu">numeric</span>(<span class="dv">10</span>)</span>
+<span id="cb37-267"><a href="#cb37-267"></a></span>
+<span id="cb37-268"><a href="#cb37-268"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) {</span>
+<span id="cb37-269"><a href="#cb37-269"></a>  tri[i] <span class="ot">=</span> (i)<span class="sc">*</span>(i<span class="sc">+</span><span class="dv">1</span>)<span class="sc">/</span><span class="dv">2</span></span>
+<span id="cb37-270"><a href="#cb37-270"></a>}</span>
+<span id="cb37-271"><a href="#cb37-271"></a></span>
+<span id="cb37-272"><a href="#cb37-272"></a>tri</span>
+<span id="cb37-273"><a href="#cb37-273"></a></span>
+<span id="cb37-274"><a href="#cb37-274"></a><span class="in">```</span></span>
+<span id="cb37-275"><a href="#cb37-275"></a></span>
+<span id="cb37-276"><a href="#cb37-276"></a><span class="fu">## Part c</span></span>
+<span id="cb37-277"><a href="#cb37-277"></a>Suppose I were designing a repeated meausres experiment with three treatment conditions. Each of $n=10$ participants (with <span class="in">`ID`</span> 1 to 10) will receive *all* experimental conditions, call them "Control", "Treatment A", and "Treatment B". </span>
+<span id="cb37-278"><a href="#cb37-278"></a></span>
+<span id="cb37-279"><a href="#cb37-279"></a>Consider setting up data entry for this experiment.</span>
+<span id="cb37-280"><a href="#cb37-280"></a></span>
+<span id="cb37-281"><a href="#cb37-281"></a>i. Create a vector containing each <span class="in">`ID`</span> repeated three times, once for each treatment.</span>
+<span id="cb37-282"><a href="#cb37-282"></a>ii. Create a vector containing each <span class="in">`Treatment`</span> repeated for each participant ID.</span>
+<span id="cb37-283"><a href="#cb37-283"></a></span>
+<span id="cb37-284"><a href="#cb37-284"></a>**Solution**</span>
+<span id="cb37-285"><a href="#cb37-285"></a></span>
+<span id="cb37-286"><a href="#cb37-286"></a>i.</span>
+<span id="cb37-287"><a href="#cb37-287"></a></span>
+<span id="cb37-290"><a href="#cb37-290"></a><span class="in">```{r}</span></span>
+<span id="cb37-291"><a href="#cb37-291"></a>(<span class="at">ID =</span> <span class="fu">rep</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>), <span class="at">each =</span> <span class="dv">3</span>))</span>
+<span id="cb37-292"><a href="#cb37-292"></a><span class="in">```</span></span>
+<span id="cb37-293"><a href="#cb37-293"></a></span>
+<span id="cb37-294"><a href="#cb37-294"></a>ii.</span>
+<span id="cb37-297"><a href="#cb37-297"></a><span class="in">```{r}</span></span>
+<span id="cb37-298"><a href="#cb37-298"></a>(<span class="at">Treatment =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Control"</span>, <span class="st">"Treatment A"</span>, <span class="st">"Treatment B"</span>), <span class="at">times =</span> <span class="dv">10</span>))</span>
+<span id="cb37-299"><a href="#cb37-299"></a><span class="in">```</span></span>
+<span id="cb37-300"><a href="#cb37-300"></a></span>
+<span id="cb37-301"><a href="#cb37-301"></a><span class="fu">## Part d</span></span>
+<span id="cb37-302"><a href="#cb37-302"></a>Create a vector containing the <span class="in">`character`</span> "MATH" and the <span class="in">`numeric`</span> 240. What is the resulting class? Explain why in a sentence.</span>
+<span id="cb37-303"><a href="#cb37-303"></a></span>
+<span id="cb37-304"><a href="#cb37-304"></a>**Solution**</span>
+<span id="cb37-305"><a href="#cb37-305"></a></span>
+<span id="cb37-308"><a href="#cb37-308"></a><span class="in">```{r}</span></span>
+<span id="cb37-309"><a href="#cb37-309"></a>(<span class="at">class =</span> <span class="fu">c</span>(<span class="st">"MATH"</span>, <span class="dv">240</span>))</span>
+<span id="cb37-310"><a href="#cb37-310"></a><span class="fu">class</span>(class)</span>
+<span id="cb37-311"><a href="#cb37-311"></a><span class="in">```</span></span>
+<span id="cb37-312"><a href="#cb37-312"></a></span>
+<span id="cb37-313"><a href="#cb37-313"></a>The class is <span class="in">`character`</span>. This is because the <span class="in">`character`</span> class is "lower" than the <span class="in">`numeric`</span> class, so the vector will resolve all inputs to the <span class="in">`character`</span> class.</span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Hudson Miller · Colgate University</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
 
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

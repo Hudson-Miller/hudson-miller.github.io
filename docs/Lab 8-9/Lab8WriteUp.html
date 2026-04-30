@@ -92,16 +92,16 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bcb4737e8fbcf1e9dfc00b59f8305558.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ab8bc71f45afde97538d8ceca41e9436.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -123,6 +123,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -157,98 +158,153 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Hudson Miller</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 8-9/Lab8WriteUp.html">Lab Eight – Probability</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Math 240 Labs</a></li><li class="breadcrumb-item"><a href="../Lab 8-9/Lab8WriteUp.html">Lab 8–9</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="../">Hudson Miller</a> 
-    </div>
-      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Overview</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Math 240 Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 2/Lab2WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Two – Basic Tasks in R</span></a>
+ <span class="menu-text">Lab 2</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 3/Lab3WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Three – Matrices and Data Frames in R</span></a>
+ <span class="menu-text">Lab 3</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 4/Lab4WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Four – Programming in R</span></a>
+ <span class="menu-text">Lab 4</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 5-6/Lab5WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Five-Six – Data Wrangling in R</span></a>
+ <span class="menu-text">Lab 5–6</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 8-9/Lab8WriteUp.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab Eight – Probability</span></a>
+ <span class="menu-text">Lab 8–9</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 10/Lab10WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Ten – Point Estimation</span></a>
+ <span class="menu-text">Lab 10</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 11/Lab11WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Eleven – Point Estimation and Resampling</span></a>
+ <span class="menu-text">Lab 11</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 13/Lab13WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Thirteen – Statistical Inference</span></a>
+ <span class="menu-text">Lab 13</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Colgate Men’s Rowing Performance Data</span></a>
+ <span class="menu-text">Rowing Data Analysis</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -287,9 +343,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Math 240 Labs</a></li><li class="breadcrumb-item"><a href="../Lab 8-9/Lab8WriteUp.html">Lab 8–9</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab Eight – Probability</h1>
+<div class="quarto-title-block"><div><h1 class="title">Lab Eight – Probability</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -1523,6 +1579,8 @@ window.Quarto = {
 <p>The Binomial and Negative Binomial distributions are identical. The Beta-Binomial distributions have a higher probability of more “extreme” values, as their variance is higher (and, notably, they are also more left-skewed). Altham’s for low theta, and then for larger theta, have the most extreme distributions. Low theta expects very extreme values, and high theta expects very moderate values. The same follows for Altham’s Beta-Binomial distributions.</p>
 
 
+<!-- -->
+
 
 </section>
 
@@ -1601,6 +1659,57 @@ Wolodzko, Tymoteusz. 2026. <em>extraDistr: Additional Univariate and Multivariat
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -1930,10 +2039,990 @@ Wolodzko, Tymoteusz. 2026. <em>extraDistr: Additional Univariate and Multivariat
       }
     }
   });
-  </script>
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb83" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb83-1"><a href="#cb83-1"></a><span class="co">---</span></span>
+<span id="cb83-2"><a href="#cb83-2"></a><span class="an">title:</span><span class="co"> Lab Eight -- Probability # Title of the document</span></span>
+<span id="cb83-3"><a href="#cb83-3"></a></span>
+<span id="cb83-4"><a href="#cb83-4"></a><span class="co"># Bibliography Details</span></span>
+<span id="cb83-5"><a href="#cb83-5"></a><span class="an">bibliography:</span><span class="co"> Lab8References.bib  # Name of bib file in the same folder </span></span>
+<span id="cb83-6"><a href="#cb83-6"></a><span class="an">bibliographystyle:</span><span class="co"> apa            # Bibliography style</span></span>
+<span id="cb83-7"><a href="#cb83-7"></a></span>
+<span id="cb83-8"><a href="#cb83-8"></a><span class="an">execute:</span><span class="co">               # Default settings for code blocks</span></span>
+<span id="cb83-9"><a href="#cb83-9"></a><span class="co">  warning: false       # Do not print warnings</span></span>
+<span id="cb83-10"><a href="#cb83-10"></a><span class="co">  message: false       # Do not print messages</span></span>
+<span id="cb83-11"><a href="#cb83-11"></a><span class="co">  size: "scriptsize"   # Set code size to script size</span></span>
+<span id="cb83-12"><a href="#cb83-12"></a></span>
+<span id="cb83-13"><a href="#cb83-13"></a><span class="co"># Below will do html by default. To render the entire project</span></span>
+<span id="cb83-14"><a href="#cb83-14"></a><span class="co"># Use the following code:</span></span>
+<span id="cb83-15"><a href="#cb83-15"></a><span class="co"># quarto::quarto_render("Lab8WriteUp.qmd")</span></span>
+<span id="cb83-16"><a href="#cb83-16"></a><span class="an">format:</span></span>
+<span id="cb83-17"><a href="#cb83-17"></a><span class="co">  pdf:        # Specify .pdf formatting options </span></span>
+<span id="cb83-18"><a href="#cb83-18"></a><span class="co">    documentclass: article     # Document Class</span></span>
+<span id="cb83-19"><a href="#cb83-19"></a><span class="co">    number-sections: true      # Number Sections</span></span>
+<span id="cb83-20"><a href="#cb83-20"></a><span class="co">    reference-section-title: "References" # Title for reference section</span></span>
+<span id="cb83-21"><a href="#cb83-21"></a><span class="co">    code-line-numbers: true    # Line numbers printed in code</span></span>
+<span id="cb83-22"><a href="#cb83-22"></a><span class="co">    cap-location: top          # Captions at the top of tables </span></span>
+<span id="cb83-23"><a href="#cb83-23"></a><span class="co">    geometry:</span></span>
+<span id="cb83-24"><a href="#cb83-24"></a><span class="co">      - top=0.75in</span></span>
+<span id="cb83-25"><a href="#cb83-25"></a><span class="co">      - left=0.75in</span></span>
+<span id="cb83-26"><a href="#cb83-26"></a><span class="co">      - bottom=0.75in</span></span>
+<span id="cb83-27"><a href="#cb83-27"></a><span class="co">      - right=0.75in</span></span>
+<span id="cb83-28"><a href="#cb83-28"></a><span class="co">  html:       # Specify HTML formatting options </span></span>
+<span id="cb83-29"><a href="#cb83-29"></a><span class="co">    number-sections: true      # Number Sections</span></span>
+<span id="cb83-30"><a href="#cb83-30"></a><span class="co">    code-fold: true            # Button to show code</span></span>
+<span id="cb83-31"><a href="#cb83-31"></a><span class="co">    code-line-numbers: true    # Line numbers printed in code</span></span>
+<span id="cb83-32"><a href="#cb83-32"></a><span class="co">    cap-location: top          # Captions at the top of tables and figures</span></span>
+<span id="cb83-33"><a href="#cb83-33"></a><span class="an">format-links:</span><span class="co"> [pdf]</span></span>
+<span id="cb83-34"><a href="#cb83-34"></a><span class="co">---</span></span>
+<span id="cb83-37"><a href="#cb83-37"></a><span class="in">```{r}</span></span>
+<span id="cb83-38"><a href="#cb83-38"></a><span class="co">#| echo: false</span></span>
+<span id="cb83-39"><a href="#cb83-39"></a></span>
+<span id="cb83-40"><a href="#cb83-40"></a>default_chunk_hook <span class="ot">&lt;-</span> knitr<span class="sc">::</span>knit_hooks<span class="sc">$</span><span class="fu">get</span>(<span class="st">"chunk"</span>)</span>
+<span id="cb83-41"><a href="#cb83-41"></a></span>
+<span id="cb83-42"><a href="#cb83-42"></a>latex_font_size <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb83-43"><a href="#cb83-43"></a>  <span class="st">"Huge"</span>,</span>
+<span id="cb83-44"><a href="#cb83-44"></a>  <span class="st">"huge"</span>,</span>
+<span id="cb83-45"><a href="#cb83-45"></a>  <span class="st">"LARGE"</span>,</span>
+<span id="cb83-46"><a href="#cb83-46"></a>  <span class="st">"Large"</span>,</span>
+<span id="cb83-47"><a href="#cb83-47"></a>  <span class="st">"large"</span>,</span>
+<span id="cb83-48"><a href="#cb83-48"></a>  <span class="st">"normalsize"</span>,</span>
+<span id="cb83-49"><a href="#cb83-49"></a>  <span class="st">"small"</span>,</span>
+<span id="cb83-50"><a href="#cb83-50"></a>  <span class="st">"footnotesize"</span>,</span>
+<span id="cb83-51"><a href="#cb83-51"></a>  <span class="st">"scriptsize"</span>,</span>
+<span id="cb83-52"><a href="#cb83-52"></a>  <span class="st">"tiny"</span></span>
+<span id="cb83-53"><a href="#cb83-53"></a>)</span>
+<span id="cb83-54"><a href="#cb83-54"></a></span>
+<span id="cb83-55"><a href="#cb83-55"></a>knitr<span class="sc">::</span>knit_hooks<span class="sc">$</span><span class="fu">set</span>(<span class="at">chunk =</span> <span class="cf">function</span>(x, options) {</span>
+<span id="cb83-56"><a href="#cb83-56"></a>  x <span class="ot">&lt;-</span> <span class="fu">default_chunk_hook</span>(x, options)</span>
+<span id="cb83-57"><a href="#cb83-57"></a>  <span class="cf">if</span> (options<span class="sc">$</span>size <span class="sc">%in%</span> latex_font_size) {</span>
+<span id="cb83-58"><a href="#cb83-58"></a>    <span class="fu">paste0</span>(<span class="st">"</span><span class="sc">\n</span><span class="st"> </span><span class="sc">\\</span><span class="st">"</span>, options<span class="sc">$</span>size, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>, x, <span class="st">"</span><span class="sc">\n\n</span><span class="st"> </span><span class="sc">\\</span><span class="st">normalsize"</span>)</span>
+<span id="cb83-59"><a href="#cb83-59"></a>  } <span class="cf">else</span> {</span>
+<span id="cb83-60"><a href="#cb83-60"></a>    x</span>
+<span id="cb83-61"><a href="#cb83-61"></a>  }</span>
+<span id="cb83-62"><a href="#cb83-62"></a>})</span>
+<span id="cb83-63"><a href="#cb83-63"></a><span class="in">```</span></span>
+<span id="cb83-64"><a href="#cb83-64"></a></span>
+<span id="cb83-67"><a href="#cb83-67"></a><span class="in">```{r}</span></span>
+<span id="cb83-68"><a href="#cb83-68"></a><span class="co">#| label: load-packages</span></span>
+<span id="cb83-69"><a href="#cb83-69"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb83-70"><a href="#cb83-70"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb83-71"><a href="#cb83-71"></a><span class="fu">library</span>(<span class="st">"extraDistr"</span>)</span>
+<span id="cb83-72"><a href="#cb83-72"></a><span class="in">```</span></span>
+<span id="cb83-73"><a href="#cb83-73"></a></span>
+<span id="cb83-74"><a href="#cb83-74"></a>**Tips**</span>
+<span id="cb83-75"><a href="#cb83-75"></a></span>
+<span id="cb83-76"><a href="#cb83-76"></a><span class="ss">* </span>Complete the tasks below. Make sure to start your solutions in on a new line that starts with "**Solution**:".</span>
+<span id="cb83-77"><a href="#cb83-77"></a><span class="ss">* </span>Make sure to use the Quarto Cheatsheet. This will make completing and writing up the lab *much* easier.</span>
+<span id="cb83-78"><a href="#cb83-78"></a><span class="ss">* </span>Make sure to use "enter" to make your code readable, so it doesn't run off the page. I switched the Quarto document to automatically render to .pdf, so you can see what you're submitting by default. You can switch back for the highlighting by moving the html block above the pdf block in the YAML header.</span>
+<span id="cb83-79"><a href="#cb83-79"></a><span class="ss">* </span>Don't forget that you can copy-and-paste code when you're doing something similar as we did in class!</span>
+<span id="cb83-80"><a href="#cb83-80"></a><span class="ss">* </span>Make sure to plot all computed probabilities. This is good <span class="in">`ggplot`</span> practice AND will help make sure you don't make a mistake when computing the probability.</span>
+<span id="cb83-81"><a href="#cb83-81"></a></span>
+<span id="cb83-82"><a href="#cb83-82"></a><span class="fu"># The Binomial and Negative Binomial Distributions</span></span>
+<span id="cb83-83"><a href="#cb83-83"></a></span>
+<span id="cb83-84"><a href="#cb83-84"></a><span class="fu">## The Binomial Distribution</span></span>
+<span id="cb83-85"><a href="#cb83-85"></a>In many introductory courses, we make the simplifying assumption of independence in Bernoulli trials. For example, when playing best two-out-of-three legs in a darts match, we would assume Player A has an 70% chance of winning each leg. We write:</span>
+<span id="cb83-86"><a href="#cb83-86"></a>$$X \sim \text{Binomial}(n=3, p=0.70)$$</span>
+<span id="cb83-87"><a href="#cb83-87"></a>where</span>
+<span id="cb83-88"><a href="#cb83-88"></a></span>
+<span id="cb83-89"><a href="#cb83-89"></a><span class="ss">* </span>$X$ is the number of legs won</span>
+<span id="cb83-90"><a href="#cb83-90"></a><span class="ss">* </span>$n$ is the number of trials </span>
+<span id="cb83-91"><a href="#cb83-91"></a><span class="ss">* </span>$p$ is the probability of the event of interest</span>
+<span id="cb83-92"><a href="#cb83-92"></a></span>
+<span id="cb83-93"><a href="#cb83-93"></a>Of note, it is not necessarily the case that the players play all three legs -- if either player wins legs one and two the match ends.</span>
+<span id="cb83-94"><a href="#cb83-94"></a></span>
+<span id="cb83-95"><a href="#cb83-95"></a>There are eight possible outcomes for Player A:</span>
+<span id="cb83-96"><a href="#cb83-96"></a></span>
+<span id="cb83-97"><a href="#cb83-97"></a><span class="ss">* </span>(win, win, "win") $\longrightarrow$ Player A wins</span>
+<span id="cb83-98"><a href="#cb83-98"></a><span class="ss">* </span>(win, win, "lose") $\longrightarrow$ Player A wins</span>
+<span id="cb83-99"><a href="#cb83-99"></a><span class="ss">* </span>(win, lose, win) $\longrightarrow$ Player A wins</span>
+<span id="cb83-100"><a href="#cb83-100"></a><span class="ss">* </span>(win, lose, lose) $\longrightarrow$ Player A loses</span>
+<span id="cb83-101"><a href="#cb83-101"></a><span class="ss">* </span>(lose, win, win)  $\longrightarrow$ Player A wins</span>
+<span id="cb83-102"><a href="#cb83-102"></a><span class="ss">* </span>(lose, win, lose) $\longrightarrow$ Player A loses</span>
+<span id="cb83-103"><a href="#cb83-103"></a><span class="ss">* </span>(lose, lose, "win") $\longrightarrow$ Player A loses</span>
+<span id="cb83-104"><a href="#cb83-104"></a><span class="ss">* </span>(lose, lose, "lose") $\longrightarrow$ Player A loses</span>
+<span id="cb83-105"><a href="#cb83-105"></a></span>
+<span id="cb83-106"><a href="#cb83-106"></a>**Note**: I use quotations above to denote outcomes where the last match isn't actually played.</span>
+<span id="cb83-107"><a href="#cb83-107"></a></span>
+<span id="cb83-108"><a href="#cb83-108"></a>**Use the Binomial distribution to compute the probability that Player A wins the match.  Make sure write out your probability statement and work to write it in terms of the distribution function (PMF/CDF) to plot the probability using `ggplot`.**</span>
+<span id="cb83-109"><a href="#cb83-109"></a></span>
+<span id="cb83-110"><a href="#cb83-110"></a>**Solution**</span>
+<span id="cb83-111"><a href="#cb83-111"></a></span>
+<span id="cb83-112"><a href="#cb83-112"></a>We use the binomial distribution with $n=3, p=0.70$ to find the probability of Player A winning $\ge 2$ games: </span>
+<span id="cb83-113"><a href="#cb83-113"></a></span>
+<span id="cb83-114"><a href="#cb83-114"></a>$$P(X \ge 2)$$</span>
+<span id="cb83-115"><a href="#cb83-115"></a></span>
+<span id="cb83-116"><a href="#cb83-116"></a>We can use the PMF for this because it is a discrete variable, which allows us to find $P(X=0)$ and $P(X=1)$, which we can add together to get $P(X \ge 2)=1-P(0)-P(1)$. Now that we know how we want to find the answer, let's plot and compute it:</span>
+<span id="cb83-117"><a href="#cb83-117"></a></span>
+<span id="cb83-120"><a href="#cb83-120"></a><span class="in">```{r}</span></span>
+<span id="cb83-121"><a href="#cb83-121"></a>n <span class="ot">&lt;-</span> <span class="dv">3</span></span>
+<span id="cb83-122"><a href="#cb83-122"></a>p <span class="ot">&lt;-</span> <span class="fl">0.70</span></span>
+<span id="cb83-123"><a href="#cb83-123"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="sc">-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">13</span>) <span class="sc">|&gt;</span></span>
+<span id="cb83-124"><a href="#cb83-124"></a><span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">dbinom</span>(x, <span class="at">size=</span>n, <span class="at">prob=</span>p),</span>
+<span id="cb83-125"><a href="#cb83-125"></a><span class="at">CDF =</span> <span class="fu">pbinom</span>(x, <span class="at">size=</span>n, <span class="at">prob=</span>p))</span>
+<span id="cb83-126"><a href="#cb83-126"></a></span>
+<span id="cb83-127"><a href="#cb83-127"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb83-128"><a href="#cb83-128"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat,</span>
+<span id="cb83-129"><a href="#cb83-129"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-130"><a href="#cb83-130"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">0</span><span class="sc">|</span>x<span class="sc">==</span><span class="dv">1</span>),</span>
+<span id="cb83-131"><a href="#cb83-131"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF),</span>
+<span id="cb83-132"><a href="#cb83-132"></a><span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">linewidth=</span><span class="fl">1.5</span>,<span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-133"><a href="#cb83-133"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-134"><a href="#cb83-134"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Player A wins (x)"</span>,</span>
+<span id="cb83-135"><a href="#cb83-135"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">13</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-136"><a href="#cb83-136"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-137"><a href="#cb83-137"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-138"><a href="#cb83-138"></a></span>
+<span id="cb83-139"><a href="#cb83-139"></a>CDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-140"><a href="#cb83-140"></a><span class="fu">geom_step</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF)) <span class="sc">+</span></span>
+<span id="cb83-141"><a href="#cb83-141"></a><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb83-142"><a href="#cb83-142"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-143"><a href="#cb83-143"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Player A wins (x)"</span>,</span>
+<span id="cb83-144"><a href="#cb83-144"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">13</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-145"><a href="#cb83-145"></a><span class="fu">ylab</span>(<span class="st">"Cumulative Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-146"><a href="#cb83-146"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-147"><a href="#cb83-147"></a>PMF.plot <span class="sc">|</span> CDF.plot</span>
+<span id="cb83-148"><a href="#cb83-148"></a></span>
+<span id="cb83-149"><a href="#cb83-149"></a><span class="co"># 1-PMF(0)-PMF(1)</span></span>
+<span id="cb83-150"><a href="#cb83-150"></a></span>
+<span id="cb83-151"><a href="#cb83-151"></a>(<span class="at">A_win =</span> <span class="dv">1</span><span class="sc">-</span><span class="fu">dbinom</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">prob =</span> <span class="fl">0.7</span>, <span class="at">size =</span> <span class="dv">3</span>)<span class="sc">-</span><span class="fu">dbinom</span>(<span class="at">x =</span> <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.70</span>, <span class="at">size =</span> <span class="dv">3</span>) )</span>
+<span id="cb83-152"><a href="#cb83-152"></a></span>
+<span id="cb83-153"><a href="#cb83-153"></a><span class="in">```</span></span>
+<span id="cb83-154"><a href="#cb83-154"></a></span>
+<span id="cb83-155"><a href="#cb83-155"></a>The probability of Player A winning is 0.784.</span>
+<span id="cb83-156"><a href="#cb83-156"></a></span>
+<span id="cb83-157"><a href="#cb83-157"></a><span class="fu">## The Negative Binomial Distribution</span></span>
+<span id="cb83-158"><a href="#cb83-158"></a>In intermediate courses, we learn the Negative Binomial distribution that we use to model the number of "failures" until the $r$th success. Note that this approach still makes the simplifying assumption of independence in Bernoulli trials.</span>
+<span id="cb83-159"><a href="#cb83-159"></a></span>
+<span id="cb83-160"><a href="#cb83-160"></a>**Specify the two cases necessary to compute the probability. Fully explain these probability statements in the context of a best two-out-of-three match and the Negative Binomial distribution. Finally, compute the probability that Player A wins the match and show you get the same result as the Binomial approach. Make sure write out your probability statement and work to write it in terms of the distribution function (PMF/CDF) to plot the probability using `ggplot`.**</span>
+<span id="cb83-161"><a href="#cb83-161"></a></span>
+<span id="cb83-162"><a href="#cb83-162"></a>**Solution**</span>
+<span id="cb83-163"><a href="#cb83-163"></a></span>
+<span id="cb83-164"><a href="#cb83-164"></a>This situation is asking for the number of failures until the second success, but we must limit our amount of trials to 3. The parameters for the negative binomial distribution are $p$ and $r$, in this case we have $p=0.7$ and $r=2$. We are computing the probability that it takes less than or equal to 3 trials for 2 successes to occur. This time, let's use the CDF. We want $P(X \le 3)$, which corresponds to the CDF evaluated at 1. Let's graph and compute it:</span>
+<span id="cb83-165"><a href="#cb83-165"></a></span>
+<span id="cb83-166"><a href="#cb83-166"></a></span>
+<span id="cb83-167"><a href="#cb83-167"></a></span>
+<span id="cb83-170"><a href="#cb83-170"></a><span class="in">```{r}</span></span>
+<span id="cb83-171"><a href="#cb83-171"></a>r <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb83-172"><a href="#cb83-172"></a>p <span class="ot">&lt;-</span> <span class="fl">0.70</span></span>
+<span id="cb83-173"><a href="#cb83-173"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="sc">-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>) <span class="sc">|&gt;</span></span>
+<span id="cb83-174"><a href="#cb83-174"></a><span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">dnbinom</span>(x, <span class="at">size=</span>r, <span class="at">prob=</span>p),</span>
+<span id="cb83-175"><a href="#cb83-175"></a><span class="at">CDF =</span> <span class="fu">pnbinom</span>(x, <span class="at">size=</span>r, <span class="at">prob=</span>p))</span>
+<span id="cb83-176"><a href="#cb83-176"></a></span>
+<span id="cb83-177"><a href="#cb83-177"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-178"><a href="#cb83-178"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-179"><a href="#cb83-179"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb83-180"><a href="#cb83-180"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-181"><a href="#cb83-181"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-182"><a href="#cb83-182"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Number of Losses (x)"</span>,</span>
+<span id="cb83-183"><a href="#cb83-183"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">6</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-184"><a href="#cb83-184"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-185"><a href="#cb83-185"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-186"><a href="#cb83-186"></a></span>
+<span id="cb83-187"><a href="#cb83-187"></a>CDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-188"><a href="#cb83-188"></a><span class="fu">geom_step</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF)) <span class="sc">+</span></span>
+<span id="cb83-189"><a href="#cb83-189"></a><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb83-190"><a href="#cb83-190"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">1</span>),</span>
+<span id="cb83-191"><a href="#cb83-191"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> CDF),</span>
+<span id="cb83-192"><a href="#cb83-192"></a><span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">linewidth=</span><span class="fl">1.5</span>,<span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-193"><a href="#cb83-193"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-194"><a href="#cb83-194"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Number of Losses (x)"</span>,</span>
+<span id="cb83-195"><a href="#cb83-195"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">6</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-196"><a href="#cb83-196"></a><span class="fu">ylab</span>(<span class="st">"Cumulative Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-197"><a href="#cb83-197"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-198"><a href="#cb83-198"></a></span>
+<span id="cb83-199"><a href="#cb83-199"></a>PMF.plot <span class="sc">|</span> CDF.plot</span>
+<span id="cb83-200"><a href="#cb83-200"></a></span>
+<span id="cb83-201"><a href="#cb83-201"></a><span class="co"># CDF Evaluated at X=1, giving us the probability of 1 failure:</span></span>
+<span id="cb83-202"><a href="#cb83-202"></a></span>
+<span id="cb83-203"><a href="#cb83-203"></a><span class="fu">pnbinom</span>(<span class="at">q =</span> <span class="dv">1</span>, <span class="at">prob =</span> <span class="fl">0.70</span>, <span class="at">size =</span> <span class="dv">2</span>) </span>
+<span id="cb83-204"><a href="#cb83-204"></a></span>
+<span id="cb83-205"><a href="#cb83-205"></a><span class="in">```</span></span>
+<span id="cb83-206"><a href="#cb83-206"></a></span>
+<span id="cb83-207"><a href="#cb83-207"></a>We get the same probability of 0.784. Note that the plot goes to 6 trials after which Player A is extremely likely to have won at least 2 games. We only play 3 times, but that is not relevant to the shape of the distribution. Rather, that information is encoded in the fact that we are looking for the probability of 2 successes with at most one failure.</span>
+<span id="cb83-208"><a href="#cb83-208"></a></span>
+<span id="cb83-209"><a href="#cb83-209"></a><span class="fu"># The Beta Binomial Distribution</span></span>
+<span id="cb83-210"><a href="#cb83-210"></a>One approach to generalize this modeling is to use a Beta-Binomial distribution. This distribution arrises when we let $p$ be a random variable that follows a Beta distribution:</span>
+<span id="cb83-211"><a href="#cb83-211"></a>\begin{align*}</span>
+<span id="cb83-212"><a href="#cb83-212"></a>  P &amp;\sim \text{Beta}(\alpha, \beta)<span class="sc">\\</span></span>
+<span id="cb83-213"><a href="#cb83-213"></a>  X &amp;\sim \text{Binomial}(n, P).</span>
+<span id="cb83-214"><a href="#cb83-214"></a>\end{align*}</span>
+<span id="cb83-215"><a href="#cb83-215"></a>This distribution is not part of base <span class="in">`R`</span>, but is available using the <span class="in">`_bbinom`</span> functions from the <span class="in">`extraDistr`</span> package <span class="co">[</span><span class="ot">@extraDistr</span><span class="co">]</span>.</span>
+<span id="cb83-216"><a href="#cb83-216"></a></span>
+<span id="cb83-217"><a href="#cb83-217"></a>The primary benefit is that the Beta-Binomial enables us to specify some uncertainty about the skill of Player A, as $p$ does not have to be fixed (e.g., $p=0.70$). Suppose the result of the best two-out-of-three match follows a Beta-Binomial distribution  where $\alpha=7$ and $\beta=3$.</span>
+<span id="cb83-218"><a href="#cb83-218"></a></span>
+<span id="cb83-219"><a href="#cb83-219"></a><span class="fu">## The Beta Part</span></span>
+<span id="cb83-220"><a href="#cb83-220"></a><span class="ss">1. </span>**Plot the corresponding Beta distribution. Interpret the plot in the context of a best two-out-of-three match and the Binomial distribution.**\</span>
+<span id="cb83-221"><a href="#cb83-221"></a>**Hint**: The Beta distribution is available in base <span class="in">`R`</span> via <span class="in">`_beta()`</span>.</span>
+<span id="cb83-222"><a href="#cb83-222"></a></span>
+<span id="cb83-223"><a href="#cb83-223"></a>**Solution**</span>
+<span id="cb83-224"><a href="#cb83-224"></a></span>
+<span id="cb83-227"><a href="#cb83-227"></a><span class="in">```{r}</span></span>
+<span id="cb83-228"><a href="#cb83-228"></a>alpha <span class="ot">=</span> <span class="dv">7</span></span>
+<span id="cb83-229"><a href="#cb83-229"></a>beta <span class="ot">=</span> <span class="dv">3</span></span>
+<span id="cb83-230"><a href="#cb83-230"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">1</span>, <span class="at">length.out=</span><span class="dv">500</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-231"><a href="#cb83-231"></a><span class="fu">mutate</span>(<span class="at">PDF =</span> <span class="fu">dbeta</span>(<span class="at">x =</span> x, <span class="at">shape1 =</span> alpha, <span class="at">shape2 =</span> beta),</span>
+<span id="cb83-232"><a href="#cb83-232"></a><span class="at">CDF =</span> <span class="fu">pbeta</span>(<span class="at">q =</span> x, <span class="at">shape1 =</span> alpha, <span class="at">shape2 =</span> beta))</span>
+<span id="cb83-233"><a href="#cb83-233"></a></span>
+<span id="cb83-234"><a href="#cb83-234"></a>PDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-235"><a href="#cb83-235"></a><span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> PDF)) <span class="sc">+</span></span>
+<span id="cb83-236"><a href="#cb83-236"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb83-237"><a href="#cb83-237"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PDF)) <span class="sc">+</span></span>
+<span id="cb83-238"><a href="#cb83-238"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-239"><a href="#cb83-239"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning one game"</span>,</span>
+<span id="cb83-240"><a href="#cb83-240"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.2</span>)) <span class="sc">+</span></span>
+<span id="cb83-241"><a href="#cb83-241"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-242"><a href="#cb83-242"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-243"><a href="#cb83-243"></a></span>
+<span id="cb83-244"><a href="#cb83-244"></a>CDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-245"><a href="#cb83-245"></a><span class="fu">geom_step</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF)) <span class="sc">+</span></span>
+<span id="cb83-246"><a href="#cb83-246"></a><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb83-247"><a href="#cb83-247"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-248"><a href="#cb83-248"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning one game"</span>,</span>
+<span id="cb83-249"><a href="#cb83-249"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.2</span>)) <span class="sc">+</span></span>
+<span id="cb83-250"><a href="#cb83-250"></a><span class="fu">ylab</span>(<span class="st">"Cumulative Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-251"><a href="#cb83-251"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-252"><a href="#cb83-252"></a></span>
+<span id="cb83-253"><a href="#cb83-253"></a>PDF.plot <span class="sc">|</span> CDF.plot</span>
+<span id="cb83-254"><a href="#cb83-254"></a><span class="in">```</span></span>
+<span id="cb83-255"><a href="#cb83-255"></a></span>
+<span id="cb83-256"><a href="#cb83-256"></a>The plot on the left represents the density of the probability that Player A will win one game. For example, there is a peak around .7, which means that it is most likely that Player A will have a 70% chance to win one game. The plot on the right represents the probability that Player A will have a probability less than or equal to the x-value for winning one game. For exampe, we interpret the CDF of 1 being 1 because there is a 100% probability that Player A will have a probability of less than or equal to 1 for winning one game.</span>
+<span id="cb83-257"><a href="#cb83-257"></a></span>
+<span id="cb83-258"><a href="#cb83-258"></a><span class="ss">2. </span>How does the Beta incorporate uncertainty about the skill of Player A? **Compute the mean and variance of the distribution.**\</span>
+<span id="cb83-259"><a href="#cb83-259"></a>**Hint**: You will find the <span class="in">`integrate(...)`</span> function helpful here. </span>
+<span id="cb83-260"><a href="#cb83-260"></a>\begin{align*}</span>
+<span id="cb83-261"><a href="#cb83-261"></a>  E(P) &amp;= \mu_P = \int_{0}^1 p f_P(p) dp<span class="sc">\\</span></span>
+<span id="cb83-262"><a href="#cb83-262"></a>  var(P) &amp;= \sigma^2_P = \int_{0}^1 (p-\mu_P)^2 f_P(p) dp<span class="sc">\\</span></span>
+<span id="cb83-263"><a href="#cb83-263"></a>\end{align*}</span>
+<span id="cb83-264"><a href="#cb83-264"></a></span>
+<span id="cb83-265"><a href="#cb83-265"></a>**Solution**</span>
+<span id="cb83-266"><a href="#cb83-266"></a></span>
+<span id="cb83-269"><a href="#cb83-269"></a><span class="in">```{r}</span></span>
+<span id="cb83-270"><a href="#cb83-270"></a>alpha <span class="ot">=</span> <span class="dv">7</span></span>
+<span id="cb83-271"><a href="#cb83-271"></a>beta <span class="ot">=</span> <span class="dv">3</span></span>
+<span id="cb83-272"><a href="#cb83-272"></a></span>
+<span id="cb83-273"><a href="#cb83-273"></a><span class="co"># Mean:</span></span>
+<span id="cb83-274"><a href="#cb83-274"></a></span>
+<span id="cb83-275"><a href="#cb83-275"></a>(<span class="at">E =</span> (<span class="fu">integrate</span>(<span class="cf">function</span>(p){</span>
+<span id="cb83-276"><a href="#cb83-276"></a>  p <span class="sc">*</span> <span class="fu">dbeta</span>(p, <span class="at">shape1 =</span> alpha, <span class="at">shape2 =</span> beta)</span>
+<span id="cb83-277"><a href="#cb83-277"></a>},</span>
+<span id="cb83-278"><a href="#cb83-278"></a><span class="dv">0</span>,<span class="dv">1</span></span>
+<span id="cb83-279"><a href="#cb83-279"></a>))<span class="sc">$</span>value)</span>
+<span id="cb83-280"><a href="#cb83-280"></a></span>
+<span id="cb83-281"><a href="#cb83-281"></a><span class="co">#Variance:</span></span>
+<span id="cb83-282"><a href="#cb83-282"></a></span>
+<span id="cb83-283"><a href="#cb83-283"></a>(<span class="at">var =</span> <span class="fu">integrate</span>(<span class="cf">function</span>(p){</span>
+<span id="cb83-284"><a href="#cb83-284"></a>  ((p<span class="sc">-</span>E)<span class="sc">^</span><span class="dv">2</span>)<span class="sc">*</span><span class="fu">dbeta</span>(p,alpha,beta)</span>
+<span id="cb83-285"><a href="#cb83-285"></a>},</span>
+<span id="cb83-286"><a href="#cb83-286"></a><span class="dv">0</span>,<span class="dv">1</span>))<span class="sc">$</span>value</span>
+<span id="cb83-287"><a href="#cb83-287"></a></span>
+<span id="cb83-288"><a href="#cb83-288"></a><span class="in">```</span></span>
+<span id="cb83-289"><a href="#cb83-289"></a></span>
+<span id="cb83-290"><a href="#cb83-290"></a>$$E(P) = \mu_P=0.7$$</span>
+<span id="cb83-291"><a href="#cb83-291"></a>and</span>
+<span id="cb83-292"><a href="#cb83-292"></a>$$var(P) = \sigma^2_P=0.01909091$$</span>
+<span id="cb83-293"><a href="#cb83-293"></a></span>
+<span id="cb83-294"><a href="#cb83-294"></a><span class="ss">3. </span>**What is the probability that Player A has a win probability of exactly 0.70?  Make sure write out your probability statement and work to write it in terms of the distribution function (PDF/CDF) to plot the probability using `ggplot`.**\</span>
+<span id="cb83-295"><a href="#cb83-295"></a>**Hint:** Think carefully about the properties of continuous distributions here.</span>
+<span id="cb83-296"><a href="#cb83-296"></a></span>
+<span id="cb83-297"><a href="#cb83-297"></a>**Solution**</span>
+<span id="cb83-298"><a href="#cb83-298"></a></span>
+<span id="cb83-299"><a href="#cb83-299"></a>The probability that Player A has a win probability of *exactly* 0.7 is zero. The probability that a continuous distribution is equal to any value is always zero. In other words, the $P(p=0.7)$ will be equal to zero. Let's show this with a plot:</span>
+<span id="cb83-300"><a href="#cb83-300"></a></span>
+<span id="cb83-301"><a href="#cb83-301"></a></span>
+<span id="cb83-304"><a href="#cb83-304"></a><span class="in">```{r}</span></span>
+<span id="cb83-305"><a href="#cb83-305"></a>alpha <span class="ot">=</span> <span class="dv">7</span></span>
+<span id="cb83-306"><a href="#cb83-306"></a>beta <span class="ot">=</span> <span class="dv">3</span></span>
+<span id="cb83-307"><a href="#cb83-307"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">1</span>, <span class="at">length.out=</span><span class="dv">500</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-308"><a href="#cb83-308"></a><span class="fu">mutate</span>(<span class="at">PDF =</span> <span class="fu">dbeta</span>(<span class="at">x =</span> x, <span class="at">shape1 =</span> alpha, <span class="at">shape2 =</span> beta),</span>
+<span id="cb83-309"><a href="#cb83-309"></a><span class="at">CDF =</span> <span class="fu">pbeta</span>(<span class="at">q =</span> x, <span class="at">shape1 =</span> alpha, <span class="at">shape2 =</span> beta))</span>
+<span id="cb83-310"><a href="#cb83-310"></a></span>
+<span id="cb83-311"><a href="#cb83-311"></a>PDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-312"><a href="#cb83-312"></a><span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> PDF)) <span class="sc">+</span></span>
+<span id="cb83-313"><a href="#cb83-313"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-314"><a href="#cb83-314"></a><span class="fu">geom_ribbon</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="fu">abs</span>(x<span class="fl">-0.7</span>)<span class="sc">&lt;</span><span class="fl">0.002</span>),</span>
+<span id="cb83-315"><a href="#cb83-315"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PDF),</span>
+<span id="cb83-316"><a href="#cb83-316"></a><span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-317"><a href="#cb83-317"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning one game"</span>,</span>
+<span id="cb83-318"><a href="#cb83-318"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.1</span>)) <span class="sc">+</span></span>
+<span id="cb83-319"><a href="#cb83-319"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-320"><a href="#cb83-320"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-321"><a href="#cb83-321"></a></span>
+<span id="cb83-322"><a href="#cb83-322"></a>PDF.plot</span>
+<span id="cb83-323"><a href="#cb83-323"></a><span class="in">```</span></span>
+<span id="cb83-324"><a href="#cb83-324"></a></span>
+<span id="cb83-325"><a href="#cb83-325"></a>The width of the bar is zero, i.e. we are integrating with our lower bound equal to our upper bound, so our result will be zero.</span>
+<span id="cb83-326"><a href="#cb83-326"></a></span>
+<span id="cb83-327"><a href="#cb83-327"></a><span class="ss">4. </span>**What is the probability that Player A has a win probability of at least 0.50?  Make sure write out your probability statement and work to write it in terms of the distribution function (PDF/CDF) to plot the probability using `ggplot`.**</span>
+<span id="cb83-328"><a href="#cb83-328"></a></span>
+<span id="cb83-329"><a href="#cb83-329"></a>**Solution**</span>
+<span id="cb83-330"><a href="#cb83-330"></a></span>
+<span id="cb83-331"><a href="#cb83-331"></a>The probabulity that Player A has a win probability of at least 0.5 is equal to the $1-P(X \le 0.5)$, and $P(X\le 0.5)$ is equal to the CDF evaluated at 0.5. Note that the equals is trivial because the distribution is continuous. This is equivalent to the area under the PDF from 0.5 to 1, which is easier to visualize. Let's compute and plot it:</span>
+<span id="cb83-332"><a href="#cb83-332"></a></span>
+<span id="cb83-335"><a href="#cb83-335"></a><span class="in">```{r}</span></span>
+<span id="cb83-336"><a href="#cb83-336"></a>alpha <span class="ot">=</span> <span class="dv">7</span></span>
+<span id="cb83-337"><a href="#cb83-337"></a>beta <span class="ot">=</span> <span class="dv">3</span></span>
+<span id="cb83-338"><a href="#cb83-338"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">1</span>, <span class="at">length.out=</span><span class="dv">500</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-339"><a href="#cb83-339"></a><span class="fu">mutate</span>(<span class="at">PDF =</span> <span class="fu">dbeta</span>(<span class="at">x =</span> x, <span class="at">shape1 =</span> alpha, <span class="at">shape2 =</span> beta),</span>
+<span id="cb83-340"><a href="#cb83-340"></a><span class="at">CDF =</span> <span class="fu">pbeta</span>(<span class="at">q =</span> x, <span class="at">shape1 =</span> alpha, <span class="at">shape2 =</span> beta))</span>
+<span id="cb83-341"><a href="#cb83-341"></a></span>
+<span id="cb83-342"><a href="#cb83-342"></a>PDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-343"><a href="#cb83-343"></a><span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> PDF)) <span class="sc">+</span></span>
+<span id="cb83-344"><a href="#cb83-344"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-345"><a href="#cb83-345"></a><span class="fu">geom_ribbon</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">&gt;</span><span class="fl">0.5</span>),</span>
+<span id="cb83-346"><a href="#cb83-346"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PDF),</span>
+<span id="cb83-347"><a href="#cb83-347"></a><span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-348"><a href="#cb83-348"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning one game"</span>,</span>
+<span id="cb83-349"><a href="#cb83-349"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.1</span>)) <span class="sc">+</span></span>
+<span id="cb83-350"><a href="#cb83-350"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-351"><a href="#cb83-351"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-352"><a href="#cb83-352"></a></span>
+<span id="cb83-353"><a href="#cb83-353"></a>PDF.plot</span>
+<span id="cb83-354"><a href="#cb83-354"></a></span>
+<span id="cb83-355"><a href="#cb83-355"></a>(<span class="at">prob =</span> <span class="dv">1</span><span class="sc">-</span><span class="fu">pbeta</span>(<span class="at">q =</span> <span class="fl">0.5</span>, <span class="at">shape1 =</span> alpha, <span class="at">shape2 =</span> beta))</span>
+<span id="cb83-356"><a href="#cb83-356"></a><span class="in">```</span></span>
+<span id="cb83-357"><a href="#cb83-357"></a></span>
+<span id="cb83-358"><a href="#cb83-358"></a>So the probability that Player A has at least a probability of 0.5 is 0.9101562. </span>
+<span id="cb83-359"><a href="#cb83-359"></a></span>
+<span id="cb83-360"><a href="#cb83-360"></a></span>
+<span id="cb83-361"><a href="#cb83-361"></a><span class="ss">5. </span>**What is the 90th percentile of Player A's win probability based on this Beta distribution? Make sure write out your probability statement and work to write it in terms of the distribution function (PDF/CDF) to plot the percentile using `ggplot`.**</span>
+<span id="cb83-362"><a href="#cb83-362"></a></span>
+<span id="cb83-363"><a href="#cb83-363"></a>**Solution**</span>
+<span id="cb83-364"><a href="#cb83-364"></a></span>
+<span id="cb83-365"><a href="#cb83-365"></a>We can use the inverse CDF to find the 90th percentile of Player A's win probability. This requires us to find where the CDF is equal to 0.9. We use the <span class="in">`qbeta`</span> function:</span>
+<span id="cb83-366"><a href="#cb83-366"></a></span>
+<span id="cb83-369"><a href="#cb83-369"></a><span class="in">```{r}</span></span>
+<span id="cb83-370"><a href="#cb83-370"></a>alpha <span class="ot">=</span> <span class="dv">7</span></span>
+<span id="cb83-371"><a href="#cb83-371"></a>beta <span class="ot">=</span> <span class="dv">3</span></span>
+<span id="cb83-372"><a href="#cb83-372"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">1</span>, <span class="at">length.out=</span><span class="dv">500</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-373"><a href="#cb83-373"></a><span class="fu">mutate</span>(<span class="at">PDF =</span> <span class="fu">dbeta</span>(<span class="at">x =</span> x, <span class="at">shape1 =</span> alpha, <span class="at">shape2 =</span> beta),</span>
+<span id="cb83-374"><a href="#cb83-374"></a><span class="at">CDF =</span> <span class="fu">pbeta</span>(<span class="at">q =</span> x, <span class="at">shape1 =</span> alpha, <span class="at">shape2 =</span> beta))</span>
+<span id="cb83-375"><a href="#cb83-375"></a></span>
+<span id="cb83-376"><a href="#cb83-376"></a>CDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-377"><a href="#cb83-377"></a><span class="fu">geom_step</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF)) <span class="sc">+</span></span>
+<span id="cb83-378"><a href="#cb83-378"></a><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb83-379"><a href="#cb83-379"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-380"><a href="#cb83-380"></a><span class="fu">geom_ribbon</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="fu">abs</span>(x<span class="fl">-0.87</span>)<span class="sc">&lt;</span><span class="fl">0.005</span>),</span>
+<span id="cb83-381"><a href="#cb83-381"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> CDF),</span>
+<span id="cb83-382"><a href="#cb83-382"></a><span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-383"><a href="#cb83-383"></a><span class="fu">geom_segment</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(<span class="fu">abs</span>(x <span class="sc">-</span> <span class="fl">0.87</span>) <span class="sc">&lt;</span> <span class="fl">0.001</span>),</span>
+<span id="cb83-384"><a href="#cb83-384"></a>  <span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">xend =</span> <span class="fl">0.87</span>, <span class="at">y =</span> <span class="fl">0.9</span>, <span class="at">yend =</span> <span class="fl">0.9</span>),</span>
+<span id="cb83-385"><a href="#cb83-385"></a>  <span class="at">color =</span> <span class="st">"gray43"</span>,<span class="at">linewidth =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb83-386"><a href="#cb83-386"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning one game"</span>,</span>
+<span id="cb83-387"><a href="#cb83-387"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="fl">0.2</span>)) <span class="sc">+</span></span>
+<span id="cb83-388"><a href="#cb83-388"></a><span class="fu">ylab</span>(<span class="st">"Cumulative Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-389"><a href="#cb83-389"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-390"><a href="#cb83-390"></a></span>
+<span id="cb83-391"><a href="#cb83-391"></a>CDF.plot</span>
+<span id="cb83-392"><a href="#cb83-392"></a></span>
+<span id="cb83-393"><a href="#cb83-393"></a></span>
+<span id="cb83-394"><a href="#cb83-394"></a>(<span class="at">inv =</span> <span class="fu">qbeta</span>(<span class="at">p =</span> <span class="fl">0.9</span>, alpha, beta))</span>
+<span id="cb83-395"><a href="#cb83-395"></a></span>
+<span id="cb83-396"><a href="#cb83-396"></a><span class="in">```</span></span>
+<span id="cb83-397"><a href="#cb83-397"></a></span>
+<span id="cb83-398"><a href="#cb83-398"></a>We can see that the 90th percentile of Player A's win probability is 0.8705027.</span>
+<span id="cb83-399"><a href="#cb83-399"></a></span>
+<span id="cb83-400"><a href="#cb83-400"></a><span class="fu">## The Beta-Binomial Part</span></span>
+<span id="cb83-401"><a href="#cb83-401"></a>**Compute the probability that Player A wins the match. Compare your result to the Binomial and Negative Binomial results. Make sure write out your probability statement and work to write it in terms of the distribution function (PMF/CDF) to plot the probability using `ggplot`**</span>
+<span id="cb83-402"><a href="#cb83-402"></a></span>
+<span id="cb83-403"><a href="#cb83-403"></a>**Solution**</span>
+<span id="cb83-404"><a href="#cb83-404"></a></span>
+<span id="cb83-405"><a href="#cb83-405"></a>We use the same logic that we used earlier for the binomial distribution. Using the Beta-Binomial distribution allows us to account for variance in $p$, but we do not need to change any of the probability statement logic because it is still discrete. Let's compute and plot the results:</span>
+<span id="cb83-406"><a href="#cb83-406"></a></span>
+<span id="cb83-409"><a href="#cb83-409"></a><span class="in">```{r}</span></span>
+<span id="cb83-410"><a href="#cb83-410"></a>alpha <span class="ot">=</span> <span class="dv">7</span></span>
+<span id="cb83-411"><a href="#cb83-411"></a>beta <span class="ot">=</span> <span class="dv">3</span></span>
+<span id="cb83-412"><a href="#cb83-412"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> (<span class="dv">0</span><span class="sc">:</span><span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-413"><a href="#cb83-413"></a><span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">dbbinom</span>(<span class="at">x =</span> x, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">alpha=</span>alpha, <span class="at">beta=</span>beta),</span>
+<span id="cb83-414"><a href="#cb83-414"></a><span class="at">CDF =</span> <span class="fu">pbbinom</span>(<span class="at">q =</span> x, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">alpha=</span>alpha, <span class="at">beta=</span>beta))</span>
+<span id="cb83-415"><a href="#cb83-415"></a></span>
+<span id="cb83-416"><a href="#cb83-416"></a></span>
+<span id="cb83-417"><a href="#cb83-417"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-418"><a href="#cb83-418"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-419"><a href="#cb83-419"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb83-420"><a href="#cb83-420"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-421"><a href="#cb83-421"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-422"><a href="#cb83-422"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-423"><a href="#cb83-423"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">6</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-424"><a href="#cb83-424"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-425"><a href="#cb83-425"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-426"><a href="#cb83-426"></a></span>
+<span id="cb83-427"><a href="#cb83-427"></a>CDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-428"><a href="#cb83-428"></a><span class="fu">geom_step</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF)) <span class="sc">+</span></span>
+<span id="cb83-429"><a href="#cb83-429"></a><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb83-430"><a href="#cb83-430"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-431"><a href="#cb83-431"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-432"><a href="#cb83-432"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">6</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-433"><a href="#cb83-433"></a><span class="fu">ylab</span>(<span class="st">"Cumulative Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-434"><a href="#cb83-434"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-435"><a href="#cb83-435"></a></span>
+<span id="cb83-436"><a href="#cb83-436"></a>PMF.plot <span class="sc">|</span> CDF.plot</span>
+<span id="cb83-437"><a href="#cb83-437"></a></span>
+<span id="cb83-438"><a href="#cb83-438"></a><span class="co">#1-PMF(0)-PMF(1)</span></span>
+<span id="cb83-439"><a href="#cb83-439"></a></span>
+<span id="cb83-440"><a href="#cb83-440"></a>(<span class="at">A_win =</span> <span class="dv">1</span><span class="sc">-</span><span class="fu">dbbinom</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="dv">3</span>, alpha, beta)<span class="sc">-</span><span class="fu">dbbinom</span>(<span class="at">x =</span> <span class="dv">1</span>, <span class="at">size =</span> <span class="dv">3</span>, alpha, beta))</span>
+<span id="cb83-441"><a href="#cb83-441"></a></span>
+<span id="cb83-442"><a href="#cb83-442"></a><span class="in">```</span></span>
+<span id="cb83-443"><a href="#cb83-443"></a></span>
+<span id="cb83-444"><a href="#cb83-444"></a>We obtain a probability of $0.763636...\approx 0.764$ that player A wins the match. This is slightly lower than the binomial and the negative binomial result of $0.784$, but similar. This makes sense, as the beta distribution is left-skewed.</span>
+<span id="cb83-445"><a href="#cb83-445"></a></span>
+<span id="cb83-446"><a href="#cb83-446"></a><span class="fu">## The Why</span></span>
+<span id="cb83-447"><a href="#cb83-447"></a>Check the expected value and variance of each distribution.</span>
+<span id="cb83-448"><a href="#cb83-448"></a></span>
+<span id="cb83-449"><a href="#cb83-449"></a>Analytically, we have</span>
+<span id="cb83-450"><a href="#cb83-450"></a>\begin{align*}</span>
+<span id="cb83-451"><a href="#cb83-451"></a>  E(X) &amp;= np  &amp;&amp;var(X) = np(1-p) \tag{Binomial Distribution}<span class="sc">\\</span></span>
+<span id="cb83-452"><a href="#cb83-452"></a>  E(X) &amp;= n\left(\frac{\alpha}{\alpha+\beta}\right)  &amp;&amp;var(X) = \frac{n \alpha \beta (\alpha + \beta + n)}{(\alpha+\beta)^2(\alpha + \beta + 1)} \tag{Beta-Binomial Distribution}</span>
+<span id="cb83-453"><a href="#cb83-453"></a>\end{align*}</span>
+<span id="cb83-454"><a href="#cb83-454"></a></span>
+<span id="cb83-455"><a href="#cb83-455"></a>**For each distribution, compute the mean number of legs won for player A.**\</span>
+<span id="cb83-456"><a href="#cb83-456"></a>**Hint**: You can perform the sum over the finite support set here. </span>
+<span id="cb83-457"><a href="#cb83-457"></a>\begin{align*}</span>
+<span id="cb83-458"><a href="#cb83-458"></a>  E(X)   = \mu_X    &amp;= \sum_{i=0}^3 i f_X(i)<span class="sc">\\</span></span>
+<span id="cb83-459"><a href="#cb83-459"></a>  var(X) = \sigma^2_X &amp;= \sum_{i=0}^3 (i-\mu_X)^2 f_X(i)</span>
+<span id="cb83-460"><a href="#cb83-460"></a>\end{align*}</span>
+<span id="cb83-461"><a href="#cb83-461"></a></span>
+<span id="cb83-462"><a href="#cb83-462"></a>**Solution**</span>
+<span id="cb83-463"><a href="#cb83-463"></a></span>
+<span id="cb83-466"><a href="#cb83-466"></a><span class="in">```{r}</span></span>
+<span id="cb83-467"><a href="#cb83-467"></a><span class="co">#Check expected value of Binomial Distribution</span></span>
+<span id="cb83-468"><a href="#cb83-468"></a></span>
+<span id="cb83-469"><a href="#cb83-469"></a></span>
+<span id="cb83-470"><a href="#cb83-470"></a>(<span class="at">mu.binom =</span> <span class="dv">0</span><span class="sc">*</span><span class="fu">dbinom</span>(<span class="at">x=</span> <span class="dv">0</span>, <span class="at">size=</span> <span class="dv">3</span>, <span class="at">prob=</span> <span class="fl">0.7</span>) <span class="sc">+</span> <span class="dv">1</span><span class="sc">*</span><span class="fu">dbinom</span>(<span class="at">x=</span> <span class="dv">1</span>, <span class="at">size=</span> <span class="dv">3</span>, <span class="at">prob=</span> <span class="fl">0.7</span>) <span class="sc">+</span> <span class="dv">2</span><span class="sc">*</span><span class="fu">dbinom</span>(<span class="at">x=</span> <span class="dv">2</span>, <span class="at">size=</span> <span class="dv">3</span>, <span class="at">prob=</span> <span class="fl">0.7</span>) <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span><span class="fu">dbinom</span>(<span class="at">x=</span> <span class="dv">3</span>, <span class="at">size=</span> <span class="dv">3</span>, <span class="at">prob=</span> <span class="fl">0.7</span>))</span>
+<span id="cb83-471"><a href="#cb83-471"></a></span>
+<span id="cb83-472"><a href="#cb83-472"></a>(<span class="at">np =</span> <span class="fl">0.7</span> <span class="sc">*</span> <span class="dv">3</span>)</span>
+<span id="cb83-473"><a href="#cb83-473"></a></span>
+<span id="cb83-474"><a href="#cb83-474"></a><span class="co"># We get equality!</span></span>
+<span id="cb83-475"><a href="#cb83-475"></a></span>
+<span id="cb83-476"><a href="#cb83-476"></a><span class="co"># Now, check variance of Binomial Distribution</span></span>
+<span id="cb83-477"><a href="#cb83-477"></a></span>
+<span id="cb83-478"><a href="#cb83-478"></a>(<span class="at">var.binom =</span> (<span class="dv">0</span><span class="sc">-</span>mu.binom)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">dbinom</span>(<span class="at">x=</span> <span class="dv">0</span>, <span class="at">size=</span> <span class="dv">3</span>, <span class="at">prob=</span> <span class="fl">0.7</span>)<span class="sc">+</span> (<span class="dv">1</span><span class="sc">-</span>mu.binom)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">dbinom</span>(<span class="at">x=</span> <span class="dv">1</span>, <span class="at">size=</span> <span class="dv">3</span>, <span class="at">prob=</span> <span class="fl">0.7</span>)<span class="sc">+</span> (<span class="dv">2</span><span class="sc">-</span>mu.binom)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">dbinom</span>(<span class="at">x=</span> <span class="dv">2</span>, <span class="at">size=</span> <span class="dv">3</span>, <span class="at">prob=</span> <span class="fl">0.7</span>)<span class="sc">+</span> (<span class="dv">3</span><span class="sc">-</span>mu.binom)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">dbinom</span>(<span class="at">x=</span> <span class="dv">3</span>, <span class="at">size=</span> <span class="dv">3</span>, <span class="at">prob=</span> <span class="fl">0.7</span>))</span>
+<span id="cb83-479"><a href="#cb83-479"></a></span>
+<span id="cb83-480"><a href="#cb83-480"></a>(<span class="at">analytic.var.binom=</span> <span class="dv">3</span><span class="sc">*</span><span class="fl">0.7</span><span class="sc">*</span>(<span class="dv">1</span><span class="fl">-0.7</span>))</span>
+<span id="cb83-481"><a href="#cb83-481"></a></span>
+<span id="cb83-482"><a href="#cb83-482"></a><span class="co"># We get equality!</span></span>
+<span id="cb83-483"><a href="#cb83-483"></a></span>
+<span id="cb83-484"><a href="#cb83-484"></a><span class="co"># Now we check the expected value of the Beta-Binomial Distribution.</span></span>
+<span id="cb83-485"><a href="#cb83-485"></a></span>
+<span id="cb83-486"><a href="#cb83-486"></a></span>
+<span id="cb83-487"><a href="#cb83-487"></a>(<span class="at">mu.bb =</span> <span class="dv">0</span><span class="sc">*</span><span class="fu">dbbinom</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="dv">3</span>, alpha, beta) <span class="sc">+</span> <span class="dv">1</span><span class="sc">*</span><span class="fu">dbbinom</span>(<span class="at">x =</span> <span class="dv">1</span>, <span class="at">size =</span> <span class="dv">3</span>, alpha, beta) <span class="sc">+</span> <span class="dv">2</span><span class="sc">*</span><span class="fu">dbbinom</span>(<span class="at">x =</span> <span class="dv">2</span>, <span class="at">size =</span> <span class="dv">3</span>, alpha, beta) <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span><span class="fu">dbbinom</span>(<span class="at">x =</span> <span class="dv">3</span>, <span class="at">size =</span> <span class="dv">3</span>, alpha, beta))</span>
+<span id="cb83-488"><a href="#cb83-488"></a></span>
+<span id="cb83-489"><a href="#cb83-489"></a>n <span class="ot">=</span> <span class="dv">3</span></span>
+<span id="cb83-490"><a href="#cb83-490"></a>a <span class="ot">=</span> <span class="dv">7</span></span>
+<span id="cb83-491"><a href="#cb83-491"></a>b <span class="ot">=</span> <span class="dv">3</span></span>
+<span id="cb83-492"><a href="#cb83-492"></a></span>
+<span id="cb83-493"><a href="#cb83-493"></a>(<span class="at">mu.bb.analytic =</span> n<span class="sc">*</span>(a<span class="sc">/</span>(a<span class="sc">+</span>b)))</span>
+<span id="cb83-494"><a href="#cb83-494"></a></span>
+<span id="cb83-495"><a href="#cb83-495"></a><span class="co"># We get equality! Note that this is the same as the Binomial Distribution. </span></span>
+<span id="cb83-496"><a href="#cb83-496"></a></span>
+<span id="cb83-497"><a href="#cb83-497"></a><span class="co"># Now we check the variance of the Beta-Binomial Distribution. </span></span>
+<span id="cb83-498"><a href="#cb83-498"></a></span>
+<span id="cb83-499"><a href="#cb83-499"></a>(<span class="at">var.bb =</span> (<span class="dv">0</span><span class="sc">-</span>mu.bb)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">dbbinom</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">size =</span> <span class="dv">3</span>, alpha, beta) <span class="sc">+</span> (<span class="dv">1</span><span class="sc">-</span>mu.bb)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">dbbinom</span>(<span class="at">x =</span> <span class="dv">1</span>, <span class="at">size =</span> <span class="dv">3</span>, alpha, beta) <span class="sc">+</span> (<span class="dv">2</span><span class="sc">-</span>mu.bb)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">dbbinom</span>(<span class="at">x =</span> <span class="dv">2</span>, <span class="at">size =</span> <span class="dv">3</span>, alpha, beta) <span class="sc">+</span> (<span class="dv">3</span><span class="sc">-</span>mu.bb)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span><span class="fu">dbbinom</span>(<span class="at">x =</span> <span class="dv">3</span>, <span class="at">size =</span> <span class="dv">3</span>, alpha, beta))</span>
+<span id="cb83-500"><a href="#cb83-500"></a></span>
+<span id="cb83-501"><a href="#cb83-501"></a>(<span class="at">var.bb.analytic =</span> (n<span class="sc">*</span>a<span class="sc">*</span>b<span class="sc">*</span>(a<span class="sc">+</span>b<span class="sc">+</span>n))<span class="sc">/</span>((a<span class="sc">+</span>b)<span class="sc">^</span><span class="dv">2</span><span class="sc">*</span>(a<span class="sc">+</span>b<span class="sc">+</span><span class="dv">1</span>)))</span>
+<span id="cb83-502"><a href="#cb83-502"></a></span>
+<span id="cb83-503"><a href="#cb83-503"></a><span class="co"># We get equality! Notice that this is larger than the variance of the Binomial Distribution, which makes sense.</span></span>
+<span id="cb83-504"><a href="#cb83-504"></a></span>
+<span id="cb83-505"><a href="#cb83-505"></a></span>
+<span id="cb83-506"><a href="#cb83-506"></a><span class="in">```</span></span>
+<span id="cb83-507"><a href="#cb83-507"></a></span>
+<span id="cb83-508"><a href="#cb83-508"></a><span class="fu"># Altham's Multiplicative Binomial Distribution</span></span>
+<span id="cb83-509"><a href="#cb83-509"></a>While the Beta-Binomial enables us to model cases where winning has a clustering effect (e.g., a "hot hand").</span>
+<span id="cb83-510"><a href="#cb83-510"></a></span>
+<span id="cb83-511"><a href="#cb83-511"></a><span class="fu">## Probability Mass Function</span></span>
+<span id="cb83-512"><a href="#cb83-512"></a>The mass function for this distribution is below. While it used to be available in the <span class="in">`MBD`</span> package for <span class="in">`R`</span>, this package is no longer available.</span>
+<span id="cb83-513"><a href="#cb83-513"></a>$$f_X(x) = \frac{1}{c} {n \choose x} p^x (1-p)^{n-x} \theta^{x(n-x)}I(x \in <span class="sc">\{</span>0, 1, ..., n<span class="sc">\}</span>)$$</span>
+<span id="cb83-514"><a href="#cb83-514"></a>where</span>
+<span id="cb83-515"><a href="#cb83-515"></a>$$c = \sum_{i=0}^n {n \choose i} p^i (1-p)^{n-i} \theta^{i(n-i)}$$ </span>
+<span id="cb83-516"><a href="#cb83-516"></a></span>
+<span id="cb83-517"><a href="#cb83-517"></a>**Write a function in `R` called `daltbinom()` for computing the PMF of this distribution. Use your function to plot the distribution where $p=0.70$ where $\theta=0.50$, $\theta=1$, and $\theta=1.50$. Comment on the differences in the context of a best two-out-of-three match**</span>
+<span id="cb83-518"><a href="#cb83-518"></a></span>
+<span id="cb83-519"><a href="#cb83-519"></a></span>
+<span id="cb83-520"><a href="#cb83-520"></a>**Solution**</span>
+<span id="cb83-521"><a href="#cb83-521"></a></span>
+<span id="cb83-524"><a href="#cb83-524"></a><span class="in">```{r}</span></span>
+<span id="cb83-525"><a href="#cb83-525"></a>daltbinom<span class="ot">=</span> <span class="cf">function</span>(p,theta,n,x){</span>
+<span id="cb83-526"><a href="#cb83-526"></a>  summands <span class="ot">=</span> <span class="dv">0</span><span class="sc">:</span>n</span>
+<span id="cb83-527"><a href="#cb83-527"></a>  cvec <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>)</span>
+<span id="cb83-528"><a href="#cb83-528"></a>  <span class="cf">for</span> (i <span class="cf">in</span> summands){</span>
+<span id="cb83-529"><a href="#cb83-529"></a>    cvec[i<span class="sc">+</span><span class="dv">1</span>] <span class="ot">=</span> <span class="fu">choose</span>(n,i)<span class="sc">*</span>p<span class="sc">^</span>i<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p)<span class="sc">^</span>(n<span class="sc">-</span>i) <span class="sc">*</span> theta<span class="sc">^</span>(i<span class="sc">*</span>(n<span class="sc">-</span>i))</span>
+<span id="cb83-530"><a href="#cb83-530"></a>    }</span>
+<span id="cb83-531"><a href="#cb83-531"></a>  c<span class="ot">=</span><span class="fu">sum</span>(cvec)</span>
+<span id="cb83-532"><a href="#cb83-532"></a>  PMF <span class="ot">=</span> (<span class="dv">1</span><span class="sc">/</span>c)<span class="sc">*</span><span class="fu">choose</span>(n,x)<span class="sc">*</span>p<span class="sc">^</span>x<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span>p)<span class="sc">^</span>(n<span class="sc">-</span>x)<span class="sc">*</span>theta<span class="sc">^</span>(x<span class="sc">*</span>(n<span class="sc">-</span>x))</span>
+<span id="cb83-533"><a href="#cb83-533"></a><span class="fu">return</span>(PMF)</span>
+<span id="cb83-534"><a href="#cb83-534"></a>}</span>
+<span id="cb83-535"><a href="#cb83-535"></a><span class="in">```</span></span>
+<span id="cb83-536"><a href="#cb83-536"></a></span>
+<span id="cb83-537"><a href="#cb83-537"></a></span>
+<span id="cb83-538"><a href="#cb83-538"></a></span>
+<span id="cb83-541"><a href="#cb83-541"></a><span class="in">```{r}</span></span>
+<span id="cb83-542"><a href="#cb83-542"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-543"><a href="#cb83-543"></a><span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">p =</span> <span class="fl">0.7</span>, <span class="at">theta =</span> <span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">3</span>))</span>
+<span id="cb83-544"><a href="#cb83-544"></a></span>
+<span id="cb83-545"><a href="#cb83-545"></a></span>
+<span id="cb83-546"><a href="#cb83-546"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-547"><a href="#cb83-547"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-548"><a href="#cb83-548"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb83-549"><a href="#cb83-549"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-550"><a href="#cb83-550"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-551"><a href="#cb83-551"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-552"><a href="#cb83-552"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-553"><a href="#cb83-553"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-554"><a href="#cb83-554"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-555"><a href="#cb83-555"></a></span>
+<span id="cb83-556"><a href="#cb83-556"></a>PMF.plot</span>
+<span id="cb83-557"><a href="#cb83-557"></a><span class="in">```</span></span>
+<span id="cb83-558"><a href="#cb83-558"></a></span>
+<span id="cb83-559"><a href="#cb83-559"></a></span>
+<span id="cb83-562"><a href="#cb83-562"></a><span class="in">```{r}</span></span>
+<span id="cb83-563"><a href="#cb83-563"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-564"><a href="#cb83-564"></a><span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">p =</span> <span class="fl">0.7</span>, <span class="at">theta =</span> <span class="dv">1</span>, <span class="at">n=</span><span class="dv">3</span>))</span>
+<span id="cb83-565"><a href="#cb83-565"></a></span>
+<span id="cb83-566"><a href="#cb83-566"></a></span>
+<span id="cb83-567"><a href="#cb83-567"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-568"><a href="#cb83-568"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-569"><a href="#cb83-569"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb83-570"><a href="#cb83-570"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-571"><a href="#cb83-571"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-572"><a href="#cb83-572"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-573"><a href="#cb83-573"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-574"><a href="#cb83-574"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-575"><a href="#cb83-575"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-576"><a href="#cb83-576"></a></span>
+<span id="cb83-577"><a href="#cb83-577"></a>PMF.plot</span>
+<span id="cb83-578"><a href="#cb83-578"></a><span class="in">```</span></span>
+<span id="cb83-579"><a href="#cb83-579"></a></span>
+<span id="cb83-580"><a href="#cb83-580"></a></span>
+<span id="cb83-583"><a href="#cb83-583"></a><span class="in">```{r}</span></span>
+<span id="cb83-584"><a href="#cb83-584"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-585"><a href="#cb83-585"></a><span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">p =</span> <span class="fl">0.7</span>, <span class="at">theta =</span> <span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">3</span>))</span>
+<span id="cb83-586"><a href="#cb83-586"></a></span>
+<span id="cb83-587"><a href="#cb83-587"></a></span>
+<span id="cb83-588"><a href="#cb83-588"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-589"><a href="#cb83-589"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-590"><a href="#cb83-590"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb83-591"><a href="#cb83-591"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-592"><a href="#cb83-592"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-593"><a href="#cb83-593"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-594"><a href="#cb83-594"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-595"><a href="#cb83-595"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-596"><a href="#cb83-596"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-597"><a href="#cb83-597"></a></span>
+<span id="cb83-598"><a href="#cb83-598"></a>PMF.plot</span>
+<span id="cb83-599"><a href="#cb83-599"></a></span>
+<span id="cb83-600"><a href="#cb83-600"></a><span class="in">```</span></span>
+<span id="cb83-601"><a href="#cb83-601"></a></span>
+<span id="cb83-602"><a href="#cb83-602"></a></span>
+<span id="cb83-603"><a href="#cb83-603"></a>A higher theta seems to correspond to a shorter or less potent hot streak, or maybe there is some observed "cost" to having a hot streak. We will be able to see better in the next section if probability of winning increases with theta for these values.</span>
+<span id="cb83-604"><a href="#cb83-604"></a></span>
+<span id="cb83-605"><a href="#cb83-605"></a><span class="fu">## Cumulative Distribution Function</span></span>
+<span id="cb83-606"><a href="#cb83-606"></a>**Use your `daltbinom()` function to create a `paltbinom()` function for computing the CDF of this distribution. Use your function to plot the distribution where $p=0.70$ where $\theta=0.50$, $\theta=1$, and $\theta=1.50$.**</span>
+<span id="cb83-607"><a href="#cb83-607"></a></span>
+<span id="cb83-608"><a href="#cb83-608"></a>**Solution**</span>
+<span id="cb83-609"><a href="#cb83-609"></a></span>
+<span id="cb83-612"><a href="#cb83-612"></a><span class="in">```{r}</span></span>
+<span id="cb83-613"><a href="#cb83-613"></a>paltbinom <span class="ot">=</span> <span class="cf">function</span>(p,theta,n,x){</span>
+<span id="cb83-614"><a href="#cb83-614"></a>  seq <span class="ot">=</span> <span class="dv">0</span><span class="sc">:</span>x</span>
+<span id="cb83-615"><a href="#cb83-615"></a>  CDF <span class="ot">=</span> <span class="fu">sum</span>(<span class="fu">daltbinom</span>(p,theta,n,<span class="at">x=</span>seq))</span>
+<span id="cb83-616"><a href="#cb83-616"></a>  <span class="fu">return</span>(CDF)</span>
+<span id="cb83-617"><a href="#cb83-617"></a>}</span>
+<span id="cb83-618"><a href="#cb83-618"></a><span class="in">```</span></span>
+<span id="cb83-619"><a href="#cb83-619"></a></span>
+<span id="cb83-622"><a href="#cb83-622"></a><span class="in">```{r}</span></span>
+<span id="cb83-623"><a href="#cb83-623"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-624"><a href="#cb83-624"></a><span class="fu">mutate</span>(<span class="at">CDF =</span><span class="fu">sapply</span>(x, <span class="cf">function</span>(k) <span class="fu">paltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">3</span>, k)))</span>
+<span id="cb83-625"><a href="#cb83-625"></a></span>
+<span id="cb83-626"><a href="#cb83-626"></a></span>
+<span id="cb83-627"><a href="#cb83-627"></a></span>
+<span id="cb83-628"><a href="#cb83-628"></a>CDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-629"><a href="#cb83-629"></a><span class="fu">geom_step</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF)) <span class="sc">+</span></span>
+<span id="cb83-630"><a href="#cb83-630"></a><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb83-631"><a href="#cb83-631"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-632"><a href="#cb83-632"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-633"><a href="#cb83-633"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-634"><a href="#cb83-634"></a><span class="fu">ylab</span>(<span class="st">"Cumulative Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-635"><a href="#cb83-635"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-636"><a href="#cb83-636"></a></span>
+<span id="cb83-637"><a href="#cb83-637"></a>CDF.plot</span>
+<span id="cb83-638"><a href="#cb83-638"></a></span>
+<span id="cb83-639"><a href="#cb83-639"></a><span class="in">```</span></span>
+<span id="cb83-640"><a href="#cb83-640"></a></span>
+<span id="cb83-643"><a href="#cb83-643"></a><span class="in">```{r}</span></span>
+<span id="cb83-644"><a href="#cb83-644"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-645"><a href="#cb83-645"></a><span class="fu">mutate</span>(<span class="at">CDF =</span><span class="fu">sapply</span>(x, <span class="cf">function</span>(k) <span class="fu">paltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="dv">1</span>, <span class="at">n=</span><span class="dv">3</span>, k)))</span>
+<span id="cb83-646"><a href="#cb83-646"></a></span>
+<span id="cb83-647"><a href="#cb83-647"></a></span>
+<span id="cb83-648"><a href="#cb83-648"></a></span>
+<span id="cb83-649"><a href="#cb83-649"></a>CDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-650"><a href="#cb83-650"></a><span class="fu">geom_step</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF)) <span class="sc">+</span></span>
+<span id="cb83-651"><a href="#cb83-651"></a><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb83-652"><a href="#cb83-652"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-653"><a href="#cb83-653"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-654"><a href="#cb83-654"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-655"><a href="#cb83-655"></a><span class="fu">ylab</span>(<span class="st">"Cumulative Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-656"><a href="#cb83-656"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-657"><a href="#cb83-657"></a></span>
+<span id="cb83-658"><a href="#cb83-658"></a>CDF.plot</span>
+<span id="cb83-659"><a href="#cb83-659"></a></span>
+<span id="cb83-660"><a href="#cb83-660"></a><span class="in">```</span></span>
+<span id="cb83-661"><a href="#cb83-661"></a></span>
+<span id="cb83-662"><a href="#cb83-662"></a></span>
+<span id="cb83-665"><a href="#cb83-665"></a><span class="in">```{r}</span></span>
+<span id="cb83-666"><a href="#cb83-666"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-667"><a href="#cb83-667"></a><span class="fu">mutate</span>(<span class="at">CDF =</span><span class="fu">sapply</span>(x, <span class="cf">function</span>(k) <span class="fu">paltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">3</span>, k)))</span>
+<span id="cb83-668"><a href="#cb83-668"></a></span>
+<span id="cb83-669"><a href="#cb83-669"></a></span>
+<span id="cb83-670"><a href="#cb83-670"></a></span>
+<span id="cb83-671"><a href="#cb83-671"></a>CDF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-672"><a href="#cb83-672"></a><span class="fu">geom_step</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF)) <span class="sc">+</span></span>
+<span id="cb83-673"><a href="#cb83-673"></a><span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">y =</span> CDF), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb83-674"><a href="#cb83-674"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-675"><a href="#cb83-675"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-676"><a href="#cb83-676"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-677"><a href="#cb83-677"></a><span class="fu">ylab</span>(<span class="st">"Cumulative Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-678"><a href="#cb83-678"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-679"><a href="#cb83-679"></a></span>
+<span id="cb83-680"><a href="#cb83-680"></a>CDF.plot</span>
+<span id="cb83-681"><a href="#cb83-681"></a></span>
+<span id="cb83-682"><a href="#cb83-682"></a><span class="in">```</span></span>
+<span id="cb83-683"><a href="#cb83-683"></a></span>
+<span id="cb83-684"><a href="#cb83-684"></a>It appears that a higher theta lowers the probability of Player A winning 0 games, but raises the probability of Player A winning one game. We will see in the next section whether theta has a positive or negative effect on the probability of Player A winning in a best 2-out-of-3 scenario.</span>
+<span id="cb83-685"><a href="#cb83-685"></a></span>
+<span id="cb83-686"><a href="#cb83-686"></a></span>
+<span id="cb83-687"><a href="#cb83-687"></a><span class="fu">## The Winning Probability</span></span>
+<span id="cb83-688"><a href="#cb83-688"></a>**Compute the probability that Player A wins the match using Altham's Multiplicative Binomial Distribution. Compare your result to the Binomial and Negative Binomial results. Compare your results to the Beta-Binomial model, too. Make sure write out your probability statement and work to write it in terms of the distribution function (PMF/CDF) to plot the probability using `ggplot`.**</span>
+<span id="cb83-689"><a href="#cb83-689"></a></span>
+<span id="cb83-690"><a href="#cb83-690"></a></span>
+<span id="cb83-691"><a href="#cb83-691"></a>**Solution**</span>
+<span id="cb83-692"><a href="#cb83-692"></a></span>
+<span id="cb83-693"><a href="#cb83-693"></a>To solve this, we can use the PMF to find the probability of winning 0 or 1 games and subtract the probability of these outcomes from 1, i.e. $1-F_X(1)-F_X(0)$ </span>
+<span id="cb83-694"><a href="#cb83-694"></a></span>
+<span id="cb83-697"><a href="#cb83-697"></a><span class="in">```{r}</span></span>
+<span id="cb83-698"><a href="#cb83-698"></a><span class="co"># for theta = 0.5:</span></span>
+<span id="cb83-699"><a href="#cb83-699"></a></span>
+<span id="cb83-700"><a href="#cb83-700"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-701"><a href="#cb83-701"></a><span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">p =</span> <span class="fl">0.7</span>, <span class="at">theta =</span> <span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">3</span>))</span>
+<span id="cb83-702"><a href="#cb83-702"></a></span>
+<span id="cb83-703"><a href="#cb83-703"></a></span>
+<span id="cb83-704"><a href="#cb83-704"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-705"><a href="#cb83-705"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-706"><a href="#cb83-706"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb83-707"><a href="#cb83-707"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-708"><a href="#cb83-708"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span><span class="sc">|</span>x<span class="sc">==</span><span class="dv">3</span>),</span>
+<span id="cb83-709"><a href="#cb83-709"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF),</span>
+<span id="cb83-710"><a href="#cb83-710"></a><span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">linewidth=</span><span class="fl">1.5</span>,<span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-711"><a href="#cb83-711"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-712"><a href="#cb83-712"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-713"><a href="#cb83-713"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-714"><a href="#cb83-714"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-715"><a href="#cb83-715"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-716"><a href="#cb83-716"></a></span>
+<span id="cb83-717"><a href="#cb83-717"></a>PMF.plot</span>
+<span id="cb83-718"><a href="#cb83-718"></a></span>
+<span id="cb83-719"><a href="#cb83-719"></a>(<span class="at">A_win =</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">0</span>) <span class="sc">-</span> </span>
+<span id="cb83-720"><a href="#cb83-720"></a>           <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">1</span>))</span>
+<span id="cb83-721"><a href="#cb83-721"></a></span>
+<span id="cb83-722"><a href="#cb83-722"></a><span class="in">```</span></span>
+<span id="cb83-723"><a href="#cb83-723"></a></span>
+<span id="cb83-726"><a href="#cb83-726"></a><span class="in">```{r}</span></span>
+<span id="cb83-727"><a href="#cb83-727"></a><span class="co"># for theta = 1:</span></span>
+<span id="cb83-728"><a href="#cb83-728"></a></span>
+<span id="cb83-729"><a href="#cb83-729"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-730"><a href="#cb83-730"></a><span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">p =</span> <span class="fl">0.7</span>, <span class="at">theta =</span> <span class="dv">1</span>, <span class="at">n=</span><span class="dv">3</span>))</span>
+<span id="cb83-731"><a href="#cb83-731"></a></span>
+<span id="cb83-732"><a href="#cb83-732"></a></span>
+<span id="cb83-733"><a href="#cb83-733"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-734"><a href="#cb83-734"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-735"><a href="#cb83-735"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb83-736"><a href="#cb83-736"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-737"><a href="#cb83-737"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span><span class="sc">|</span>x<span class="sc">==</span><span class="dv">3</span>),</span>
+<span id="cb83-738"><a href="#cb83-738"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF),</span>
+<span id="cb83-739"><a href="#cb83-739"></a><span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">linewidth=</span><span class="fl">1.5</span>,<span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-740"><a href="#cb83-740"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-741"><a href="#cb83-741"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-742"><a href="#cb83-742"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-743"><a href="#cb83-743"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-744"><a href="#cb83-744"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-745"><a href="#cb83-745"></a></span>
+<span id="cb83-746"><a href="#cb83-746"></a>PMF.plot</span>
+<span id="cb83-747"><a href="#cb83-747"></a></span>
+<span id="cb83-748"><a href="#cb83-748"></a>(<span class="at">A_win =</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="dv">1</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">0</span>) <span class="sc">-</span> </span>
+<span id="cb83-749"><a href="#cb83-749"></a>           <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="dv">1</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">1</span>))</span>
+<span id="cb83-750"><a href="#cb83-750"></a></span>
+<span id="cb83-751"><a href="#cb83-751"></a><span class="in">```</span></span>
+<span id="cb83-752"><a href="#cb83-752"></a></span>
+<span id="cb83-753"><a href="#cb83-753"></a></span>
+<span id="cb83-756"><a href="#cb83-756"></a><span class="in">```{r}</span></span>
+<span id="cb83-757"><a href="#cb83-757"></a><span class="co"># for theta = 0.5:</span></span>
+<span id="cb83-758"><a href="#cb83-758"></a></span>
+<span id="cb83-759"><a href="#cb83-759"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-760"><a href="#cb83-760"></a><span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">daltbinom</span>(<span class="at">x =</span> x, <span class="at">p =</span> <span class="fl">0.7</span>, <span class="at">theta =</span> <span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">3</span>))</span>
+<span id="cb83-761"><a href="#cb83-761"></a></span>
+<span id="cb83-762"><a href="#cb83-762"></a></span>
+<span id="cb83-763"><a href="#cb83-763"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-764"><a href="#cb83-764"></a><span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-765"><a href="#cb83-765"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span>),</span>
+<span id="cb83-766"><a href="#cb83-766"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-767"><a href="#cb83-767"></a><span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span><span class="sc">|</span>x<span class="sc">==</span><span class="dv">3</span>),</span>
+<span id="cb83-768"><a href="#cb83-768"></a><span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF),</span>
+<span id="cb83-769"><a href="#cb83-769"></a><span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">linewidth=</span><span class="fl">1.5</span>,<span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-770"><a href="#cb83-770"></a><span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-771"><a href="#cb83-771"></a><span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-772"><a href="#cb83-772"></a><span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-773"><a href="#cb83-773"></a><span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-774"><a href="#cb83-774"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb83-775"><a href="#cb83-775"></a></span>
+<span id="cb83-776"><a href="#cb83-776"></a>PMF.plot</span>
+<span id="cb83-777"><a href="#cb83-777"></a></span>
+<span id="cb83-778"><a href="#cb83-778"></a>(<span class="at">A_win =</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">0</span>) <span class="sc">-</span> </span>
+<span id="cb83-779"><a href="#cb83-779"></a>           <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">1</span>))</span>
+<span id="cb83-780"><a href="#cb83-780"></a></span>
+<span id="cb83-781"><a href="#cb83-781"></a><span class="in">```</span></span>
+<span id="cb83-782"><a href="#cb83-782"></a></span>
+<span id="cb83-783"><a href="#cb83-783"></a>We get win (Player A wins in a best two-out-of-three scenario ) probabilities of $\approx 0.86,0.78, \text{ and } 0.75$ for $\theta = 0.5,1, \text{ and } 1.5$, respectively. Our Beta-Binomial result was 0.764, our Negative Binomial result was 0.784, and this was the same as our Binomial result. The Altham distribution is highly dependent on theta, and we get some results with a much greater probability of winning ($\theta=0.5$), and some results with about the same probability.</span>
+<span id="cb83-784"><a href="#cb83-784"></a></span>
+<span id="cb83-785"><a href="#cb83-785"></a></span>
+<span id="cb83-786"><a href="#cb83-786"></a><span class="fu"># Altham's Multiplicative Beta-Binomial Distribution</span></span>
+<span id="cb83-787"><a href="#cb83-787"></a>You may have wondered -- "Can we do the Beta thing with Altham's version of the Binomial Distribution?" The answer is yes!</span>
+<span id="cb83-788"><a href="#cb83-788"></a></span>
+<span id="cb83-789"><a href="#cb83-789"></a><span class="fu">## Probability Mass Function</span></span>
+<span id="cb83-790"><a href="#cb83-790"></a>The mass function for this distribution is below. </span>
+<span id="cb83-791"><a href="#cb83-791"></a>$$f_X(x) = \left[\int_{0}^1 dp</span>
+<span id="cb83-792"><a href="#cb83-792"></a>\left(\frac{1}{c} {n \choose x} p^x (1-p)^{n-x} \theta^{x(n-x)}\right)\left(\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} p^{\alpha-1}(1-p)^{\beta-1}\right)\right]I(x \in <span class="sc">\{</span>0, 1, ..., n<span class="sc">\}</span>)$$</span>
+<span id="cb83-793"><a href="#cb83-793"></a></span>
+<span id="cb83-794"><a href="#cb83-794"></a>**Write a function in `R` called `daltbbinom()` for computing the PMF of this distribution. Use your function to plot the distribution where $\alpha=7$ and $\beta=3$ where $\theta=0.50$, $\theta=1$, and $\theta=1.50$. Comment on the differences in the context of a best two-out-of-three match.**</span>
+<span id="cb83-795"><a href="#cb83-795"></a></span>
+<span id="cb83-796"><a href="#cb83-796"></a>**Hint**: You can use the <span class="in">`integrate()`</span> in <span class="in">`R`</span> to compute the integral. Note that this requires the function to be vectorized -- it should be unless you have added any block conditionals. </span>
+<span id="cb83-797"><a href="#cb83-797"></a></span>
+<span id="cb83-798"><a href="#cb83-798"></a>**Solution**</span>
+<span id="cb83-799"><a href="#cb83-799"></a></span>
+<span id="cb83-802"><a href="#cb83-802"></a><span class="in">```{r}</span></span>
+<span id="cb83-803"><a href="#cb83-803"></a><span class="co"># I don't know why this doesn't look like a code block in the Quarto editor, but it looks fine in the PDF. </span></span>
+<span id="cb83-804"><a href="#cb83-804"></a></span>
+<span id="cb83-805"><a href="#cb83-805"></a>daltbbinom <span class="ot">=</span> <span class="cf">function</span>(alpha, beta, theta, n, x){</span>
+<span id="cb83-806"><a href="#cb83-806"></a>  <span class="fu">integrate</span>(<span class="cf">function</span>(p){</span>
+<span id="cb83-807"><a href="#cb83-807"></a>    cvec <span class="ot">=</span> <span class="fu">rowSums</span>(<span class="fu">sapply</span>(<span class="dv">0</span><span class="sc">:</span>n, <span class="cf">function</span>(i) <span class="fu">choose</span>(n,i) <span class="sc">*</span> p<span class="sc">^</span>i <span class="sc">*</span> (<span class="dv">1</span><span class="sc">-</span>p)<span class="sc">^</span>(n<span class="sc">-</span>i) <span class="sc">*</span> theta<span class="sc">^</span>(i<span class="sc">*</span>(n<span class="sc">-</span>i))))</span>
+<span id="cb83-808"><a href="#cb83-808"></a>    altham   <span class="ot">=</span> (<span class="dv">1</span><span class="sc">/</span>cvec) <span class="sc">*</span> <span class="fu">choose</span>(n,x) <span class="sc">*</span> p<span class="sc">^</span>x <span class="sc">*</span> (<span class="dv">1</span><span class="sc">-</span>p)<span class="sc">^</span>(n<span class="sc">-</span>x) <span class="sc">*</span> theta<span class="sc">^</span>(x<span class="sc">*</span>(n<span class="sc">-</span>x))</span>
+<span id="cb83-809"><a href="#cb83-809"></a>    beta.pdf <span class="ot">=</span> <span class="fu">dbeta</span>(p, alpha, beta)</span>
+<span id="cb83-810"><a href="#cb83-810"></a>    altham <span class="sc">*</span> beta.pdf</span>
+<span id="cb83-811"><a href="#cb83-811"></a>  }, <span class="at">lower =</span> <span class="dv">0</span>, <span class="at">upper =</span> <span class="dv">1</span>)<span class="sc">$</span>value</span>
+<span id="cb83-812"><a href="#cb83-812"></a>}</span>
+<span id="cb83-813"><a href="#cb83-813"></a><span class="in">```</span></span>
+<span id="cb83-814"><a href="#cb83-814"></a></span>
+<span id="cb83-815"><a href="#cb83-815"></a></span>
+<span id="cb83-818"><a href="#cb83-818"></a><span class="in">```{r}</span></span>
+<span id="cb83-819"><a href="#cb83-819"></a><span class="co"># theta = 0.5</span></span>
+<span id="cb83-820"><a href="#cb83-820"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-821"><a href="#cb83-821"></a>  <span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">sapply</span>(x, <span class="cf">function</span>(k)</span>
+<span id="cb83-822"><a href="#cb83-822"></a>    <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span>k)))</span>
+<span id="cb83-823"><a href="#cb83-823"></a></span>
+<span id="cb83-824"><a href="#cb83-824"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-825"><a href="#cb83-825"></a>  <span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-826"><a href="#cb83-826"></a>  <span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span><span class="sc">|</span>x<span class="sc">==</span><span class="dv">3</span>),</span>
+<span id="cb83-827"><a href="#cb83-827"></a>    <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF),</span>
+<span id="cb83-828"><a href="#cb83-828"></a>    <span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">linewidth=</span><span class="fl">1.5</span>, <span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-829"><a href="#cb83-829"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-830"><a href="#cb83-830"></a>  <span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-831"><a href="#cb83-831"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-832"><a href="#cb83-832"></a>  <span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-833"><a href="#cb83-833"></a>  <span class="fu">theme_bw</span>()</span>
+<span id="cb83-834"><a href="#cb83-834"></a></span>
+<span id="cb83-835"><a href="#cb83-835"></a>PMF.plot</span>
+<span id="cb83-836"><a href="#cb83-836"></a></span>
+<span id="cb83-837"><a href="#cb83-837"></a>(<span class="at">A_win =</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">0</span>) <span class="sc">-</span></span>
+<span id="cb83-838"><a href="#cb83-838"></a>             <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">1</span>))</span>
+<span id="cb83-839"><a href="#cb83-839"></a><span class="in">```</span></span>
+<span id="cb83-840"><a href="#cb83-840"></a></span>
+<span id="cb83-843"><a href="#cb83-843"></a><span class="in">```{r}</span></span>
+<span id="cb83-844"><a href="#cb83-844"></a><span class="co"># theta = 1</span></span>
+<span id="cb83-845"><a href="#cb83-845"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-846"><a href="#cb83-846"></a>  <span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">sapply</span>(x, <span class="cf">function</span>(k)</span>
+<span id="cb83-847"><a href="#cb83-847"></a>    <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="dv">1</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span>k)))</span>
+<span id="cb83-848"><a href="#cb83-848"></a></span>
+<span id="cb83-849"><a href="#cb83-849"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-850"><a href="#cb83-850"></a>  <span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-851"><a href="#cb83-851"></a>  <span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span><span class="sc">|</span>x<span class="sc">==</span><span class="dv">3</span>),</span>
+<span id="cb83-852"><a href="#cb83-852"></a>    <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF),</span>
+<span id="cb83-853"><a href="#cb83-853"></a>    <span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">linewidth=</span><span class="fl">1.5</span>, <span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-854"><a href="#cb83-854"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-855"><a href="#cb83-855"></a>  <span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-856"><a href="#cb83-856"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-857"><a href="#cb83-857"></a>  <span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-858"><a href="#cb83-858"></a>  <span class="fu">theme_bw</span>()</span>
+<span id="cb83-859"><a href="#cb83-859"></a></span>
+<span id="cb83-860"><a href="#cb83-860"></a>PMF.plot</span>
+<span id="cb83-861"><a href="#cb83-861"></a></span>
+<span id="cb83-862"><a href="#cb83-862"></a>(<span class="at">A_win =</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="dv">1</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">0</span>) <span class="sc">-</span></span>
+<span id="cb83-863"><a href="#cb83-863"></a>             <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="dv">1</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">1</span>))</span>
+<span id="cb83-864"><a href="#cb83-864"></a><span class="in">```</span></span>
+<span id="cb83-865"><a href="#cb83-865"></a></span>
+<span id="cb83-868"><a href="#cb83-868"></a><span class="in">```{r}</span></span>
+<span id="cb83-869"><a href="#cb83-869"></a><span class="co"># theta = 1.5</span></span>
+<span id="cb83-870"><a href="#cb83-870"></a>ggdat <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb83-871"><a href="#cb83-871"></a>  <span class="fu">mutate</span>(<span class="at">PMF =</span> <span class="fu">sapply</span>(x, <span class="cf">function</span>(k)</span>
+<span id="cb83-872"><a href="#cb83-872"></a>    <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span>k)))</span>
+<span id="cb83-873"><a href="#cb83-873"></a></span>
+<span id="cb83-874"><a href="#cb83-874"></a>PMF.plot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(ggdat) <span class="sc">+</span></span>
+<span id="cb83-875"><a href="#cb83-875"></a>  <span class="fu">geom_linerange</span>(<span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF)) <span class="sc">+</span></span>
+<span id="cb83-876"><a href="#cb83-876"></a>  <span class="fu">geom_linerange</span>(<span class="at">data =</span> ggdat <span class="sc">|&gt;</span> <span class="fu">filter</span>(x<span class="sc">==</span><span class="dv">2</span><span class="sc">|</span>x<span class="sc">==</span><span class="dv">3</span>),</span>
+<span id="cb83-877"><a href="#cb83-877"></a>    <span class="fu">aes</span>(<span class="at">x =</span> x, <span class="at">ymin =</span> <span class="dv">0</span>, <span class="at">ymax =</span> PMF),</span>
+<span id="cb83-878"><a href="#cb83-878"></a>    <span class="at">color=</span><span class="st">"darkorchid2"</span>, <span class="at">linewidth=</span><span class="fl">1.5</span>, <span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb83-879"><a href="#cb83-879"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb83-880"><a href="#cb83-880"></a>  <span class="fu">scale_x_continuous</span>(<span class="st">"Probability of winning n games"</span>,</span>
+<span id="cb83-881"><a href="#cb83-881"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb83-882"><a href="#cb83-882"></a>  <span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-883"><a href="#cb83-883"></a>  <span class="fu">theme_bw</span>()</span>
+<span id="cb83-884"><a href="#cb83-884"></a></span>
+<span id="cb83-885"><a href="#cb83-885"></a>PMF.plot</span>
+<span id="cb83-886"><a href="#cb83-886"></a></span>
+<span id="cb83-887"><a href="#cb83-887"></a>(<span class="at">A_win =</span> <span class="dv">1</span> <span class="sc">-</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">0</span>) <span class="sc">-</span></span>
+<span id="cb83-888"><a href="#cb83-888"></a>             <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">3</span>, <span class="at">x=</span><span class="dv">1</span>))</span>
+<span id="cb83-889"><a href="#cb83-889"></a><span class="in">```</span></span>
+<span id="cb83-890"><a href="#cb83-890"></a></span>
+<span id="cb83-891"><a href="#cb83-891"></a>We now get a tighter spread for the variance with theta. Our probabilities are $\approx 0.81,0.76, \text{ and } 0.74$ for $\theta = 0.5,1, \text{ and } 1.5$, respectively. This clusters cloesly around our results for the other distributions.</span>
+<span id="cb83-892"><a href="#cb83-892"></a></span>
+<span id="cb83-893"><a href="#cb83-893"></a></span>
+<span id="cb83-894"><a href="#cb83-894"></a><span class="fu"># A Comparison</span></span>
+<span id="cb83-895"><a href="#cb83-895"></a>Compute the probabilities for all outcomes for Player A.</span>
+<span id="cb83-896"><a href="#cb83-896"></a></span>
+<span id="cb83-897"><a href="#cb83-897"></a><span class="ss">* </span>Loses 0-2 (LL"L", LL"W")</span>
+<span id="cb83-898"><a href="#cb83-898"></a><span class="ss">* </span>Loses 1-2 (WLL, LWL)</span>
+<span id="cb83-899"><a href="#cb83-899"></a><span class="ss">* </span>Wins 2-0 (WW"W", WW"L")</span>
+<span id="cb83-900"><a href="#cb83-900"></a><span class="ss">* </span>Wins 2-1 (LWW, WLW)</span>
+<span id="cb83-901"><a href="#cb83-901"></a></span>
+<span id="cb83-902"><a href="#cb83-902"></a>**Note**: You'll need to define these outcomes in terms of the random variable. </span>
+<span id="cb83-903"><a href="#cb83-903"></a></span>
+<span id="cb83-904"><a href="#cb83-904"></a>**Create a bar plot (or column plot) using `ggplot` to show the probability of each outcome under the following conditions:**</span>
+<span id="cb83-905"><a href="#cb83-905"></a></span>
+<span id="cb83-906"><a href="#cb83-906"></a><span class="ss">* </span>**Binomial**</span>
+<span id="cb83-907"><a href="#cb83-907"></a><span class="ss">* </span>**Negative Binomial**\</span>
+<span id="cb83-908"><a href="#cb83-908"></a>**Note**: You can compute the lose probabilities the same way as the win probabilities using success probability ($1-p$)</span>
+<span id="cb83-909"><a href="#cb83-909"></a><span class="ss">* </span>**Beta-Binomial**</span>
+<span id="cb83-910"><a href="#cb83-910"></a><span class="ss">* </span>**Althman Binomial with $\theta=0.50$ and $\theta=1.5$**</span>
+<span id="cb83-911"><a href="#cb83-911"></a><span class="ss">* </span>**Althman Beta-Binomial with $\theta=0.50$ and $\theta=1.5$**</span>
+<span id="cb83-912"><a href="#cb83-912"></a></span>
+<span id="cb83-913"><a href="#cb83-913"></a>**Comment on the differences in the context of a best two-out-of-three match.**</span>
+<span id="cb83-914"><a href="#cb83-914"></a></span>
+<span id="cb83-915"><a href="#cb83-915"></a>**Solution**</span>
+<span id="cb83-916"><a href="#cb83-916"></a></span>
+<span id="cb83-917"><a href="#cb83-917"></a>This seems easy to write a function for, but this is one of those examples where the long way is the short way. The need to distinguish between the third and fourth cases make this complicated. This approach also is very easy to analyze what is going on in terms of the probability statements. We check each distribution to make sure the sum of all outcomes is 1. </span>
+<span id="cb83-918"><a href="#cb83-918"></a></span>
+<span id="cb83-921"><a href="#cb83-921"></a><span class="in">```{r}</span></span>
+<span id="cb83-922"><a href="#cb83-922"></a><span class="co"># Binomial:</span></span>
+<span id="cb83-923"><a href="#cb83-923"></a>prob_binom <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>)</span>
+<span id="cb83-924"><a href="#cb83-924"></a></span>
+<span id="cb83-925"><a href="#cb83-925"></a>prob_binom[<span class="dv">1</span>] <span class="ot">=</span> <span class="fu">dbinom</span>(<span class="at">x=</span><span class="dv">0</span>, <span class="at">prob=</span><span class="fl">0.7</span>, <span class="at">size=</span><span class="dv">2</span>)            <span class="co"># Lose 0-2</span></span>
+<span id="cb83-926"><a href="#cb83-926"></a>prob_binom[<span class="dv">2</span>] <span class="ot">=</span> <span class="fu">dbinom</span>(<span class="at">x=</span><span class="dv">1</span>, <span class="at">prob=</span><span class="fl">0.7</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">*</span> (<span class="dv">1</span><span class="fl">-0.7</span>) <span class="co"># Lose 1-2</span></span>
+<span id="cb83-927"><a href="#cb83-927"></a>prob_binom[<span class="dv">3</span>] <span class="ot">=</span> <span class="fu">dbinom</span>(<span class="at">x=</span><span class="dv">2</span>, <span class="at">prob=</span><span class="fl">0.7</span>, <span class="at">size=</span><span class="dv">2</span>)            <span class="co"># Win 2-0</span></span>
+<span id="cb83-928"><a href="#cb83-928"></a>prob_binom[<span class="dv">4</span>] <span class="ot">=</span> <span class="fu">dbinom</span>(<span class="at">x=</span><span class="dv">1</span>, <span class="at">prob=</span><span class="fl">0.7</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">*</span> <span class="fl">0.7</span>      <span class="co"># Win 2-1</span></span>
+<span id="cb83-929"><a href="#cb83-929"></a></span>
+<span id="cb83-930"><a href="#cb83-930"></a><span class="fu">sum</span>(prob_binom)</span>
+<span id="cb83-931"><a href="#cb83-931"></a></span>
+<span id="cb83-932"><a href="#cb83-932"></a><span class="co"># Negative Binomial:</span></span>
+<span id="cb83-933"><a href="#cb83-933"></a>prob_nbinom <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>)</span>
+<span id="cb83-934"><a href="#cb83-934"></a></span>
+<span id="cb83-935"><a href="#cb83-935"></a>prob_nbinom[<span class="dv">1</span>] <span class="ot">=</span> <span class="fu">dbinom</span>(<span class="at">x=</span><span class="dv">0</span>, <span class="at">prob=</span><span class="fl">0.7</span>, <span class="at">size=</span><span class="dv">2</span>)            <span class="co"># Lose 0-2</span></span>
+<span id="cb83-936"><a href="#cb83-936"></a>prob_nbinom[<span class="dv">2</span>] <span class="ot">=</span> <span class="fu">dbinom</span>(<span class="at">x=</span><span class="dv">1</span>, <span class="at">prob=</span><span class="fl">0.7</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">*</span> (<span class="dv">1</span><span class="fl">-0.7</span>) <span class="co"># Lose 1-2</span></span>
+<span id="cb83-937"><a href="#cb83-937"></a>prob_nbinom[<span class="dv">3</span>] <span class="ot">=</span> <span class="fu">dbinom</span>(<span class="at">x=</span><span class="dv">2</span>, <span class="at">prob=</span><span class="fl">0.7</span>, <span class="at">size=</span><span class="dv">2</span>)            <span class="co"># Win 2-0</span></span>
+<span id="cb83-938"><a href="#cb83-938"></a>prob_nbinom[<span class="dv">4</span>] <span class="ot">=</span> <span class="fu">dbinom</span>(<span class="at">x=</span><span class="dv">1</span>, <span class="at">prob=</span><span class="fl">0.7</span>, <span class="at">size=</span><span class="dv">2</span>) <span class="sc">*</span> <span class="fl">0.7</span>      <span class="co"># Win 2-1</span></span>
+<span id="cb83-939"><a href="#cb83-939"></a></span>
+<span id="cb83-940"><a href="#cb83-940"></a><span class="fu">sum</span>(prob_nbinom)</span>
+<span id="cb83-941"><a href="#cb83-941"></a></span>
+<span id="cb83-942"><a href="#cb83-942"></a><span class="co"># Beta-Binomial:</span></span>
+<span id="cb83-943"><a href="#cb83-943"></a>prob_bbinom <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>)</span>
+<span id="cb83-944"><a href="#cb83-944"></a></span>
+<span id="cb83-945"><a href="#cb83-945"></a>prob_bbinom[<span class="dv">1</span>] <span class="ot">=</span> <span class="fu">dbbinom</span>(<span class="at">x=</span><span class="dv">0</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>)             <span class="co"># Lose 0-2</span></span>
+<span id="cb83-946"><a href="#cb83-946"></a>prob_bbinom[<span class="dv">2</span>] <span class="ot">=</span> <span class="fu">dbbinom</span>(<span class="at">x=</span><span class="dv">1</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>) <span class="sc">*</span> (<span class="dv">3</span><span class="sc">/</span>(<span class="dv">7</span><span class="sc">+</span><span class="dv">3</span>)) <span class="co"># Lose 1-2</span></span>
+<span id="cb83-947"><a href="#cb83-947"></a>prob_bbinom[<span class="dv">3</span>] <span class="ot">=</span> <span class="fu">dbbinom</span>(<span class="at">x=</span><span class="dv">2</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>)             <span class="co"># Win 2-0</span></span>
+<span id="cb83-948"><a href="#cb83-948"></a>prob_bbinom[<span class="dv">4</span>] <span class="ot">=</span> <span class="fu">dbbinom</span>(<span class="at">x=</span><span class="dv">1</span>, <span class="at">size=</span><span class="dv">2</span>, <span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>) <span class="sc">*</span> (<span class="dv">7</span><span class="sc">/</span>(<span class="dv">7</span><span class="sc">+</span><span class="dv">3</span>)) <span class="co"># Win 2-1</span></span>
+<span id="cb83-949"><a href="#cb83-949"></a></span>
+<span id="cb83-950"><a href="#cb83-950"></a><span class="co"># </span><span class="al">NOTE</span><span class="co">: the $3/(7+3)$ is derived from the expected win probability of the Beta-Binomial distribution (alpha divided by alpha plus beta) for one game. We saw this formula in section 2.3. We use this again for Altham's Beta-Binomial. </span></span>
+<span id="cb83-951"><a href="#cb83-951"></a></span>
+<span id="cb83-952"><a href="#cb83-952"></a><span class="fu">sum</span>(prob_bbinom)</span>
+<span id="cb83-953"><a href="#cb83-953"></a></span>
+<span id="cb83-954"><a href="#cb83-954"></a><span class="co"># Altham Binomial, theta = 0.5:</span></span>
+<span id="cb83-955"><a href="#cb83-955"></a>prob_altham05 <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>)</span>
+<span id="cb83-956"><a href="#cb83-956"></a></span>
+<span id="cb83-957"><a href="#cb83-957"></a>prob_altham05[<span class="dv">1</span>] <span class="ot">=</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">0</span>)            <span class="co"># Lose 0-2</span></span>
+<span id="cb83-958"><a href="#cb83-958"></a>prob_altham05[<span class="dv">2</span>] <span class="ot">=</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">1</span>) <span class="sc">*</span> (<span class="dv">1</span><span class="fl">-0.7</span>) <span class="co"># Lose 1-2</span></span>
+<span id="cb83-959"><a href="#cb83-959"></a>prob_altham05[<span class="dv">3</span>] <span class="ot">=</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">2</span>)            <span class="co"># Win 2-0</span></span>
+<span id="cb83-960"><a href="#cb83-960"></a>prob_altham05[<span class="dv">4</span>] <span class="ot">=</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">1</span>) <span class="sc">*</span> <span class="fl">0.7</span>     <span class="co"># Win 2-1</span></span>
+<span id="cb83-961"><a href="#cb83-961"></a></span>
+<span id="cb83-962"><a href="#cb83-962"></a><span class="fu">sum</span>(prob_altham05)</span>
+<span id="cb83-963"><a href="#cb83-963"></a></span>
+<span id="cb83-964"><a href="#cb83-964"></a><span class="co"># Altham Binomial, theta = 1.5:</span></span>
+<span id="cb83-965"><a href="#cb83-965"></a>prob_altham15 <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>)</span>
+<span id="cb83-966"><a href="#cb83-966"></a></span>
+<span id="cb83-967"><a href="#cb83-967"></a>prob_altham15[<span class="dv">1</span>] <span class="ot">=</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">0</span>)            <span class="co"># Lose 0-2</span></span>
+<span id="cb83-968"><a href="#cb83-968"></a>prob_altham15[<span class="dv">2</span>] <span class="ot">=</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">1</span>) <span class="sc">*</span> (<span class="dv">1</span><span class="fl">-0.7</span>) <span class="co"># Lose 1-2</span></span>
+<span id="cb83-969"><a href="#cb83-969"></a>prob_altham15[<span class="dv">3</span>] <span class="ot">=</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">2</span>)            <span class="co"># Win 2-0</span></span>
+<span id="cb83-970"><a href="#cb83-970"></a>prob_altham15[<span class="dv">4</span>] <span class="ot">=</span> <span class="fu">daltbinom</span>(<span class="at">p=</span><span class="fl">0.7</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">1</span>) <span class="sc">*</span> <span class="fl">0.7</span>     <span class="co"># Win 2-1</span></span>
+<span id="cb83-971"><a href="#cb83-971"></a></span>
+<span id="cb83-972"><a href="#cb83-972"></a><span class="fu">sum</span>(prob_altham15)</span>
+<span id="cb83-973"><a href="#cb83-973"></a></span>
+<span id="cb83-974"><a href="#cb83-974"></a><span class="co"># Altham Beta-Binomial, theta = 0.5:</span></span>
+<span id="cb83-975"><a href="#cb83-975"></a>prob_althambb05 <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>)</span>
+<span id="cb83-976"><a href="#cb83-976"></a></span>
+<span id="cb83-977"><a href="#cb83-977"></a>prob_althambb05[<span class="dv">1</span>] <span class="ot">=</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">0</span>)              <span class="co"># Lose 0-2</span></span>
+<span id="cb83-978"><a href="#cb83-978"></a>prob_althambb05[<span class="dv">2</span>] <span class="ot">=</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">1</span>) <span class="sc">*</span> (<span class="dv">3</span><span class="sc">/</span>(<span class="dv">7</span><span class="sc">+</span><span class="dv">3</span>)) <span class="co"># Lose 1-2</span></span>
+<span id="cb83-979"><a href="#cb83-979"></a>prob_althambb05[<span class="dv">3</span>] <span class="ot">=</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">2</span>)              <span class="co"># Win 2-0</span></span>
+<span id="cb83-980"><a href="#cb83-980"></a>prob_althambb05[<span class="dv">4</span>] <span class="ot">=</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">0.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">1</span>) <span class="sc">*</span> (<span class="dv">7</span><span class="sc">/</span>(<span class="dv">7</span><span class="sc">+</span><span class="dv">3</span>)) <span class="co"># Win 2-1</span></span>
+<span id="cb83-981"><a href="#cb83-981"></a></span>
+<span id="cb83-982"><a href="#cb83-982"></a><span class="fu">sum</span>(prob_althambb05)</span>
+<span id="cb83-983"><a href="#cb83-983"></a></span>
+<span id="cb83-984"><a href="#cb83-984"></a><span class="co"># Altham Beta-Binomial, theta = 1.5:</span></span>
+<span id="cb83-985"><a href="#cb83-985"></a>prob_althambb15 <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>)</span>
+<span id="cb83-986"><a href="#cb83-986"></a></span>
+<span id="cb83-987"><a href="#cb83-987"></a>prob_althambb15[<span class="dv">1</span>] <span class="ot">=</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">0</span>)              <span class="co"># Lose 0-2</span></span>
+<span id="cb83-988"><a href="#cb83-988"></a>prob_althambb15[<span class="dv">2</span>] <span class="ot">=</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">1</span>) <span class="sc">*</span> (<span class="dv">3</span><span class="sc">/</span>(<span class="dv">7</span><span class="sc">+</span><span class="dv">3</span>)) <span class="co"># Lose 1-2</span></span>
+<span id="cb83-989"><a href="#cb83-989"></a>prob_althambb15[<span class="dv">3</span>] <span class="ot">=</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">2</span>)              <span class="co"># Win 2-0</span></span>
+<span id="cb83-990"><a href="#cb83-990"></a>prob_althambb15[<span class="dv">4</span>] <span class="ot">=</span> <span class="fu">daltbbinom</span>(<span class="at">alpha=</span><span class="dv">7</span>, <span class="at">beta=</span><span class="dv">3</span>, <span class="at">theta=</span><span class="fl">1.5</span>, <span class="at">n=</span><span class="dv">2</span>, <span class="at">x=</span><span class="dv">1</span>) <span class="sc">*</span> (<span class="dv">7</span><span class="sc">/</span>(<span class="dv">7</span><span class="sc">+</span><span class="dv">3</span>)) <span class="co"># Win 2-1</span></span>
+<span id="cb83-991"><a href="#cb83-991"></a></span>
+<span id="cb83-992"><a href="#cb83-992"></a><span class="fu">sum</span>(prob_althambb15)</span>
+<span id="cb83-993"><a href="#cb83-993"></a></span>
+<span id="cb83-994"><a href="#cb83-994"></a>plotting.dat <span class="ot">=</span> <span class="fu">tibble</span>(</span>
+<span id="cb83-995"><a href="#cb83-995"></a>  <span class="at">outcome =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Lose 0-2"</span>, <span class="st">"Lose 1-2"</span>, <span class="st">"Win 2-0"</span>, <span class="st">"Win 2-1"</span>), <span class="dv">7</span>),</span>
+<span id="cb83-996"><a href="#cb83-996"></a>  <span class="at">prob    =</span> <span class="fu">c</span>(prob_binom, prob_nbinom, prob_bbinom,</span>
+<span id="cb83-997"><a href="#cb83-997"></a>              prob_altham05, prob_altham15,</span>
+<span id="cb83-998"><a href="#cb83-998"></a>              prob_althambb05, prob_althambb15),</span>
+<span id="cb83-999"><a href="#cb83-999"></a>  <span class="at">dist    =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Binomial"</span>, <span class="st">"Negative Binomial"</span>, <span class="st">"Beta-Binomial"</span>,</span>
+<span id="cb83-1000"><a href="#cb83-1000"></a>                  <span class="st">"Altham (t=0.5)"</span>, <span class="st">"Altham (t=1.5)"</span>,</span>
+<span id="cb83-1001"><a href="#cb83-1001"></a>                  <span class="st">"Altham BB (t=0.5)"</span>, <span class="st">"Altham BB (t=1.5)"</span>), <span class="at">each=</span><span class="dv">4</span>)</span>
+<span id="cb83-1002"><a href="#cb83-1002"></a>)</span>
+<span id="cb83-1003"><a href="#cb83-1003"></a></span>
+<span id="cb83-1004"><a href="#cb83-1004"></a><span class="fu">ggplot</span>(plotting.dat) <span class="sc">+</span></span>
+<span id="cb83-1005"><a href="#cb83-1005"></a>  <span class="fu">geom_col</span>(<span class="fu">aes</span>(<span class="at">x =</span> outcome, <span class="at">y =</span> prob, <span class="at">fill =</span> dist),</span>
+<span id="cb83-1006"><a href="#cb83-1006"></a>           <span class="at">position =</span> <span class="st">"dodge"</span>) <span class="sc">+</span></span>
+<span id="cb83-1007"><a href="#cb83-1007"></a>  <span class="fu">scale_x_discrete</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="st">"Lose 0-2"</span>, <span class="st">"Lose 1-2"</span>, <span class="st">"Win 2-1"</span>, <span class="st">"Win 2-0"</span>)) <span class="sc">+</span></span>
+<span id="cb83-1008"><a href="#cb83-1008"></a>  <span class="fu">ylab</span>(<span class="st">"Probability"</span>) <span class="sc">+</span></span>
+<span id="cb83-1009"><a href="#cb83-1009"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Dark2"</span>, <span class="at">name =</span> <span class="st">"Distribution"</span>) <span class="sc">+</span></span>
+<span id="cb83-1010"><a href="#cb83-1010"></a>  <span class="fu">theme_bw</span>()</span>
+<span id="cb83-1011"><a href="#cb83-1011"></a></span>
+<span id="cb83-1012"><a href="#cb83-1012"></a><span class="co"># This plot was informed by a lot of internet searches and minimal AI help </span></span>
+<span id="cb83-1013"><a href="#cb83-1013"></a><span class="co"># (just the scale_x_discrete and the scale_fill_brewer). </span></span>
+<span id="cb83-1014"><a href="#cb83-1014"></a><span class="co"># I really like the way it looks </span></span>
+<span id="cb83-1015"><a href="#cb83-1015"></a><span class="co"># and I will probably come back to this for plotting anything similar.</span></span>
+<span id="cb83-1016"><a href="#cb83-1016"></a><span class="in">```</span></span>
+<span id="cb83-1017"><a href="#cb83-1017"></a></span>
+<span id="cb83-1018"><a href="#cb83-1018"></a>The Binomial and Negative Binomial distributions are identical. The Beta-Binomial distributions have a higher probability of more "extreme" values, as their variance is higher (and, notably, they are also more left-skewed). Altham's for low theta, and then for larger theta, have the most extreme distributions. Low theta expects very extreme values, and high theta expects very moderate values. The same follows for Altham's Beta-Binomial distributions.</span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Hudson Miller · Colgate University</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
 
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

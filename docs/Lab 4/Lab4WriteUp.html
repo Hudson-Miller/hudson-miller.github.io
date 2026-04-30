@@ -92,16 +92,16 @@ div.csl-indent {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-8b4baf804e461d9b72633f0de59a0cac.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-bcb4737e8fbcf1e9dfc00b59f8305558.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-ab8bc71f45afde97538d8ceca41e9436.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -123,6 +123,7 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -157,98 +158,153 @@ window.Quarto = {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Hudson Miller</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 4/Lab4WriteUp.html">Lab Four – Programming in R</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Math 240 Labs</a></li><li class="breadcrumb-item"><a href="../Lab 4/Lab4WriteUp.html">Lab 4</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="../">Hudson Miller</a> 
-    </div>
-      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Overview</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Math 240 Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 2/Lab2WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Two – Basic Tasks in R</span></a>
+ <span class="menu-text">Lab 2</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 3/Lab3WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Three – Matrices and Data Frames in R</span></a>
+ <span class="menu-text">Lab 3</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 4/Lab4WriteUp.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab Four – Programming in R</span></a>
+ <span class="menu-text">Lab 4</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 5-6/Lab5WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Five-Six – Data Wrangling in R</span></a>
+ <span class="menu-text">Lab 5–6</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 8-9/Lab8WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Eight – Probability</span></a>
+ <span class="menu-text">Lab 8–9</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 10/Lab10WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Ten – Point Estimation</span></a>
+ <span class="menu-text">Lab 10</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 11/Lab11WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Eleven – Point Estimation and Resampling</span></a>
+ <span class="menu-text">Lab 11</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Lab 13/Lab13WriteUp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab Thirteen – Statistical Inference</span></a>
+ <span class="menu-text">Lab 13</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Colgate Men’s Rowing Performance Data</span></a>
+ <span class="menu-text">Rowing Data Analysis</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -300,9 +356,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lab 2/Lab2WriteUp.html">Math 240 Labs</a></li><li class="breadcrumb-item"><a href="../Lab 4/Lab4WriteUp.html">Lab 4</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab Four – Programming in R</h1>
+<div class="quarto-title-block"><div><h1 class="title">Lab Four – Programming in R</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 </div>
 
 
@@ -870,6 +926,8 @@ window.Quarto = {
 <p>Yes, I used functions for the main structure of my code. I used them to write logic that would perform the code for any recipe number. This solution was halfway to being an efficient and scaleable pipeline; with the missing ingredient being logic to loop through any number of recipes.</p>
 
 
+<!-- -->
+
 
 </section>
 </section>
@@ -949,6 +1007,57 @@ Wickham, Hadley. 2025. <em>Rvest: Easily Harvest (Scrape) Web Pages</em>. <a hre
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -1278,10 +1387,443 @@ Wickham, Hadley. 2025. <em>Rvest: Easily Harvest (Scrape) Web Pages</em>. <a hre
       }
     }
   });
-  </script>
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb48" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb48-1"><a href="#cb48-1"></a><span class="co">---</span></span>
+<span id="cb48-2"><a href="#cb48-2"></a><span class="an">title:</span><span class="co"> Lab Four -- Programming in R # Title of the document</span></span>
+<span id="cb48-3"><a href="#cb48-3"></a></span>
+<span id="cb48-4"><a href="#cb48-4"></a><span class="co"># Bibliography Details</span></span>
+<span id="cb48-5"><a href="#cb48-5"></a><span class="an">bibliography:</span><span class="co"> Lab4References.bib  # Name of bib file in the same folder </span></span>
+<span id="cb48-6"><a href="#cb48-6"></a><span class="an">bibliographystyle:</span><span class="co"> apa            # Bibliography style</span></span>
+<span id="cb48-7"><a href="#cb48-7"></a></span>
+<span id="cb48-8"><a href="#cb48-8"></a><span class="an">execute:</span><span class="co">               # Default settings for code blocks</span></span>
+<span id="cb48-9"><a href="#cb48-9"></a><span class="co">  warning: false       # Do not print warnings</span></span>
+<span id="cb48-10"><a href="#cb48-10"></a><span class="co">  message: false       # Do not print messages</span></span>
+<span id="cb48-11"><a href="#cb48-11"></a><span class="co">  size: "scriptsize"   # Set code size to script size</span></span>
+<span id="cb48-12"><a href="#cb48-12"></a></span>
+<span id="cb48-13"><a href="#cb48-13"></a><span class="co"># Below will do html by default. To render the entire project</span></span>
+<span id="cb48-14"><a href="#cb48-14"></a><span class="co"># Use the following code:</span></span>
+<span id="cb48-15"><a href="#cb48-15"></a><span class="co"># quarto::quarto_render("Lab4WriteUp.qmd")</span></span>
+<span id="cb48-16"><a href="#cb48-16"></a><span class="an">format:</span></span>
+<span id="cb48-17"><a href="#cb48-17"></a><span class="co">  html:       # Specify HTML formatting options </span></span>
+<span id="cb48-18"><a href="#cb48-18"></a><span class="co">    number-sections: true      # Number Sections</span></span>
+<span id="cb48-19"><a href="#cb48-19"></a><span class="co">    code-fold: true            # Button to show code</span></span>
+<span id="cb48-20"><a href="#cb48-20"></a><span class="co">    code-line-numbers: true    # Line numbers printed in code</span></span>
+<span id="cb48-21"><a href="#cb48-21"></a><span class="co">    cap-location: top          # Captions at the top of tables and figures</span></span>
+<span id="cb48-22"><a href="#cb48-22"></a><span class="co">  pdf:        # Specify .pdf formatting options </span></span>
+<span id="cb48-23"><a href="#cb48-23"></a><span class="co">    documentclass: article     # Document Class</span></span>
+<span id="cb48-24"><a href="#cb48-24"></a><span class="co">    number-sections: true      # Number Sections</span></span>
+<span id="cb48-25"><a href="#cb48-25"></a><span class="co">    reference-section-title: "References" # Title for reference section</span></span>
+<span id="cb48-26"><a href="#cb48-26"></a><span class="co">    code-line-numbers: true    # Line numbers printed in code</span></span>
+<span id="cb48-27"><a href="#cb48-27"></a><span class="co">    cap-location: top          # Captions at the top of tables </span></span>
+<span id="cb48-28"><a href="#cb48-28"></a><span class="co">    geometry:</span></span>
+<span id="cb48-29"><a href="#cb48-29"></a><span class="co">      - top=0.75in</span></span>
+<span id="cb48-30"><a href="#cb48-30"></a><span class="co">      - left=0.75in</span></span>
+<span id="cb48-31"><a href="#cb48-31"></a><span class="co">      - bottom=0.75in</span></span>
+<span id="cb48-32"><a href="#cb48-32"></a><span class="co">      - right=0.75in</span></span>
+<span id="cb48-33"><a href="#cb48-33"></a><span class="an">format-links:</span><span class="co"> [pdf]</span></span>
+<span id="cb48-34"><a href="#cb48-34"></a><span class="co">---</span></span>
+<span id="cb48-37"><a href="#cb48-37"></a><span class="in">```{r}</span></span>
+<span id="cb48-38"><a href="#cb48-38"></a><span class="co">#| echo: false</span></span>
+<span id="cb48-39"><a href="#cb48-39"></a></span>
+<span id="cb48-40"><a href="#cb48-40"></a>default_chunk_hook  <span class="ot">&lt;-</span> knitr<span class="sc">::</span>knit_hooks<span class="sc">$</span><span class="fu">get</span>(<span class="st">"chunk"</span>)</span>
+<span id="cb48-41"><a href="#cb48-41"></a></span>
+<span id="cb48-42"><a href="#cb48-42"></a>latex_font_size <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Huge"</span>, <span class="st">"huge"</span>, <span class="st">"LARGE"</span>, <span class="st">"Large"</span>, </span>
+<span id="cb48-43"><a href="#cb48-43"></a>                     <span class="st">"large"</span>, <span class="st">"normalsize"</span>, <span class="st">"small"</span>, </span>
+<span id="cb48-44"><a href="#cb48-44"></a>                     <span class="st">"footnotesize"</span>, <span class="st">"scriptsize"</span>, <span class="st">"tiny"</span>)</span>
+<span id="cb48-45"><a href="#cb48-45"></a></span>
+<span id="cb48-46"><a href="#cb48-46"></a>knitr<span class="sc">::</span>knit_hooks<span class="sc">$</span><span class="fu">set</span>(<span class="at">chunk =</span> <span class="cf">function</span>(x, options) {</span>
+<span id="cb48-47"><a href="#cb48-47"></a>  x <span class="ot">&lt;-</span> <span class="fu">default_chunk_hook</span>(x, options)</span>
+<span id="cb48-48"><a href="#cb48-48"></a>  <span class="cf">if</span>(options<span class="sc">$</span>size <span class="sc">%in%</span> latex_font_size) {</span>
+<span id="cb48-49"><a href="#cb48-49"></a>    <span class="fu">paste0</span>(<span class="st">"</span><span class="sc">\n</span><span class="st"> </span><span class="sc">\\</span><span class="st">"</span>, options<span class="sc">$</span>size, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>, </span>
+<span id="cb48-50"><a href="#cb48-50"></a>      x, </span>
+<span id="cb48-51"><a href="#cb48-51"></a>      <span class="st">"</span><span class="sc">\n\n</span><span class="st"> </span><span class="sc">\\</span><span class="st">normalsize"</span></span>
+<span id="cb48-52"><a href="#cb48-52"></a>    )</span>
+<span id="cb48-53"><a href="#cb48-53"></a>  } <span class="cf">else</span> {</span>
+<span id="cb48-54"><a href="#cb48-54"></a>    x</span>
+<span id="cb48-55"><a href="#cb48-55"></a>  }</span>
+<span id="cb48-56"><a href="#cb48-56"></a>})</span>
+<span id="cb48-57"><a href="#cb48-57"></a></span>
+<span id="cb48-58"><a href="#cb48-58"></a><span class="in">```</span></span>
+<span id="cb48-59"><a href="#cb48-59"></a></span>
+<span id="cb48-62"><a href="#cb48-62"></a><span class="in">```{r}</span></span>
+<span id="cb48-63"><a href="#cb48-63"></a><span class="co">#| label: load-packages</span></span>
+<span id="cb48-64"><a href="#cb48-64"></a><span class="co">#| include: false</span></span>
+<span id="cb48-65"><a href="#cb48-65"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb48-66"><a href="#cb48-66"></a><span class="in">```</span></span>
+<span id="cb48-67"><a href="#cb48-67"></a></span>
+<span id="cb48-68"><a href="#cb48-68"></a><span class="ss">* </span>Complete the tasks below. Make sure to start your solutions in on a new line that starts with "**Solution**:".</span>
+<span id="cb48-69"><a href="#cb48-69"></a><span class="ss">* </span>Make sure to use the Quarto Cheatsheet. This will make completing and writing up the lab *much* easier.</span>
+<span id="cb48-70"><a href="#cb48-70"></a></span>
+<span id="cb48-71"><a href="#cb48-71"></a>In this lab, we will build a mealkit recipe generator. I created a small website of about 40 recipes. We will scrape recipes from that website, randomly select three meals, and print a grocery list with recipe cards.</span>
+<span id="cb48-72"><a href="#cb48-72"></a></span>
+<span id="cb48-73"><a href="#cb48-73"></a><span class="fu"># Preliminaries </span></span>
+<span id="cb48-74"><a href="#cb48-74"></a></span>
+<span id="cb48-75"><a href="#cb48-75"></a><span class="fu">## Part a</span></span>
+<span id="cb48-76"><a href="#cb48-76"></a>Below, I create a numeric vector filled with random observations. Ask for the 3rd item.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">/&gt;</span> </span>
+<span id="cb48-77"><a href="#cb48-77"></a>**Note**: The <span class="in">`set.seed(7272)`</span> portion ensures we all get the same answer.</span>
+<span id="cb48-78"><a href="#cb48-78"></a></span>
+<span id="cb48-81"><a href="#cb48-81"></a><span class="in">```{r}</span></span>
+<span id="cb48-82"><a href="#cb48-82"></a><span class="co">#| size: "scriptsize"</span></span>
+<span id="cb48-83"><a href="#cb48-83"></a><span class="fu">set.seed</span>(<span class="dv">7272</span>) <span class="co"># sets the randomization seed for replication</span></span>
+<span id="cb48-84"><a href="#cb48-84"></a>x <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,          <span class="co"># sample from 1, 2, 3, ..., 10 </span></span>
+<span id="cb48-85"><a href="#cb48-85"></a>            <span class="at">size=</span><span class="dv">10</span>,         <span class="co"># sample of 10</span></span>
+<span id="cb48-86"><a href="#cb48-86"></a>            <span class="at">replace =</span> <span class="cn">TRUE</span>)  <span class="co"># allowed to sample the same item multiple times</span></span>
+<span id="cb48-87"><a href="#cb48-87"></a><span class="in">```</span></span>
+<span id="cb48-88"><a href="#cb48-88"></a></span>
+<span id="cb48-89"><a href="#cb48-89"></a>**Solution**</span>
+<span id="cb48-90"><a href="#cb48-90"></a></span>
+<span id="cb48-93"><a href="#cb48-93"></a><span class="in">```{r}</span></span>
+<span id="cb48-94"><a href="#cb48-94"></a>(x[<span class="dv">3</span>])</span>
+<span id="cb48-95"><a href="#cb48-95"></a><span class="in">```</span></span>
+<span id="cb48-96"><a href="#cb48-96"></a></span>
+<span id="cb48-97"><a href="#cb48-97"></a><span class="fu">## Part b</span></span>
+<span id="cb48-98"><a href="#cb48-98"></a></span>
+<span id="cb48-99"><a href="#cb48-99"></a>Below, I create a data frame filled with random observations.</span>
+<span id="cb48-100"><a href="#cb48-100"></a></span>
+<span id="cb48-103"><a href="#cb48-103"></a><span class="in">```{r}</span></span>
+<span id="cb48-104"><a href="#cb48-104"></a><span class="fu">set.seed</span>(<span class="dv">7272</span>) <span class="co"># sets the randomization seed for replication</span></span>
+<span id="cb48-105"><a href="#cb48-105"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x1 =</span> <span class="fu">sample</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,          <span class="co"># sample from 1, 2, 3, ..., 10 </span></span>
+<span id="cb48-106"><a href="#cb48-106"></a>                             <span class="at">size=</span><span class="dv">10</span>,         <span class="co"># sample of 10</span></span>
+<span id="cb48-107"><a href="#cb48-107"></a>                             <span class="at">replace =</span> <span class="cn">TRUE</span>), <span class="co"># allowed to sample the same item multiple times</span></span>
+<span id="cb48-108"><a href="#cb48-108"></a>                 <span class="at">x2 =</span> <span class="fu">sample</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,          <span class="co"># sample from 1, 2, 3, ..., 10 </span></span>
+<span id="cb48-109"><a href="#cb48-109"></a>                             <span class="at">size=</span><span class="dv">10</span>,         <span class="co"># sample of 10</span></span>
+<span id="cb48-110"><a href="#cb48-110"></a>                             <span class="at">replace =</span> <span class="cn">TRUE</span>), <span class="co"># allowed to sample the same item multiple times</span></span>
+<span id="cb48-111"><a href="#cb48-111"></a>                 <span class="at">x3 =</span> <span class="fu">sample</span>(<span class="at">x=</span><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,          <span class="co"># sample from 1, 2, 3, ..., 10 </span></span>
+<span id="cb48-112"><a href="#cb48-112"></a>                             <span class="at">size=</span><span class="dv">10</span>,         <span class="co"># sample of 10</span></span>
+<span id="cb48-113"><a href="#cb48-113"></a>                             <span class="at">replace =</span> <span class="cn">TRUE</span>)  <span class="co"># allowed to sample the same item multiple times,</span></span>
+<span id="cb48-114"><a href="#cb48-114"></a>)</span>
+<span id="cb48-115"><a href="#cb48-115"></a><span class="in">```</span></span>
+<span id="cb48-116"><a href="#cb48-116"></a></span>
+<span id="cb48-117"><a href="#cb48-117"></a><span class="fu">## Part b </span></span>
+<span id="cb48-118"><a href="#cb48-118"></a>Use the <span class="in">`head(...)`</span> function to peek at the data frame.</span>
+<span id="cb48-119"><a href="#cb48-119"></a></span>
+<span id="cb48-120"><a href="#cb48-120"></a>**Solution**</span>
+<span id="cb48-121"><a href="#cb48-121"></a></span>
+<span id="cb48-124"><a href="#cb48-124"></a><span class="in">```{r}</span></span>
+<span id="cb48-125"><a href="#cb48-125"></a>(<span class="fu">head</span>(df))</span>
+<span id="cb48-126"><a href="#cb48-126"></a><span class="in">```</span></span>
+<span id="cb48-127"><a href="#cb48-127"></a></span>
+<span id="cb48-128"><a href="#cb48-128"></a><span class="fu">## Part c</span></span>
+<span id="cb48-129"><a href="#cb48-129"></a>Ask for the column <span class="in">`x1`</span>.</span>
+<span id="cb48-130"><a href="#cb48-130"></a></span>
+<span id="cb48-131"><a href="#cb48-131"></a>**Solution**</span>
+<span id="cb48-132"><a href="#cb48-132"></a></span>
+<span id="cb48-135"><a href="#cb48-135"></a><span class="in">```{r}</span></span>
+<span id="cb48-136"><a href="#cb48-136"></a>(df[,<span class="dv">1</span>])</span>
+<span id="cb48-137"><a href="#cb48-137"></a><span class="in">```</span></span>
+<span id="cb48-138"><a href="#cb48-138"></a></span>
+<span id="cb48-139"><a href="#cb48-139"></a><span class="fu">## Part d</span></span>
+<span id="cb48-140"><a href="#cb48-140"></a>Ask for the fifth row of the data frame.</span>
+<span id="cb48-141"><a href="#cb48-141"></a></span>
+<span id="cb48-142"><a href="#cb48-142"></a>**Solution**</span>
+<span id="cb48-143"><a href="#cb48-143"></a></span>
+<span id="cb48-146"><a href="#cb48-146"></a><span class="in">```{r}</span></span>
+<span id="cb48-147"><a href="#cb48-147"></a>(df[<span class="dv">5</span>,])</span>
+<span id="cb48-148"><a href="#cb48-148"></a><span class="in">```</span></span>
+<span id="cb48-149"><a href="#cb48-149"></a></span>
+<span id="cb48-150"><a href="#cb48-150"></a><span class="fu">## Part e</span></span>
+<span id="cb48-151"><a href="#cb48-151"></a>Ask for the the value of <span class="in">`x1`</span> in the fifth row of the data frame.</span>
+<span id="cb48-152"><a href="#cb48-152"></a></span>
+<span id="cb48-153"><a href="#cb48-153"></a>**Solution**</span>
+<span id="cb48-154"><a href="#cb48-154"></a></span>
+<span id="cb48-157"><a href="#cb48-157"></a><span class="in">```{r}</span></span>
+<span id="cb48-158"><a href="#cb48-158"></a>(df[<span class="dv">5</span>,<span class="dv">1</span>])</span>
+<span id="cb48-159"><a href="#cb48-159"></a><span class="in">```</span></span>
+<span id="cb48-160"><a href="#cb48-160"></a></span>
+<span id="cb48-161"><a href="#cb48-161"></a><span class="fu">## Part f</span></span>
+<span id="cb48-162"><a href="#cb48-162"></a>Ask for the the value of in the third column and the fifth row of the data frame.</span>
+<span id="cb48-163"><a href="#cb48-163"></a></span>
+<span id="cb48-164"><a href="#cb48-164"></a>**Solution**</span>
+<span id="cb48-165"><a href="#cb48-165"></a></span>
+<span id="cb48-168"><a href="#cb48-168"></a><span class="in">```{r}</span></span>
+<span id="cb48-169"><a href="#cb48-169"></a>(df[<span class="dv">5</span>,<span class="dv">3</span>])</span>
+<span id="cb48-170"><a href="#cb48-170"></a><span class="in">```</span></span>
+<span id="cb48-171"><a href="#cb48-171"></a></span>
+<span id="cb48-172"><a href="#cb48-172"></a><span class="fu">## Part g</span></span>
+<span id="cb48-173"><a href="#cb48-173"></a>Create a sequence from 1 to 10 by 2 and use it to print the odd rows of the data frame.</span>
+<span id="cb48-174"><a href="#cb48-174"></a></span>
+<span id="cb48-175"><a href="#cb48-175"></a>**Solution**</span>
+<span id="cb48-176"><a href="#cb48-176"></a></span>
+<span id="cb48-179"><a href="#cb48-179"></a><span class="in">```{r}</span></span>
+<span id="cb48-180"><a href="#cb48-180"></a>(<span class="at">sequence =</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">10</span>,<span class="dv">2</span>))</span>
+<span id="cb48-181"><a href="#cb48-181"></a>(df[sequence,])</span>
+<span id="cb48-182"><a href="#cb48-182"></a><span class="in">```</span></span>
+<span id="cb48-183"><a href="#cb48-183"></a></span>
+<span id="cb48-184"><a href="#cb48-184"></a><span class="fu">## Part h</span></span>
+<span id="cb48-185"><a href="#cb48-185"></a>Below, I create an empty column called <span class="in">`x12`</span>. Fill in the details of the <span class="in">`for(...)`</span> loop to ensure <span class="in">`x12`</span> is the product of <span class="in">`x1`</span> and <span class="in">`x2`</span>.</span>
+<span id="cb48-188"><a href="#cb48-188"></a><span class="in">```{r}</span></span>
+<span id="cb48-189"><a href="#cb48-189"></a><span class="co">#| size: "scriptsize"</span></span>
+<span id="cb48-190"><a href="#cb48-190"></a>n <span class="ot">&lt;-</span> <span class="fu">nrow</span>(df)                <span class="co"># How many rows do we have to fill?</span></span>
+<span id="cb48-191"><a href="#cb48-191"></a>df<span class="sc">$</span>x12 <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, <span class="fu">nrow</span>(df))   <span class="co"># Create an empty column for x12</span></span>
+<span id="cb48-192"><a href="#cb48-192"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(df)){</span>
+<span id="cb48-193"><a href="#cb48-193"></a>  <span class="co"># REPLACE WITH THE NECESSARY CODE</span></span>
+<span id="cb48-194"><a href="#cb48-194"></a>}</span>
+<span id="cb48-195"><a href="#cb48-195"></a><span class="in">```</span></span>
+<span id="cb48-196"><a href="#cb48-196"></a></span>
+<span id="cb48-197"><a href="#cb48-197"></a>**Solution**</span>
+<span id="cb48-198"><a href="#cb48-198"></a></span>
+<span id="cb48-201"><a href="#cb48-201"></a><span class="in">```{r}</span></span>
+<span id="cb48-202"><a href="#cb48-202"></a><span class="co">#| size: "scriptsize"</span></span>
+<span id="cb48-203"><a href="#cb48-203"></a>n <span class="ot">&lt;-</span> <span class="fu">nrow</span>(df)                <span class="co"># How many rows do we have to fill?</span></span>
+<span id="cb48-204"><a href="#cb48-204"></a>df<span class="sc">$</span>x12 <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, <span class="fu">nrow</span>(df))   <span class="co"># Create an empty column for x12</span></span>
+<span id="cb48-205"><a href="#cb48-205"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(df)){</span>
+<span id="cb48-206"><a href="#cb48-206"></a>  df<span class="sc">$</span>x12[i] <span class="ot">=</span> df<span class="sc">$</span>x1[i] <span class="sc">*</span> df<span class="sc">$</span>x2[i]</span>
+<span id="cb48-207"><a href="#cb48-207"></a>}</span>
+<span id="cb48-208"><a href="#cb48-208"></a><span class="fu">head</span>(df)</span>
+<span id="cb48-209"><a href="#cb48-209"></a><span class="in">```</span></span>
+<span id="cb48-210"><a href="#cb48-210"></a></span>
+<span id="cb48-211"><a href="#cb48-211"></a><span class="fu">## Part i</span></span>
+<span id="cb48-212"><a href="#cb48-212"></a>Write a function called <span class="in">`calculate.score(...)`</span> that takes three arguments representing <span class="in">`x1`</span>, <span class="in">`x2`</span>, and <span class="in">`x3`</span>) and returns a single value based on the formula:</span>
+<span id="cb48-213"><a href="#cb48-213"></a>$$Score = (x_1 \times 2) + x_2 - x_3$$</span>
+<span id="cb48-214"><a href="#cb48-214"></a>Use your function to create a new column <span class="in">`total.score`</span> in our data frame <span class="in">`df`</span>.</span>
+<span id="cb48-215"><a href="#cb48-215"></a></span>
+<span id="cb48-216"><a href="#cb48-216"></a>**Solution**</span>
+<span id="cb48-217"><a href="#cb48-217"></a></span>
+<span id="cb48-220"><a href="#cb48-220"></a><span class="in">```{r}</span></span>
+<span id="cb48-221"><a href="#cb48-221"></a>calculate.score <span class="ot">=</span> <span class="cf">function</span>(x1,x2,x3){</span>
+<span id="cb48-222"><a href="#cb48-222"></a>  (x1 <span class="sc">*</span> <span class="dv">2</span>) <span class="sc">+</span> x2 <span class="sc">-</span> x3</span>
+<span id="cb48-223"><a href="#cb48-223"></a>}</span>
+<span id="cb48-224"><a href="#cb48-224"></a></span>
+<span id="cb48-225"><a href="#cb48-225"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(df)){</span>
+<span id="cb48-226"><a href="#cb48-226"></a>  df<span class="sc">$</span>total.score[i] <span class="ot">=</span> <span class="fu">calculate.score</span>(df<span class="sc">$</span>x1[i],df<span class="sc">$</span>x2[i],df<span class="sc">$</span>x3[i])</span>
+<span id="cb48-227"><a href="#cb48-227"></a>}</span>
+<span id="cb48-228"><a href="#cb48-228"></a><span class="fu">head</span>(df)</span>
+<span id="cb48-229"><a href="#cb48-229"></a><span class="in">```</span></span>
+<span id="cb48-230"><a href="#cb48-230"></a></span>
+<span id="cb48-231"><a href="#cb48-231"></a></span>
+<span id="cb48-232"><a href="#cb48-232"></a><span class="fu">## Part j</span></span>
+<span id="cb48-233"><a href="#cb48-233"></a>Create a function called <span class="in">`evaluate.row(...)`</span> that takes one argument and returns "low" when the argument is less than 4, "mid" when the argument is between 4 and 7 (inclusive), and "high" when the arguement is 8 or larger. Then, use <span class="in">`sapply(...)`</span> to apply it to column <span class="in">`x1`</span>.</span>
+<span id="cb48-234"><a href="#cb48-234"></a></span>
+<span id="cb48-235"><a href="#cb48-235"></a>**Solution**</span>
+<span id="cb48-236"><a href="#cb48-236"></a></span>
+<span id="cb48-239"><a href="#cb48-239"></a><span class="in">```{r}</span></span>
+<span id="cb48-240"><a href="#cb48-240"></a>evaluate.row <span class="ot">=</span> <span class="cf">function</span>(value){</span>
+<span id="cb48-241"><a href="#cb48-241"></a>  value <span class="ot">=</span> <span class="fu">as.numeric</span>(value)</span>
+<span id="cb48-242"><a href="#cb48-242"></a>  </span>
+<span id="cb48-243"><a href="#cb48-243"></a>  <span class="cf">if</span> (value <span class="sc">&lt;</span> <span class="dv">4</span>){</span>
+<span id="cb48-244"><a href="#cb48-244"></a>    <span class="st">"low"</span></span>
+<span id="cb48-245"><a href="#cb48-245"></a>  }</span>
+<span id="cb48-246"><a href="#cb48-246"></a>  <span class="cf">else</span> <span class="cf">if</span> (value <span class="sc">&gt;=</span> <span class="dv">4</span> <span class="sc">&amp;</span> value <span class="sc">&lt;=</span> <span class="dv">7</span>){</span>
+<span id="cb48-247"><a href="#cb48-247"></a>    <span class="st">"mid"</span></span>
+<span id="cb48-248"><a href="#cb48-248"></a>  }</span>
+<span id="cb48-249"><a href="#cb48-249"></a>  <span class="cf">else</span> <span class="cf">if</span> (value <span class="sc">&gt;</span> <span class="dv">7</span>){</span>
+<span id="cb48-250"><a href="#cb48-250"></a>    <span class="st">"high"</span></span>
+<span id="cb48-251"><a href="#cb48-251"></a>  }</span>
+<span id="cb48-252"><a href="#cb48-252"></a>}</span>
+<span id="cb48-253"><a href="#cb48-253"></a></span>
+<span id="cb48-254"><a href="#cb48-254"></a>(<span class="fu">sapply</span>(df<span class="sc">$</span>x1, evaluate.row))</span>
+<span id="cb48-255"><a href="#cb48-255"></a><span class="in">```</span></span>
+<span id="cb48-256"><a href="#cb48-256"></a></span>
+<span id="cb48-257"><a href="#cb48-257"></a></span>
+<span id="cb48-258"><a href="#cb48-258"></a><span class="fu">## Part k</span></span>
+<span id="cb48-259"><a href="#cb48-259"></a>Did we need to use loops or functions in (h.)-(j.)? That is, can we use vectorization to attain the same results in 1 line each? Where it is possible, write the line of code. Where it is not, explain why.</span>
+<span id="cb48-260"><a href="#cb48-260"></a></span>
+<span id="cb48-261"><a href="#cb48-261"></a>**Solution**</span>
+<span id="cb48-262"><a href="#cb48-262"></a></span>
+<span id="cb48-263"><a href="#cb48-263"></a>In h., we can simply use multiplication with <span class="in">`*`</span>, because multiplication is vectorized in <span class="in">`R`</span>. For example:</span>
+<span id="cb48-264"><a href="#cb48-264"></a></span>
+<span id="cb48-267"><a href="#cb48-267"></a><span class="in">```{r}</span></span>
+<span id="cb48-268"><a href="#cb48-268"></a>(<span class="at">x12 =</span> df<span class="sc">$</span>x1 <span class="sc">*</span> df<span class="sc">$</span>x2)</span>
+<span id="cb48-269"><a href="#cb48-269"></a><span class="in">```</span></span>
+<span id="cb48-270"><a href="#cb48-270"></a></span>
+<span id="cb48-271"><a href="#cb48-271"></a>In i., all of the operations used (multiplication, addition, and subtraction) are vectorized, so we can come to the same result using vectors:</span>
+<span id="cb48-272"><a href="#cb48-272"></a></span>
+<span id="cb48-275"><a href="#cb48-275"></a><span class="in">```{r}</span></span>
+<span id="cb48-276"><a href="#cb48-276"></a>(<span class="at">total.score =</span> (df<span class="sc">$</span>x1 <span class="sc">*</span> <span class="dv">2</span>) <span class="sc">+</span> df<span class="sc">$</span>x2 <span class="sc">-</span> df<span class="sc">$</span>x3)</span>
+<span id="cb48-277"><a href="#cb48-277"></a><span class="in">```</span></span>
+<span id="cb48-278"><a href="#cb48-278"></a></span>
+<span id="cb48-279"><a href="#cb48-279"></a>In j., we did not need to use a function. We could have simply used <span class="in">`ifelse`</span>, which works in one line and is vectorized: </span>
+<span id="cb48-280"><a href="#cb48-280"></a></span>
+<span id="cb48-283"><a href="#cb48-283"></a><span class="in">```{r}</span></span>
+<span id="cb48-284"><a href="#cb48-284"></a>(<span class="at">evaluate.row.ifelse =</span> <span class="fu">ifelse</span>(df<span class="sc">$</span>x1 <span class="sc">&lt;</span> <span class="dv">4</span>, <span class="st">"low"</span>, <span class="fu">ifelse</span>(df<span class="sc">$</span>x1 <span class="sc">&lt;=</span><span class="dv">7</span>, <span class="st">"mid"</span>, <span class="st">"high"</span>)))</span>
+<span id="cb48-285"><a href="#cb48-285"></a><span class="in">```</span></span>
+<span id="cb48-286"><a href="#cb48-286"></a></span>
+<span id="cb48-287"><a href="#cb48-287"></a>or, as Professor Cipolli showed me in class:</span>
+<span id="cb48-288"><a href="#cb48-288"></a></span>
+<span id="cb48-291"><a href="#cb48-291"></a><span class="in">```{r}</span></span>
+<span id="cb48-292"><a href="#cb48-292"></a>result <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="st">"mid"</span>, <span class="fu">nrow</span>(df))</span>
+<span id="cb48-293"><a href="#cb48-293"></a>result[df<span class="sc">$</span>x1<span class="sc">&lt;</span><span class="dv">4</span>] <span class="ot">&lt;-</span> <span class="st">"low"</span></span>
+<span id="cb48-294"><a href="#cb48-294"></a>result[df<span class="sc">$</span>x1<span class="sc">&gt;</span><span class="dv">7</span>] <span class="ot">&lt;-</span> <span class="st">"high"</span></span>
+<span id="cb48-295"><a href="#cb48-295"></a>result[<span class="fu">is.na</span>(df<span class="sc">$</span>x1)] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb48-296"><a href="#cb48-296"></a>(result)</span>
+<span id="cb48-297"><a href="#cb48-297"></a><span class="in">```</span></span>
+<span id="cb48-298"><a href="#cb48-298"></a></span>
+<span id="cb48-299"><a href="#cb48-299"></a></span>
+<span id="cb48-300"><a href="#cb48-300"></a><span class="fu"># Complete Tasks for One Recipe</span></span>
+<span id="cb48-301"><a href="#cb48-301"></a></span>
+<span id="cb48-302"><a href="#cb48-302"></a><span class="fu">## Part a</span></span>
+<span id="cb48-303"><a href="#cb48-303"></a></span>
+<span id="cb48-304"><a href="#cb48-304"></a>Install and load the <span class="in">`rvest`</span> package <span class="co">[</span><span class="ot">@rvest</span><span class="co">]</span>.</span>
+<span id="cb48-305"><a href="#cb48-305"></a></span>
+<span id="cb48-306"><a href="#cb48-306"></a>**Solution**</span>
+<span id="cb48-307"><a href="#cb48-307"></a></span>
+<span id="cb48-310"><a href="#cb48-310"></a><span class="in">```{r}</span></span>
+<span id="cb48-311"><a href="#cb48-311"></a><span class="co"># install.packages("rvest")</span></span>
+<span id="cb48-312"><a href="#cb48-312"></a><span class="fu">library</span>(<span class="st">"rvest"</span>)</span>
+<span id="cb48-313"><a href="#cb48-313"></a><span class="in">```</span></span>
+<span id="cb48-314"><a href="#cb48-314"></a></span>
+<span id="cb48-315"><a href="#cb48-315"></a><span class="fu">## Part b</span></span>
+<span id="cb48-316"><a href="#cb48-316"></a></span>
+<span id="cb48-317"><a href="#cb48-317"></a>Load the html of the <span class="in">`website/KimchiGrilledCheese.html`</span> using the <span class="in">`read_html()`</span> function and save the result to an object called <span class="in">`recipe.item`</span>. We will use the Kimchi Grilled Cheese recipe as our prototype and extend this workflow to all recipes, so try to be as general as possible. If you do look at it, you'll notice it contains the html we saw in the developer tools in class.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">/&gt;</span></span>
+<span id="cb48-318"><a href="#cb48-318"></a>**Hint**: You can use <span class="in">`read_html(...)`</span> like <span class="in">`read.csv(...)`</span>. Don't forget you can use the documentation to help use it.</span>
+<span id="cb48-319"><a href="#cb48-319"></a></span>
+<span id="cb48-320"><a href="#cb48-320"></a>**Solution**</span>
+<span id="cb48-321"><a href="#cb48-321"></a></span>
+<span id="cb48-324"><a href="#cb48-324"></a><span class="in">```{r}</span></span>
+<span id="cb48-325"><a href="#cb48-325"></a>recipe.item <span class="ot">=</span> <span class="fu">read_html</span>(<span class="st">"website/KimchiGrilledCheese.html"</span>)</span>
+<span id="cb48-326"><a href="#cb48-326"></a><span class="in">```</span></span>
+<span id="cb48-327"><a href="#cb48-327"></a></span>
+<span id="cb48-328"><a href="#cb48-328"></a><span class="fu">## Part c</span></span>
+<span id="cb48-329"><a href="#cb48-329"></a></span>
+<span id="cb48-330"><a href="#cb48-330"></a>Open the html file in a web browser and open developer tools. In chrome-based browsers, you can do this by pressing the three verticle dots in the upper-right corner, clicking "more tools", then "developer tools".</span>
+<span id="cb48-331"><a href="#cb48-331"></a></span>
+<span id="cb48-332"><a href="#cb48-332"></a>Find the name of the Ingredients section of the website and pull the HTML of the function using <span class="in">`html_element(...)`</span> and save the results to an object called <span class="in">`ingredients.section`</span>. <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">/&gt;</span></span>
+<span id="cb48-333"><a href="#cb48-333"></a>**Hint**: You can ask for elements by id using a preceeding "<span class="sc">\#</span>". See <span class="in">`?html_element(...)`</span> for a helpful example. </span>
+<span id="cb48-334"><a href="#cb48-334"></a></span>
+<span id="cb48-335"><a href="#cb48-335"></a>**Solution**</span>
+<span id="cb48-336"><a href="#cb48-336"></a></span>
+<span id="cb48-339"><a href="#cb48-339"></a><span class="in">```{r}</span></span>
+<span id="cb48-340"><a href="#cb48-340"></a>(<span class="at">ingredients.section =</span> <span class="fu">html_element</span>(recipe.item, <span class="st">"#ingredients"</span>))</span>
+<span id="cb48-341"><a href="#cb48-341"></a><span class="in">```</span></span>
+<span id="cb48-342"><a href="#cb48-342"></a></span>
+<span id="cb48-343"><a href="#cb48-343"></a><span class="fu">## Part d</span></span>
+<span id="cb48-344"><a href="#cb48-344"></a>Now, we want to obtain all of the itemized items. Find the element type the individual ingredients and pull all of them from <span class="in">`ingredients.section`</span> using <span class="in">`html_elements(...)`</span> (note the added s) and save the results to an object called <span class="in">`ingredients`</span>.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">/&gt;</span></span>
+<span id="cb48-345"><a href="#cb48-345"></a>**Hint**: You can ask for elements by type by simply specifying the tag (e.g., "p" for paragraph). See `?html_element for a helpful example.</span>
+<span id="cb48-346"><a href="#cb48-346"></a></span>
+<span id="cb48-347"><a href="#cb48-347"></a>**Solution**</span>
+<span id="cb48-348"><a href="#cb48-348"></a></span>
+<span id="cb48-351"><a href="#cb48-351"></a><span class="in">```{r}</span></span>
+<span id="cb48-352"><a href="#cb48-352"></a>(<span class="at">ingredients =</span> <span class="fu">html_elements</span>(ingredients.section, <span class="st">"li"</span>))</span>
+<span id="cb48-353"><a href="#cb48-353"></a><span class="in">```</span></span>
+<span id="cb48-354"><a href="#cb48-354"></a></span>
+<span id="cb48-355"><a href="#cb48-355"></a><span class="fu">## Part e</span></span>
+<span id="cb48-356"><a href="#cb48-356"></a>Similar to Part c. Find the name of the Instructions section of the website and pull the HTML of the function using <span class="in">`html_element(...)`</span> and save the results to an object called <span class="in">`instructions.section`</span>.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">/&gt;</span></span>
+<span id="cb48-357"><a href="#cb48-357"></a></span>
+<span id="cb48-358"><a href="#cb48-358"></a>**Solution**</span>
+<span id="cb48-359"><a href="#cb48-359"></a></span>
+<span id="cb48-362"><a href="#cb48-362"></a><span class="in">```{r}</span></span>
+<span id="cb48-363"><a href="#cb48-363"></a>(<span class="at">instructions.section =</span> <span class="fu">html_element</span>(recipe.item, <span class="st">"#instructions"</span>))</span>
+<span id="cb48-364"><a href="#cb48-364"></a><span class="in">```</span></span>
+<span id="cb48-365"><a href="#cb48-365"></a></span>
+<span id="cb48-366"><a href="#cb48-366"></a></span>
+<span id="cb48-367"><a href="#cb48-367"></a><span class="fu">## Part f</span></span>
+<span id="cb48-368"><a href="#cb48-368"></a>Now, we want to obtain all of the enumerated items. Find the element type the individual instructions and pull all of them from <span class="in">`instructions.section`</span> using <span class="in">`html_elements(...)`</span> (note the added s) and save the results to an object called <span class="in">`instructions`</span>.</span>
+<span id="cb48-369"><a href="#cb48-369"></a></span>
+<span id="cb48-370"><a href="#cb48-370"></a>**Solution**</span>
+<span id="cb48-371"><a href="#cb48-371"></a></span>
+<span id="cb48-374"><a href="#cb48-374"></a><span class="in">```{r}</span></span>
+<span id="cb48-375"><a href="#cb48-375"></a>(<span class="at">instructions =</span> <span class="fu">html_elements</span>(instructions.section, <span class="st">"li"</span>))</span>
+<span id="cb48-376"><a href="#cb48-376"></a><span class="in">```</span></span>
+<span id="cb48-377"><a href="#cb48-377"></a></span>
+<span id="cb48-378"><a href="#cb48-378"></a></span>
+<span id="cb48-379"><a href="#cb48-379"></a><span class="fu">## Part g</span></span>
+<span id="cb48-380"><a href="#cb48-380"></a>Find the class of the recipe image and pull the HTML using <span class="in">`html_element(...)`</span> and save the results to an object called <span class="in">`image.element`</span>. <span class="dt">&lt;</span><span class="kw">br</span><span class="dt">/&gt;</span></span>
+<span id="cb48-381"><a href="#cb48-381"></a>**Hint**: You can ask for elements by class using a preceeding ".". See <span class="in">`?html_element(...)`</span> for a helpful example. Further, note that HTML elements may have more than one class (separated by a space). When that is the case, you need to choose one.</span>
+<span id="cb48-382"><a href="#cb48-382"></a></span>
+<span id="cb48-383"><a href="#cb48-383"></a>**Solution**</span>
+<span id="cb48-384"><a href="#cb48-384"></a></span>
+<span id="cb48-387"><a href="#cb48-387"></a><span class="in">```{r}</span></span>
+<span id="cb48-388"><a href="#cb48-388"></a>(<span class="at">image.element =</span> <span class="fu">html_element</span>(recipe.item, <span class="st">".img-fluid.figure-img"</span>))</span>
+<span id="cb48-389"><a href="#cb48-389"></a><span class="in">```</span></span>
+<span id="cb48-390"><a href="#cb48-390"></a></span>
+<span id="cb48-391"><a href="#cb48-391"></a><span class="fu">## Part h</span></span>
+<span id="cb48-392"><a href="#cb48-392"></a>Use the <span class="in">`html_attr(...)`</span> function to pull the source link ("src"). Then, use <span class="in">`paste(...)`</span> to prepend the source link with "website/" so we have the full link.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">/&gt;</span></span>
+<span id="cb48-393"><a href="#cb48-393"></a>**Note**: This would be like adding "https://www.website.com" to get the absolute link.</span>
+<span id="cb48-394"><a href="#cb48-394"></a></span>
+<span id="cb48-395"><a href="#cb48-395"></a>**Solution**</span>
+<span id="cb48-396"><a href="#cb48-396"></a></span>
+<span id="cb48-399"><a href="#cb48-399"></a><span class="in">```{r}</span></span>
+<span id="cb48-400"><a href="#cb48-400"></a>src <span class="ot">=</span> <span class="fu">html_attr</span>(image.element, <span class="st">"src"</span>)</span>
+<span id="cb48-401"><a href="#cb48-401"></a>(<span class="at">image.url =</span> <span class="fu">paste0</span>(<span class="st">"website/"</span>,src))</span>
+<span id="cb48-402"><a href="#cb48-402"></a><span class="in">```</span></span>
+<span id="cb48-403"><a href="#cb48-403"></a></span>
+<span id="cb48-404"><a href="#cb48-404"></a><span class="fu">## Part i</span></span>
+<span id="cb48-405"><a href="#cb48-405"></a>Now that we have all the things we need, let's try to print the recipe. Below, I have written code to print from the objects. One by one, remove <span class="in">`#| eval: false`</span> from the YAML header and add <span class="in">`#| echo: false`</span> and <span class="in">`#| results: 'asis'`</span>, and test. Let me know if you're stuck!</span>
+<span id="cb48-406"><a href="#cb48-406"></a></span>
+<span id="cb48-407"><a href="#cb48-407"></a>**Image**</span>
+<span id="cb48-408"><a href="#cb48-408"></a></span>
+<span id="cb48-411"><a href="#cb48-411"></a><span class="in">```{r}</span></span>
+<span id="cb48-412"><a href="#cb48-412"></a><span class="co">#| echo: false</span></span>
+<span id="cb48-413"><a href="#cb48-413"></a><span class="co">#| results: 'asis'</span></span>
+<span id="cb48-414"><a href="#cb48-414"></a><span class="co"># width="50%" shrinks the image for printing</span></span>
+<span id="cb48-415"><a href="#cb48-415"></a>recipe.title <span class="ot">&lt;-</span> recipe.item <span class="sc">|&gt;</span> <span class="fu">html_element</span>(<span class="st">"h1"</span>) <span class="sc">|&gt;</span> <span class="fu">html_text</span>()</span>
+<span id="cb48-416"><a href="#cb48-416"></a><span class="fu">cat</span>(<span class="fu">paste</span>(<span class="st">'!['</span>, recipe.title, <span class="st">']('</span>, image.url, <span class="st">"){width=50%}"</span>, <span class="at">sep=</span><span class="st">""</span>)) </span>
+<span id="cb48-417"><a href="#cb48-417"></a><span class="in">```</span></span>
+<span id="cb48-418"><a href="#cb48-418"></a></span>
+<span id="cb48-419"><a href="#cb48-419"></a>**Ingredients**</span>
+<span id="cb48-420"><a href="#cb48-420"></a></span>
+<span id="cb48-423"><a href="#cb48-423"></a><span class="in">```{r}</span></span>
+<span id="cb48-424"><a href="#cb48-424"></a><span class="co">#| echo: false</span></span>
+<span id="cb48-425"><a href="#cb48-425"></a><span class="co">#| results: 'asis'</span></span>
+<span id="cb48-426"><a href="#cb48-426"></a>formatted_list <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"-"</span>, <span class="fu">html_text</span>(ingredients))</span>
+<span id="cb48-427"><a href="#cb48-427"></a><span class="fu">cat</span>(formatted_list, <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb48-428"><a href="#cb48-428"></a><span class="in">```</span></span>
+<span id="cb48-429"><a href="#cb48-429"></a></span>
+<span id="cb48-430"><a href="#cb48-430"></a>**Instructions**</span>
+<span id="cb48-431"><a href="#cb48-431"></a></span>
+<span id="cb48-434"><a href="#cb48-434"></a><span class="in">```{r}</span></span>
+<span id="cb48-435"><a href="#cb48-435"></a><span class="co">#| echo: false</span></span>
+<span id="cb48-436"><a href="#cb48-436"></a><span class="co">#| results: 'asis'</span></span>
+<span id="cb48-437"><a href="#cb48-437"></a>formatted_list <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="st">"1."</span>, <span class="fu">html_text</span>(instructions))</span>
+<span id="cb48-438"><a href="#cb48-438"></a><span class="fu">cat</span>(formatted_list, <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb48-439"><a href="#cb48-439"></a><span class="in">```</span></span>
+<span id="cb48-440"><a href="#cb48-440"></a></span>
+<span id="cb48-441"><a href="#cb48-441"></a><span class="fu"># Complete a Full Menu!</span></span>
+<span id="cb48-442"><a href="#cb48-442"></a>Open <span class="in">`Menu.qmd`</span> and add code to complete the following.</span>
+<span id="cb48-443"><a href="#cb48-443"></a></span>
+<span id="cb48-444"><a href="#cb48-444"></a><span class="ss">1. </span>Randomly select three dinner recipes and one breakfast recipe at random.<span class="dt">&lt;</span><span class="kw">br</span><span class="dt">/&gt;</span></span>
+<span id="cb48-445"><a href="#cb48-445"></a>**Hint:** Use the <span class="in">`sample(...)`</span> function.</span>
+<span id="cb48-446"><a href="#cb48-446"></a><span class="ss">2. </span>Pull the image, ingredients, and instructions for each selected recipe.</span>
+<span id="cb48-447"><a href="#cb48-447"></a><span class="ss">3. </span>Combine all of the ingredients into a grocery list on the first page.</span>
+<span id="cb48-448"><a href="#cb48-448"></a><span class="ss">4. </span>Print the image, ingredients, and instructions for each receipe on the subsequent pages.</span>
+<span id="cb48-449"><a href="#cb48-449"></a></span>
+<span id="cb48-450"><a href="#cb48-450"></a>When you render this document, no code should be visible. Instead, you should see a five-page document as described above.</span>
+<span id="cb48-451"><a href="#cb48-451"></a></span>
+<span id="cb48-452"><a href="#cb48-452"></a><span class="fu"># Describe your work!</span></span>
+<span id="cb48-453"><a href="#cb48-453"></a></span>
+<span id="cb48-454"><a href="#cb48-454"></a><span class="fu">## Why a fake website?</span></span>
+<span id="cb48-455"><a href="#cb48-455"></a>Read <span class="co">[</span><span class="ot">https://www.scrapingbee.com/blog/is-web-scraping-legal/</span><span class="co">](Is Web Sraping Legal?)</span>. Originally, I conceived doing this with recipes from Purple Carrot (my favorite subscription service). Being a large company, their terms of service are *very* long and precluded us from copying their recipes. We also checked a few smaller recipe websites we like and even they had terms of service that restricted automated collection of data.</span>
+<span id="cb48-456"><a href="#cb48-456"></a></span>
+<span id="cb48-457"><a href="#cb48-457"></a><span class="fu">## Conditionals</span></span>
+<span id="cb48-458"><a href="#cb48-458"></a>Did you use conditional statements in your code? If yes, how. If not, are there places you could have used them but did something else?</span>
+<span id="cb48-459"><a href="#cb48-459"></a></span>
+<span id="cb48-460"><a href="#cb48-460"></a>**Solution**</span>
+<span id="cb48-461"><a href="#cb48-461"></a></span>
+<span id="cb48-462"><a href="#cb48-462"></a>I did not use any conditional statements in the web scraper. I made the pipeline semi-generalizeable, but I did hardcode the recipe 1-4 vectors into the code. I could have used them to make the code more generalizable, specifically in extracting the html elements. For the extraction of ingredients, instructions, and the images, I could have used conditional statements to store the html to a certain variable depending upon which html type each element is. Looking back, this would have made the code more applicable as a general format for web scraping, and is definitely something I'd consider for extracting HTML in the future.</span>
+<span id="cb48-463"><a href="#cb48-463"></a></span>
+<span id="cb48-464"><a href="#cb48-464"></a><span class="fu">## Loops</span></span>
+<span id="cb48-465"><a href="#cb48-465"></a>Did you use loops in your code? If yes, how. If not, are there places you could have used them but did something else?</span>
+<span id="cb48-466"><a href="#cb48-466"></a></span>
+<span id="cb48-467"><a href="#cb48-467"></a>**Solution**</span>
+<span id="cb48-468"><a href="#cb48-468"></a></span>
+<span id="cb48-469"><a href="#cb48-469"></a>No, I did not use any loops. I could have used for loops instead of the r1,r2 etc. structure, which would have also made the code easier to apply to other scenarios. Since there were only four "cases", though, I thought that it fit the problem best to just hardcode the vectors and copy/paste the logic for each recipe.</span>
+<span id="cb48-470"><a href="#cb48-470"></a></span>
+<span id="cb48-471"><a href="#cb48-471"></a><span class="fu">## Functions</span></span>
+<span id="cb48-472"><a href="#cb48-472"></a>Did you use functions in your code? If yes, how. If not, are there places you could have used them but did something else?</span>
+<span id="cb48-473"><a href="#cb48-473"></a></span>
+<span id="cb48-474"><a href="#cb48-474"></a>**Solution**</span>
+<span id="cb48-475"><a href="#cb48-475"></a></span>
+<span id="cb48-476"><a href="#cb48-476"></a>Yes, I used functions for the main structure of my code. I used them to write logic that would perform the code for any recipe number. This solution was halfway to being an efficient and scaleable pipeline; with the missing ingredient being logic to loop through any number of recipes.</span>
+<span id="cb48-477"><a href="#cb48-477"></a></span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Hudson Miller · Colgate University</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
+  </div>
+</footer>
 
 
 
 
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
