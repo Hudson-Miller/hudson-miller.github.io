@@ -2,6 +2,40 @@
 title: "Hudson Miller"
 ---
 
-This is a Quarto website.
+::: {.hero-block}
+# Hudson Miller
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+::: {.subtitle}
+Mathematics & Computer Science · Colgate University, Class of '29
+:::
+:::
+
+::: {.info-card}
+Welcome. I'm an undergraduate researcher working at the intersection of **computational commutative algebra** and **graph theory**, advised by Professor Sosa-Castillo. My current work investigates properties of simple finite graphs under monomial orders, with an emphasis on formal proof-writing at a publication standard.
+
+This site also hosts my coursework from **Math 240: Computational Statistics**.
+:::
+
+## Research
+
+I study connections between graph-theoretic structure and algebraic properties of monomial ideals — particularly how combinatorial data from a graph translates into algebraic invariants. This work is deeply collaborative and has sharpened my ability to communicate mathematics clearly and rigorously.
+
+## Course Work
+
+The lab reports below document statistical analyses conducted in R across a range of applied topics.
+
+| Lab | Topic |
+|-----|-------|
+| [Lab 2](Lab 2/Lab2WriteUp.qmd) | — |
+| [Lab 3](Lab 3/Lab3WriteUp.qmd) | — |
+| [Lab 4](Lab 4/Lab4WriteUp.qmd) | — |
+| [Lab 5–6](Lab 5-6/Lab5WriteUp.qmd) | — |
+| [Lab 8–9](Lab 8-9/Lab8WriteUp.qmd) | — |
+| [Lab 10](Lab 10/Lab10WriteUp.qmd) | — |
+| [Lab 11](Lab 11/Lab11WriteUp.qmd) | — |
+| [Lab 13](Lab 13/Lab13WriteUp.qmd) | — |
+| [Colgate Rowing Analysis](Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.qmd) | Rowing performance data |
+
+---
+
+*Last updated April 2025.*

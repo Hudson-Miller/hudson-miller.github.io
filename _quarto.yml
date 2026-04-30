@@ -4,33 +4,68 @@ project:
 
 website:
   title: "Hudson Miller"
+  description: "Mathematics & CS · Colgate University"
+  favicon: ""          # add a favicon.png to your repo root if you have one
+
+  navbar:
+    background: dark
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+
   sidebar:
     style: "docked"
+    background: light
     search: false
     contents:
-    - href: index.qmd
-      text: Home
-    - about.qmd
-    - Lab 2/Lab2WriteUp.qmd
-    - Lab 3/Lab3WriteUp.qmd
-    - Lab 4/Lab4WriteUp.qmd
-    - Lab 5-6/Lab5WriteUp.qmd
-    - Lab 8-9/Lab8WriteUp.qmd
-    - Lab 10/Lab10WriteUp.qmd
-    - Lab 11/Lab11WriteUp.qmd
-    - Lab 13/Lab13WriteUp.qmd
-    - Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.qmd
+      - section: "Overview"
+        contents:
+          - href: index.qmd
+            text: Home
+          - href: about.qmd
+            text: About
+      - section: "Math 240 Labs"
+        contents:
+          - href: Lab 2/Lab2WriteUp.qmd
+            text: Lab 2
+          - href: Lab 3/Lab3WriteUp.qmd
+            text: Lab 3
+          - href: Lab 4/Lab4WriteUp.qmd
+            text: Lab 4
+          - href: Lab 5-6/Lab5WriteUp.qmd
+            text: Lab 5–6
+          - href: Lab 8-9/Lab8WriteUp.qmd
+            text: Lab 8–9
+          - href: Lab 10/Lab10WriteUp.qmd
+            text: Lab 10
+          - href: Lab 11/Lab11WriteUp.qmd
+            text: Lab 11
+          - href: Lab 13/Lab13WriteUp.qmd
+            text: Lab 13
+      - section: "Projects"
+        contents:
+          - href: Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.qmd
+            text: Rowing Data Analysis
+
+  page-footer:
+    left: "Hudson Miller · Colgate University"
+    right: "Built with [Quarto](https://quarto.org)"
 
 format:
   html:
     theme:
       - cosmo
-      - brand
     css: styles.css
     toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    smooth-scroll: true
+    code-fold: false
+    code-tools: true
+    highlight-style: github
+    df-print: paged
 
 execute:
   freeze: auto
-
-
-
