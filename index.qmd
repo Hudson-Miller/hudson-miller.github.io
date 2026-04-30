@@ -3,7 +3,7 @@ title: "Hudson Miller"
 ---
 
 ::: {.hero-block}
-# About Me
+# Hudson Miller
 
 ::: {.subtitle}
 Mathematics & Computer Science · Colgate University, Class of '29
