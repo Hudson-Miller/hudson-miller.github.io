@@ -24,17 +24,17 @@ I study connections between graph-theoretic structure and algebraic properties o
 
 The lab reports below document statistical analyses conducted in R across a range of applied topics.
 
-| Lab | | Topic |
-|-----| |-------|
+| Lab | Topic |
+|-----|-------|
 | [Lab 2](Lab 2/Lab2WriteUp.qmd) | Basics of R |
 | [Lab 3](Lab 3/Lab3WriteUp.qmd) | Matrices and Dataframes |
 | [Lab 4](Lab 4/Lab4WriteUp.qmd) | Coding Structures |
 | [Lab 5–6](Lab 5-6/Lab5WriteUp.qmd) | Data Wrangling |
 | [Lab 8–9](Lab 8-9/Lab8WriteUp.qmd) | Probability |
-| [Lab 10](Lab 10/Lab10WriteUp.qmd)  | Point Estimation |
-| [Lab 11](Lab 11/Lab11WriteUp.qmd)  | Bootstrapping |
-| [Lab 13](Lab 13/Lab13WriteUp.qmd)  | Statistical Inference |
-| [Colgate Rowing Analysis](Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.qmd) | | Project for the Colgate Men's Rowing Team|
+| [Lab 10](Lab 10/Lab10WriteUp.qmd) | Point Estimation |
+| [Lab 11](Lab 11/Lab11WriteUp.qmd) | Bootstrapping |
+| [Lab 13](Lab 13/Lab13WriteUp.qmd) | Statistical Inference |
+| [Colgate Rowing Analysis](Colgate Rowing Data Analysis/CMROW_DATA_ANALYSIS.qmd) | Project for the Colgate Men's Rowing Team |
 
 ---
 
